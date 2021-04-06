@@ -7,23 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE241C61261C84C6002DF800 /* Aeonik-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C53261C84C6002DF800 /* Aeonik-RegularItalic.otf */; };
+		EE241C62261C84C6002DF800 /* Aeonik-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C54261C84C6002DF800 /* Aeonik-Bold.otf */; };
+		EE241C63261C84C6002DF800 /* Aeonik-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C55261C84C6002DF800 /* Aeonik-LightItalic.otf */; };
+		EE241C64261C84C6002DF800 /* Aeonik-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C56261C84C6002DF800 /* Aeonik-Thin.otf */; };
+		EE241C65261C84C6002DF800 /* Aeonik-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C57261C84C6002DF800 /* Aeonik-BlackItalic.otf */; };
+		EE241C66261C84C6002DF800 /* Aeonik-Air.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C58261C84C6002DF800 /* Aeonik-Air.otf */; };
+		EE241C67261C84C6002DF800 /* Aeonik-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C59261C84C6002DF800 /* Aeonik-Light.otf */; };
+		EE241C68261C84C6002DF800 /* Aeonik-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C5A261C84C6002DF800 /* Aeonik-Medium.otf */; };
+		EE241C69261C84C6002DF800 /* Aeonik-AirItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C5B261C84C6002DF800 /* Aeonik-AirItalic.otf */; };
+		EE241C6A261C84C6002DF800 /* Aeonik-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C5C261C84C6002DF800 /* Aeonik-Black.otf */; };
+		EE241C6B261C84C6002DF800 /* Aeonik-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C5D261C84C6002DF800 /* Aeonik-Regular.otf */; };
+		EE241C6C261C84C6002DF800 /* Aeonik-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C5E261C84C6002DF800 /* Aeonik-BoldItalic.otf */; };
+		EE241C6D261C84C6002DF800 /* Aeonik-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C5F261C84C6002DF800 /* Aeonik-ThinItalic.otf */; };
+		EE241C6E261C84C6002DF800 /* Aeonik-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C60261C84C6002DF800 /* Aeonik-MediumItalic.otf */; };
 		EE261E2D261C7BF700C43BA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE261E2C261C7BF700C43BA2 /* AppDelegate.swift */; };
 		EE261E2F261C7BF700C43BA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE261E2E261C7BF700C43BA2 /* SceneDelegate.swift */; };
-		EE261E31261C7BF700C43BA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE261E30261C7BF700C43BA2 /* ViewController.swift */; };
 		EE261E34261C7BF700C43BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE261E32261C7BF700C43BA2 /* Main.storyboard */; };
 		EE261E36261C7BF800C43BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE261E35261C7BF800C43BA2 /* Assets.xcassets */; };
 		EE261E39261C7BF800C43BA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE261E37261C7BF800C43BA2 /* LaunchScreen.storyboard */; };
+		EE261E44261C811000C43BA2 /* YWelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE261E43261C811000C43BA2 /* YWelcomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE241C53261C84C6002DF800 /* Aeonik-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-RegularItalic.otf"; sourceTree = "<group>"; };
+		EE241C54261C84C6002DF800 /* Aeonik-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-Bold.otf"; sourceTree = "<group>"; };
+		EE241C55261C84C6002DF800 /* Aeonik-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-LightItalic.otf"; sourceTree = "<group>"; };
+		EE241C56261C84C6002DF800 /* Aeonik-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-Thin.otf"; sourceTree = "<group>"; };
+		EE241C57261C84C6002DF800 /* Aeonik-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-BlackItalic.otf"; sourceTree = "<group>"; };
+		EE241C58261C84C6002DF800 /* Aeonik-Air.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-Air.otf"; sourceTree = "<group>"; };
+		EE241C59261C84C6002DF800 /* Aeonik-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-Light.otf"; sourceTree = "<group>"; };
+		EE241C5A261C84C6002DF800 /* Aeonik-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-Medium.otf"; sourceTree = "<group>"; };
+		EE241C5B261C84C6002DF800 /* Aeonik-AirItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-AirItalic.otf"; sourceTree = "<group>"; };
+		EE241C5C261C84C6002DF800 /* Aeonik-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-Black.otf"; sourceTree = "<group>"; };
+		EE241C5D261C84C6002DF800 /* Aeonik-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-Regular.otf"; sourceTree = "<group>"; };
+		EE241C5E261C84C6002DF800 /* Aeonik-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-BoldItalic.otf"; sourceTree = "<group>"; };
+		EE241C5F261C84C6002DF800 /* Aeonik-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-ThinItalic.otf"; sourceTree = "<group>"; };
+		EE241C60261C84C6002DF800 /* Aeonik-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-MediumItalic.otf"; sourceTree = "<group>"; };
 		EE261E29261C7BF700C43BA2 /* YProjet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YProjet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE261E2C261C7BF700C43BA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE261E2E261C7BF700C43BA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE261E30261C7BF700C43BA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE261E33261C7BF700C43BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE261E35261C7BF800C43BA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE261E38261C7BF800C43BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE261E3A261C7BF800C43BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE261E43261C811000C43BA2 /* YWelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWelcomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +65,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE241C52261C84C6002DF800 /* Aeonik-font */ = {
+			isa = PBXGroup;
+			children = (
+				EE241C53261C84C6002DF800 /* Aeonik-RegularItalic.otf */,
+				EE241C54261C84C6002DF800 /* Aeonik-Bold.otf */,
+				EE241C55261C84C6002DF800 /* Aeonik-LightItalic.otf */,
+				EE241C56261C84C6002DF800 /* Aeonik-Thin.otf */,
+				EE241C57261C84C6002DF800 /* Aeonik-BlackItalic.otf */,
+				EE241C58261C84C6002DF800 /* Aeonik-Air.otf */,
+				EE241C59261C84C6002DF800 /* Aeonik-Light.otf */,
+				EE241C5A261C84C6002DF800 /* Aeonik-Medium.otf */,
+				EE241C5B261C84C6002DF800 /* Aeonik-AirItalic.otf */,
+				EE241C5C261C84C6002DF800 /* Aeonik-Black.otf */,
+				EE241C5D261C84C6002DF800 /* Aeonik-Regular.otf */,
+				EE241C5E261C84C6002DF800 /* Aeonik-BoldItalic.otf */,
+				EE241C5F261C84C6002DF800 /* Aeonik-ThinItalic.otf */,
+				EE241C60261C84C6002DF800 /* Aeonik-MediumItalic.otf */,
+			);
+			path = "Aeonik-font";
+			sourceTree = "<group>";
+		};
 		EE261E20261C7BF700C43BA2 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +107,12 @@
 			children = (
 				EE261E2C261C7BF700C43BA2 /* AppDelegate.swift */,
 				EE261E2E261C7BF700C43BA2 /* SceneDelegate.swift */,
-				EE261E30261C7BF700C43BA2 /* ViewController.swift */,
+				EE261E43261C811000C43BA2 /* YWelcomeVC.swift */,
 				EE261E32261C7BF700C43BA2 /* Main.storyboard */,
 				EE261E35261C7BF800C43BA2 /* Assets.xcassets */,
 				EE261E37261C7BF800C43BA2 /* LaunchScreen.storyboard */,
 				EE261E3A261C7BF800C43BA2 /* Info.plist */,
+				EE241C52261C84C6002DF800 /* Aeonik-font */,
 			);
 			path = YProjet;
 			sourceTree = "<group>";
@@ -124,9 +174,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE241C62261C84C6002DF800 /* Aeonik-Bold.otf in Resources */,
+				EE241C69261C84C6002DF800 /* Aeonik-AirItalic.otf in Resources */,
+				EE241C68261C84C6002DF800 /* Aeonik-Medium.otf in Resources */,
+				EE241C6C261C84C6002DF800 /* Aeonik-BoldItalic.otf in Resources */,
+				EE241C66261C84C6002DF800 /* Aeonik-Air.otf in Resources */,
+				EE241C64261C84C6002DF800 /* Aeonik-Thin.otf in Resources */,
+				EE241C63261C84C6002DF800 /* Aeonik-LightItalic.otf in Resources */,
 				EE261E39261C7BF800C43BA2 /* LaunchScreen.storyboard in Resources */,
+				EE241C6E261C84C6002DF800 /* Aeonik-MediumItalic.otf in Resources */,
+				EE241C6A261C84C6002DF800 /* Aeonik-Black.otf in Resources */,
+				EE241C6D261C84C6002DF800 /* Aeonik-ThinItalic.otf in Resources */,
+				EE241C67261C84C6002DF800 /* Aeonik-Light.otf in Resources */,
+				EE241C6B261C84C6002DF800 /* Aeonik-Regular.otf in Resources */,
+				EE241C65261C84C6002DF800 /* Aeonik-BlackItalic.otf in Resources */,
 				EE261E36261C7BF800C43BA2 /* Assets.xcassets in Resources */,
 				EE261E34261C7BF700C43BA2 /* Main.storyboard in Resources */,
+				EE241C61261C84C6002DF800 /* Aeonik-RegularItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE261E31261C7BF700C43BA2 /* ViewController.swift in Sources */,
+				EE261E44261C811000C43BA2 /* YWelcomeVC.swift in Sources */,
 				EE261E2D261C7BF700C43BA2 /* AppDelegate.swift in Sources */,
 				EE261E2F261C7BF700C43BA2 /* SceneDelegate.swift in Sources */,
 			);

@@ -1,20 +1,71 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Bold.otf">
+            <string>Aeonik-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PC5-71-8m3" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="-16" width="414" height="160"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PA1-sS-wUC">
+                                        <rect key="frame" x="36" y="104" width="103.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-d1-6Ni">
+                                        <rect key="frame" x="350" y="97" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="BP0-cz-CCk"/>
+                                            <constraint firstAttribute="height" constant="44" id="bfB-mu-36c"/>
+                                        </constraints>
+                                        <state key="normal" image="settings"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rm1-Z1-XcT">
+                                        <rect key="frame" x="298" y="97" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="HTz-we-FW3"/>
+                                            <constraint firstAttribute="height" constant="44" id="Kv4-fY-Jqh"/>
+                                        </constraints>
+                                        <state key="normal" image="bell-ring"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="TopBar"/>
+                                <constraints>
+                                    <constraint firstItem="ZsQ-d1-6Ni" firstAttribute="centerY" secondItem="PA1-sS-wUC" secondAttribute="centerY" id="D0B-Nq-Yke"/>
+                                    <constraint firstItem="PA1-sS-wUC" firstAttribute="leading" secondItem="PC5-71-8m3" secondAttribute="leading" constant="36" id="H01-zi-8Sw"/>
+                                    <constraint firstAttribute="height" constant="160" id="HZP-FZ-uxH"/>
+                                    <constraint firstItem="ZsQ-d1-6Ni" firstAttribute="leading" secondItem="Rm1-Z1-XcT" secondAttribute="trailing" constant="8" symbolic="YES" id="KHE-by-Kjt"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZsQ-d1-6Ni" secondAttribute="trailing" constant="20" id="ZqF-Zc-vAE"/>
+                                    <constraint firstItem="Rm1-Z1-XcT" firstAttribute="centerY" secondItem="ZsQ-d1-6Ni" secondAttribute="centerY" id="fjZ-nM-Qkw"/>
+                                    <constraint firstAttribute="bottom" secondItem="PA1-sS-wUC" secondAttribute="bottom" constant="26" id="oor-AM-2dV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PC5-71-8m3" secondAttribute="trailing" id="1U7-7S-dB8"/>
+                            <constraint firstItem="PC5-71-8m3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K3Z-JM-wS1"/>
+                            <constraint firstItem="PC5-71-8m3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-60" id="t8o-Kr-QPj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -22,4 +73,14 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bell-ring" width="18.214000701904297" height="18.243999481201172"/>
+        <image name="settings" width="16.415000915527344" height="18.243999481201172"/>
+        <namedColor name="Background">
+            <color red="0.93333333333333335" green="0.94509803921568625" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TopBar">
+            <color red="0.14901960784313725" green="0.078431372549019607" blue="0.3843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
