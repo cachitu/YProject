@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="-16" width="414" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbb-XL-N1b">
-                                        <rect key="frame" x="36" y="104" width="110.5" height="30"/>
+                                        <rect key="frame" x="36" y="104" width="103.5" height="30"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6b-LU-w0a">
-                                            <rect key="frame" x="36" y="56" width="342" height="36"/>
+                                            <rect key="frame" x="36" y="56.5" width="342" height="35"/>
                                             <string key="text">Choose one of the networks below 
 to create or add your first wallet.</string>
                                             <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
@@ -109,7 +109,7 @@ to create or add your first wallet.</string>
                                                             <rect key="frame" x="298" y="36" width="24" height="24"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTP-QE-hsm">
-                                                            <rect key="frame" x="76" y="39" width="58.5" height="18"/>
+                                                            <rect key="frame" x="76" y="39" width="56" height="18"/>
                                                             <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                                             <color key="textColor" name="TopBar"/>
                                                             <nil key="highlightedColor"/>
