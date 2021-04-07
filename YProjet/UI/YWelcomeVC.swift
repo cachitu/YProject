@@ -45,6 +45,12 @@ extension YWelcomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "CreateWalletSegue", sender: self)
+        }
+    }
 }
 
 class YWelcomeCell: UITableViewCell {

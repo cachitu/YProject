@@ -107,6 +107,7 @@ to create or add your first wallet.</string>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-icon" translatesAutoresizingMaskIntoConstraints="NO" id="bWI-Or-q1K">
                                                             <rect key="frame" x="298" y="36" width="24" height="24"/>
+                                                            <color key="tintColor" name="TopBar"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTP-QE-hsm">
                                                             <rect key="frame" x="76" y="39" width="56" height="18"/>
@@ -163,11 +164,22 @@ to create or add your first wallet.</string>
                     <navigationItem key="navigationItem" id="zcc-va-Yml"/>
                     <connections>
                         <outlet property="tableView" destination="HY3-9b-gjJ" id="VSc-lO-Nxb"/>
+                        <segue destination="Loe-i8-OKN" kind="show" identifier="CreateWalletSegue" id="Usg-ah-iDb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="923.1884057971015" y="88.392857142857139"/>
+        </scene>
+        <!--CreateWallet-->
+        <scene sceneID="Kb4-ME-kMn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateWallet" id="Loe-i8-OKN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xmK-9G-rT3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yNL-B4-g8K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1536" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YCV-gi-0oB">

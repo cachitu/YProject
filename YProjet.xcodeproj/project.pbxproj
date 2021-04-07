@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE11BFC3261DF3F7005E724D /* CreateWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE11BFC2261DF3F7005E724D /* CreateWallet.storyboard */; };
+		EE11BFCA261E0382005E724D /* YWalletCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFC9261E0382005E724D /* YWalletCreateVC.swift */; };
+		EE11BFCD261E0599005E724D /* YWalletColletPhraseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFCC261E0599005E724D /* YWalletColletPhraseVC.swift */; };
+		EE11BFD0261E0C91005E724D /* YWalletConfirmPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFCF261E0C91005E724D /* YWalletConfirmPhrase.swift */; };
+		EE11BFD3261E1486005E724D /* YWalletImportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFD2261E1486005E724D /* YWalletImportVC.swift */; };
+		EE11BFD7261E1755005E724D /* YWalletWatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFD6261E1755005E724D /* YWalletWatchVC.swift */; };
 		EE241C61261C84C6002DF800 /* Aeonik-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C53261C84C6002DF800 /* Aeonik-RegularItalic.otf */; };
 		EE241C62261C84C6002DF800 /* Aeonik-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C54261C84C6002DF800 /* Aeonik-Bold.otf */; };
 		EE241C63261C84C6002DF800 /* Aeonik-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C55261C84C6002DF800 /* Aeonik-LightItalic.otf */; };
@@ -30,6 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE11BFC2261DF3F7005E724D /* CreateWallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateWallet.storyboard; sourceTree = "<group>"; };
+		EE11BFC9261E0382005E724D /* YWalletCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWalletCreateVC.swift; sourceTree = "<group>"; };
+		EE11BFCC261E0599005E724D /* YWalletColletPhraseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWalletColletPhraseVC.swift; sourceTree = "<group>"; };
+		EE11BFCF261E0C91005E724D /* YWalletConfirmPhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWalletConfirmPhrase.swift; sourceTree = "<group>"; };
+		EE11BFD2261E1486005E724D /* YWalletImportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWalletImportVC.swift; sourceTree = "<group>"; };
+		EE11BFD6261E1755005E724D /* YWalletWatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWalletWatchVC.swift; sourceTree = "<group>"; };
 		EE241C53261C84C6002DF800 /* Aeonik-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-RegularItalic.otf"; sourceTree = "<group>"; };
 		EE241C54261C84C6002DF800 /* Aeonik-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-Bold.otf"; sourceTree = "<group>"; };
 		EE241C55261C84C6002DF800 /* Aeonik-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-LightItalic.otf"; sourceTree = "<group>"; };
@@ -65,6 +77,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE11BFD9261E19CA005E724D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EE261E43261C811000C43BA2 /* YWelcomeVC.swift */,
+				EE11BFC9261E0382005E724D /* YWalletCreateVC.swift */,
+				EE11BFCC261E0599005E724D /* YWalletColletPhraseVC.swift */,
+				EE11BFCF261E0C91005E724D /* YWalletConfirmPhrase.swift */,
+				EE11BFD2261E1486005E724D /* YWalletImportVC.swift */,
+				EE11BFD6261E1755005E724D /* YWalletWatchVC.swift */,
+				EE11BFC2261DF3F7005E724D /* CreateWallet.storyboard */,
+				EE261E32261C7BF700C43BA2 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		EE241C52261C84C6002DF800 /* Aeonik-font */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +134,7 @@
 			children = (
 				EE261E2C261C7BF700C43BA2 /* AppDelegate.swift */,
 				EE261E2E261C7BF700C43BA2 /* SceneDelegate.swift */,
-				EE261E43261C811000C43BA2 /* YWelcomeVC.swift */,
-				EE261E32261C7BF700C43BA2 /* Main.storyboard */,
+				EE11BFD9261E19CA005E724D /* UI */,
 				EE261E35261C7BF800C43BA2 /* Assets.xcassets */,
 				EE261E37261C7BF800C43BA2 /* LaunchScreen.storyboard */,
 				EE261E3A261C7BF800C43BA2 /* Info.plist */,
@@ -181,6 +207,7 @@
 				EE241C66261C84C6002DF800 /* Aeonik-Air.otf in Resources */,
 				EE241C64261C84C6002DF800 /* Aeonik-Thin.otf in Resources */,
 				EE241C63261C84C6002DF800 /* Aeonik-LightItalic.otf in Resources */,
+				EE11BFC3261DF3F7005E724D /* CreateWallet.storyboard in Resources */,
 				EE261E39261C7BF800C43BA2 /* LaunchScreen.storyboard in Resources */,
 				EE241C6E261C84C6002DF800 /* Aeonik-MediumItalic.otf in Resources */,
 				EE241C6A261C84C6002DF800 /* Aeonik-Black.otf in Resources */,
@@ -201,9 +228,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE11BFCD261E0599005E724D /* YWalletColletPhraseVC.swift in Sources */,
+				EE11BFD7261E1755005E724D /* YWalletWatchVC.swift in Sources */,
 				EE261E44261C811000C43BA2 /* YWelcomeVC.swift in Sources */,
 				EE261E2D261C7BF700C43BA2 /* AppDelegate.swift in Sources */,
 				EE261E2F261C7BF700C43BA2 /* SceneDelegate.swift in Sources */,
+				EE11BFD0261E0C91005E724D /* YWalletConfirmPhrase.swift in Sources */,
+				EE11BFCA261E0382005E724D /* YWalletCreateVC.swift in Sources */,
+				EE11BFD3261E1486005E724D /* YWalletImportVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kytzu.YProjet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,7 +411,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kytzu.YProjet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
