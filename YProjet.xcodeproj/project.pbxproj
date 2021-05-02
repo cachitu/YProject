@@ -3,16 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0AD9975201F3B488C5D1E2 /* Pods_YProjet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9166D0CAE24FE1B8A749CC2 /* Pods_YProjet.framework */; };
+		8D225A6C263D50620050B329 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A6B263D50620050B329 /* AppCoordinator.swift */; };
+		8D225A73263D50AF0050B329 /* CoordinableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A70263D50AF0050B329 /* CoordinableViewModel.swift */; };
+		8D225A74263D50AF0050B329 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A71263D50AF0050B329 /* TransitionType.swift */; };
+		8D225A75263D50AF0050B329 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A72263D50AF0050B329 /* Coordinator.swift */; };
+		8D225A7E263D51640050B329 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D225A79263D51640050B329 /* MainTabBar.storyboard */; };
+		8D225A7F263D51640050B329 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A7B263D51640050B329 /* TabBarCoordinator.swift */; };
+		8D225A80263D51640050B329 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A7D263D51640050B329 /* MainTabBarViewController.swift */; };
+		8D225A86263D52CA0050B329 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A85263D52CA0050B329 /* StoryboardIdentifiable.swift */; };
+		8D225A8A263D544E0050B329 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A89263D544E0050B329 /* BaseNavigationController.swift */; };
+		8D225A8E263D54970050B329 /* ScrollableToTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A8D263D54970050B329 /* ScrollableToTop.swift */; };
+		8D225A92263D551C0050B329 /* RefreshableTabProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A91263D551C0050B329 /* RefreshableTabProtocol.swift */; };
+		8D225A96263D557F0050B329 /* CreateWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A95263D557F0050B329 /* CreateWalletCoordinator.swift */; };
+		8D225A99263D558D0050B329 /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225A98263D558D0050B329 /* WelcomeCoordinator.swift */; };
+		8D225AB6263D57660050B329 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AB5263D57660050B329 /* HomeCoordinator.swift */; };
+		8D225ABB263D5A4C0050B329 /* UIStoryboard+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225ABA263D5A4C0050B329 /* UIStoryboard+extension.swift */; };
+		8D225ABF263D5C730050B329 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225ABE263D5C730050B329 /* String+extension.swift */; };
+		8D225AC2263D5CBF0050B329 /* UIImage+assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AC1263D5CBF0050B329 /* UIImage+assets.swift */; };
+		8D225AC5263D5E960050B329 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AC4263D5E960050B329 /* Scene.swift */; };
+		8D225AC8263D5F0B0050B329 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AC7263D5F0B0050B329 /* HomeViewModel.swift */; };
+		8D225ACC263D5F460050B329 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225ACB263D5F460050B329 /* BaseViewModel.swift */; };
+		8D225AD0263D60370050B329 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225ACF263D60370050B329 /* HomeViewController.swift */; };
+		8D225AD3263D60790050B329 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AD2263D60790050B329 /* BindableType.swift */; };
+		8D225AD6263D62D20050B329 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AD5263D62D20050B329 /* BaseViewController.swift */; };
+		8D225AD9263D635F0050B329 /* KeyboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AD8263D635F0050B329 /* KeyboardMonitor.swift */; };
+		8D225ADC263D63F10050B329 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225ADB263D63F10050B329 /* HomeTableViewController.swift */; };
+		8D225ADF263D642E0050B329 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225ADE263D642E0050B329 /* BaseTableViewController.swift */; };
+		8D225AE2263D65210050B329 /* UINavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AE1263D65210050B329 /* UINavigationController+extension.swift */; };
+		8D225AE5263D67B00050B329 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AE4263D67B00050B329 /* WelcomeViewModel.swift */; };
+		8D225AEC263D69230050B329 /* DataSourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AEB263D69220050B329 /* DataSourceState.swift */; };
+		8D225AEF263D69A20050B329 /* CustomTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AEE263D69A20050B329 /* CustomTableViewSection.swift */; };
+		8DFE767F263DCEB900EA8E24 /* CreateWalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE767E263DCEB900EA8E24 /* CreateWalletTableViewCell.swift */; };
+		8DFE7683263DD4AA00EA8E24 /* CreateWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE7682263DD4AA00EA8E24 /* CreateWalletViewModel.swift */; };
 		EE11BFC3261DF3F7005E724D /* CreateWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE11BFC2261DF3F7005E724D /* CreateWallet.storyboard */; };
-		EE11BFCA261E0382005E724D /* YWalletCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFC9261E0382005E724D /* YWalletCreateVC.swift */; };
-		EE11BFCD261E0599005E724D /* YWalletColletPhraseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFCC261E0599005E724D /* YWalletColletPhraseVC.swift */; };
-		EE11BFD0261E0C91005E724D /* YWalletConfirmPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFCF261E0C91005E724D /* YWalletConfirmPhrase.swift */; };
-		EE11BFD3261E1486005E724D /* YWalletImportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFD2261E1486005E724D /* YWalletImportVC.swift */; };
-		EE11BFD7261E1755005E724D /* YWalletWatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFD6261E1755005E724D /* YWalletWatchVC.swift */; };
+		EE11BFCA261E0382005E724D /* CreateWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFC9261E0382005E724D /* CreateWalletViewController.swift */; };
+		EE11BFCD261E0599005E724D /* CollectPhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFCC261E0599005E724D /* CollectPhraseViewController.swift */; };
+		EE11BFD0261E0C91005E724D /* ConfirmPhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFCF261E0C91005E724D /* ConfirmPhraseViewController.swift */; };
+		EE11BFD3261E1486005E724D /* ImportWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFD2261E1486005E724D /* ImportWalletViewController.swift */; };
+		EE11BFD7261E1755005E724D /* WatchWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11BFD6261E1755005E724D /* WatchWalletViewController.swift */; };
 		EE241C61261C84C6002DF800 /* Aeonik-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C53261C84C6002DF800 /* Aeonik-RegularItalic.otf */; };
 		EE241C62261C84C6002DF800 /* Aeonik-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C54261C84C6002DF800 /* Aeonik-Bold.otf */; };
 		EE241C63261C84C6002DF800 /* Aeonik-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C55261C84C6002DF800 /* Aeonik-LightItalic.otf */; };
@@ -29,19 +62,54 @@
 		EE241C6E261C84C6002DF800 /* Aeonik-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE241C60261C84C6002DF800 /* Aeonik-MediumItalic.otf */; };
 		EE261E2D261C7BF700C43BA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE261E2C261C7BF700C43BA2 /* AppDelegate.swift */; };
 		EE261E2F261C7BF700C43BA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE261E2E261C7BF700C43BA2 /* SceneDelegate.swift */; };
-		EE261E34261C7BF700C43BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE261E32261C7BF700C43BA2 /* Main.storyboard */; };
+		EE261E34261C7BF700C43BA2 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE261E32261C7BF700C43BA2 /* Welcome.storyboard */; };
 		EE261E36261C7BF800C43BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE261E35261C7BF800C43BA2 /* Assets.xcassets */; };
 		EE261E39261C7BF800C43BA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE261E37261C7BF800C43BA2 /* LaunchScreen.storyboard */; };
-		EE261E44261C811000C43BA2 /* YWelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE261E43261C811000C43BA2 /* YWelcomeVC.swift */; };
+		EE261E44261C811000C43BA2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE261E43261C811000C43BA2 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D225A6B263D50620050B329 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8D225A70263D50AF0050B329 /* CoordinableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinableViewModel.swift; sourceTree = "<group>"; };
+		8D225A71263D50AF0050B329 /* TransitionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
+		8D225A72263D50AF0050B329 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8D225A79263D51640050B329 /* MainTabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
+		8D225A7B263D51640050B329 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		8D225A7D263D51640050B329 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		8D225A85263D52CA0050B329 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		8D225A89263D544E0050B329 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		8D225A8D263D54970050B329 /* ScrollableToTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableToTop.swift; sourceTree = "<group>"; };
+		8D225A91263D551C0050B329 /* RefreshableTabProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableTabProtocol.swift; sourceTree = "<group>"; };
+		8D225A95263D557F0050B329 /* CreateWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletCoordinator.swift; sourceTree = "<group>"; };
+		8D225A98263D558D0050B329 /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
+		8D225AB5263D57660050B329 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		8D225ABA263D5A4C0050B329 /* UIStoryboard+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+extension.swift"; sourceTree = "<group>"; };
+		8D225ABE263D5C730050B329 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		8D225AC1263D5CBF0050B329 /* UIImage+assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+assets.swift"; sourceTree = "<group>"; };
+		8D225AC4263D5E960050B329 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		8D225AC7263D5F0B0050B329 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8D225ACB263D5F460050B329 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		8D225ACF263D60370050B329 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8D225AD2263D60790050B329 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		8D225AD5263D62D20050B329 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8D225AD8263D635F0050B329 /* KeyboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardMonitor.swift; sourceTree = "<group>"; };
+		8D225ADB263D63F10050B329 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		8D225ADE263D642E0050B329 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		8D225AE1263D65210050B329 /* UINavigationController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+extension.swift"; sourceTree = "<group>"; };
+		8D225AE4263D67B00050B329 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		8D225AEB263D69220050B329 /* DataSourceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceState.swift; sourceTree = "<group>"; };
+		8D225AEE263D69A20050B329 /* CustomTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewSection.swift; sourceTree = "<group>"; };
+		8DFE767E263DCEB900EA8E24 /* CreateWalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletTableViewCell.swift; sourceTree = "<group>"; };
+		8DFE7682263DD4AA00EA8E24 /* CreateWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewModel.swift; sourceTree = "<group>"; };
+		B9166D0CAE24FE1B8A749CC2 /* Pods_YProjet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YProjet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58EF2BD14C9494175075C59 /* Pods-YProjet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YProjet.debug.xcconfig"; path = "Target Support Files/Pods-YProjet/Pods-YProjet.debug.xcconfig"; sourceTree = "<group>"; };
+		EBDED3B427782413690F9437 /* Pods-YProjet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YProjet.release.xcconfig"; path = "Target Support Files/Pods-YProjet/Pods-YProjet.release.xcconfig"; sourceTree = "<group>"; };
 		EE11BFC2261DF3F7005E724D /* CreateWallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateWallet.storyboard; sourceTree = "<group>"; };
-		EE11BFC9261E0382005E724D /* YWalletCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWalletCreateVC.swift; sourceTree = "<group>"; };
-		EE11BFCC261E0599005E724D /* YWalletColletPhraseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWalletColletPhraseVC.swift; sourceTree = "<group>"; };
-		EE11BFCF261E0C91005E724D /* YWalletConfirmPhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWalletConfirmPhrase.swift; sourceTree = "<group>"; };
-		EE11BFD2261E1486005E724D /* YWalletImportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWalletImportVC.swift; sourceTree = "<group>"; };
-		EE11BFD6261E1755005E724D /* YWalletWatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWalletWatchVC.swift; sourceTree = "<group>"; };
+		EE11BFC9261E0382005E724D /* CreateWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewController.swift; sourceTree = "<group>"; };
+		EE11BFCC261E0599005E724D /* CollectPhraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectPhraseViewController.swift; sourceTree = "<group>"; };
+		EE11BFCF261E0C91005E724D /* ConfirmPhraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhraseViewController.swift; sourceTree = "<group>"; };
+		EE11BFD2261E1486005E724D /* ImportWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletViewController.swift; sourceTree = "<group>"; };
+		EE11BFD6261E1755005E724D /* WatchWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWalletViewController.swift; sourceTree = "<group>"; };
 		EE241C53261C84C6002DF800 /* Aeonik-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-RegularItalic.otf"; sourceTree = "<group>"; };
 		EE241C54261C84C6002DF800 /* Aeonik-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-Bold.otf"; sourceTree = "<group>"; };
 		EE241C55261C84C6002DF800 /* Aeonik-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aeonik-LightItalic.otf"; sourceTree = "<group>"; };
@@ -59,11 +127,11 @@
 		EE261E29261C7BF700C43BA2 /* YProjet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YProjet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE261E2C261C7BF700C43BA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE261E2E261C7BF700C43BA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE261E33261C7BF700C43BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE261E33261C7BF700C43BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		EE261E35261C7BF800C43BA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE261E38261C7BF800C43BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE261E3A261C7BF800C43BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE261E43261C811000C43BA2 /* YWelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWelcomeVC.swift; sourceTree = "<group>"; };
+		EE261E43261C811000C43BA2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,25 +139,529 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0AD9975201F3B488C5D1E2 /* Pods_YProjet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EE11BFD9261E19CA005E724D /* UI */ = {
+		259C8EA73E7FEF689179E9F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EE261E43261C811000C43BA2 /* YWelcomeVC.swift */,
-				EE11BFC9261E0382005E724D /* YWalletCreateVC.swift */,
-				EE11BFCC261E0599005E724D /* YWalletColletPhraseVC.swift */,
-				EE11BFCF261E0C91005E724D /* YWalletConfirmPhrase.swift */,
-				EE11BFD2261E1486005E724D /* YWalletImportVC.swift */,
-				EE11BFD6261E1755005E724D /* YWalletWatchVC.swift */,
-				EE11BFC2261DF3F7005E724D /* CreateWallet.storyboard */,
-				EE261E32261C7BF700C43BA2 /* Main.storyboard */,
+				E58EF2BD14C9494175075C59 /* Pods-YProjet.debug.xcconfig */,
+				EBDED3B427782413690F9437 /* Pods-YProjet.release.xcconfig */,
 			);
-			path = UI;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7973E856A284EE6040F62BC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9166D0CAE24FE1B8A749CC2 /* Pods_YProjet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D225A41263D4A4C0050B329 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A42263D4A510050B329 /* Welcome */,
+				8D225A43263D4A7F0050B329 /* Create wallet */,
+				8D225AA0263D565E0050B329 /* TabBarItems */,
+				8D225A60263D4E070050B329 /* Base */,
+				8D225A49263D4AF80050B329 /* New Flow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		8D225A42263D4A510050B329 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A5A263D4D0F0050B329 /* Coordinators */,
+				8D225A58263D4D0F0050B329 /* Models */,
+				8D225A59263D4D0F0050B329 /* ViewControllers */,
+				8D225A57263D4D0F0050B329 /* ViewModels */,
+				8D225A56263D4D0F0050B329 /* Views */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		8D225A43263D4A7F0050B329 /* Create wallet */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A5F263D4D340050B329 /* Coordinators */,
+				8D225A5E263D4D340050B329 /* Models */,
+				8D225A5D263D4D340050B329 /* ViewControllers */,
+				8D225A5B263D4D340050B329 /* ViewModels */,
+				8D225A5C263D4D340050B329 /* Views */,
+			);
+			path = "Create wallet";
+			sourceTree = "<group>";
+		};
+		8D225A44263D4A9E0050B329 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D225A45263D4AA70050B329 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D225A46263D4AAF0050B329 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D225A47263D4AC70050B329 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D225A48263D4AF00050B329 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D225A49263D4AF80050B329 /* New Flow */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A46263D4AAF0050B329 /* Coordinators */,
+				8D225A45263D4AA70050B329 /* Models */,
+				8D225A44263D4A9E0050B329 /* Views */,
+				8D225A48263D4AF00050B329 /* ViewModels */,
+				8D225A47263D4AC70050B329 /* ViewControllers */,
+			);
+			path = "New Flow";
+			sourceTree = "<group>";
+		};
+		8D225A56263D4D0F0050B329 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE261E32261C7BF700C43BA2 /* Welcome.storyboard */,
+				8DFE767E263DCEB900EA8E24 /* CreateWalletTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D225A57263D4D0F0050B329 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D225AE4263D67B00050B329 /* WelcomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D225A58263D4D0F0050B329 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D225A59263D4D0F0050B329 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE261E43261C811000C43BA2 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D225A5A263D4D0F0050B329 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A98263D558D0050B329 /* WelcomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D225A5B263D4D340050B329 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8DFE7682263DD4AA00EA8E24 /* CreateWalletViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D225A5C263D4D340050B329 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE11BFC2261DF3F7005E724D /* CreateWallet.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D225A5D263D4D340050B329 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE11BFC9261E0382005E724D /* CreateWalletViewController.swift */,
+				EE11BFCC261E0599005E724D /* CollectPhraseViewController.swift */,
+				EE11BFD2261E1486005E724D /* ImportWalletViewController.swift */,
+				EE11BFD6261E1755005E724D /* WatchWalletViewController.swift */,
+				EE11BFCF261E0C91005E724D /* ConfirmPhraseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D225A5E263D4D340050B329 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D225A5F263D4D340050B329 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A95263D557F0050B329 /* CreateWalletCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D225A60263D4E070050B329 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A61263D4E140050B329 /* Coordinator */,
+				8D225ACA263D5F330050B329 /* ViewModel */,
+				8D225A88263D54350050B329 /* ViewControllers */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8D225A61263D4E140050B329 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A6B263D50620050B329 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8D225A6E263D509E0050B329 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A6F263D50AF0050B329 /* Coordinator */,
+				8D225A90263D54E60050B329 /* Protocols */,
+				8D225AC4263D5E960050B329 /* Scene.swift */,
+				8D225AD8263D635F0050B329 /* KeyboardMonitor.swift */,
+				8D225AEB263D69220050B329 /* DataSourceState.swift */,
+				8D225AEE263D69A20050B329 /* CustomTableViewSection.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		8D225A6F263D50AF0050B329 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A70263D50AF0050B329 /* CoordinableViewModel.swift */,
+				8D225A71263D50AF0050B329 /* TransitionType.swift */,
+				8D225A72263D50AF0050B329 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8D225A77263D51470050B329 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A7A263D51640050B329 /* Coordinators */,
+				8D225A7C263D51640050B329 /* ViewControllers */,
+				8D225A78263D51640050B329 /* Views */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		8D225A78263D51640050B329 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A79263D51640050B329 /* MainTabBar.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D225A7A263D51640050B329 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A7B263D51640050B329 /* TabBarCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D225A7C263D51640050B329 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A7D263D51640050B329 /* MainTabBarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D225A88263D54350050B329 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A89263D544E0050B329 /* BaseNavigationController.swift */,
+				8D225AD5263D62D20050B329 /* BaseViewController.swift */,
+				8D225ADE263D642E0050B329 /* BaseTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D225A90263D54E60050B329 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A85263D52CA0050B329 /* StoryboardIdentifiable.swift */,
+				8D225A8D263D54970050B329 /* ScrollableToTop.swift */,
+				8D225A91263D551C0050B329 /* RefreshableTabProtocol.swift */,
+				8D225AD2263D60790050B329 /* BindableType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8D225A9C263D56300050B329 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8D225AA8263D56FD0050B329 /* Coordinators */,
+				8D225AA9263D56FD0050B329 /* Models */,
+				8D225AA6263D56FD0050B329 /* ViewControllers */,
+				8D225AA7263D56FD0050B329 /* ViewModels */,
+				8D225AAA263D56FD0050B329 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8D225A9D263D56360050B329 /* Swap */ = {
+			isa = PBXGroup;
+			children = (
+				8D225AA3263D56EB0050B329 /* Coordinators */,
+				8D225AA1263D56EB0050B329 /* Models */,
+				8D225AA5263D56EB0050B329 /* ViewControllers */,
+				8D225AA2263D56EB0050B329 /* ViewModels */,
+				8D225AA4263D56EB0050B329 /* Views */,
+			);
+			path = Swap;
+			sourceTree = "<group>";
+		};
+		8D225A9E263D56480050B329 /* Staking */ = {
+			isa = PBXGroup;
+			children = (
+				8D225AAD263D570C0050B329 /* Coordinators */,
+				8D225AAE263D570C0050B329 /* Models */,
+				8D225AAB263D570C0050B329 /* ViewControllers */,
+				8D225AAC263D570C0050B329 /* ViewModels */,
+				8D225AAF263D570C0050B329 /* Views */,
+			);
+			path = Staking;
+			sourceTree = "<group>";
+		};
+		8D225A9F263D56550050B329 /* Gov */ = {
+			isa = PBXGroup;
+			children = (
+				8D225AB0263D57190050B329 /* Coordinators */,
+				8D225AB3263D57190050B329 /* Models */,
+				8D225AB1263D57190050B329 /* ViewControllers */,
+				8D225AB2263D57190050B329 /* ViewModels */,
+				8D225AB4263D57190050B329 /* Views */,
+			);
+			path = Gov;
+			sourceTree = "<group>";
+		};
+		8D225AA0263D565E0050B329 /* TabBarItems */ = {
+			isa = PBXGroup;
+			children = (
+				8D225A77263D51470050B329 /* MainTabBar */,
+				8D225A9C263D56300050B329 /* Home */,
+				8D225A9D263D56360050B329 /* Swap */,
+				8D225A9E263D56480050B329 /* Staking */,
+				8D225A9F263D56550050B329 /* Gov */,
+			);
+			path = TabBarItems;
+			sourceTree = "<group>";
+		};
+		8D225AA1263D56EB0050B329 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D225AA2263D56EB0050B329 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D225AA3263D56EB0050B329 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D225AA4263D56EB0050B329 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D225AA5263D56EB0050B329 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D225AA6263D56FD0050B329 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D225ACF263D60370050B329 /* HomeViewController.swift */,
+				8D225ADB263D63F10050B329 /* HomeTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D225AA7263D56FD0050B329 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D225AC7263D5F0B0050B329 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D225AA8263D56FD0050B329 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8D225AB5263D57660050B329 /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D225AA9263D56FD0050B329 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D225AAA263D56FD0050B329 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D225AAB263D570C0050B329 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D225AAC263D570C0050B329 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D225AAD263D570C0050B329 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D225AAE263D570C0050B329 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D225AAF263D570C0050B329 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D225AB0263D57190050B329 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D225AB1263D57190050B329 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D225AB2263D57190050B329 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D225AB3263D57190050B329 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D225AB4263D57190050B329 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D225AB9263D5A290050B329 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D225ABA263D5A4C0050B329 /* UIStoryboard+extension.swift */,
+				8D225ABE263D5C730050B329 /* String+extension.swift */,
+				8D225AC1263D5CBF0050B329 /* UIImage+assets.swift */,
+				8D225AE1263D65210050B329 /* UINavigationController+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8D225ACA263D5F330050B329 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D225ACB263D5F460050B329 /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D7967C0263E143000C5C341 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE241C52261C84C6002DF800 /* Aeonik-font */,
+				EE261E35261C7BF800C43BA2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE11BFD9261E19CA005E724D /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 		EE241C52261C84C6002DF800 /* Aeonik-font */ = {
@@ -118,6 +690,8 @@
 			children = (
 				EE261E2B261C7BF700C43BA2 /* YProjet */,
 				EE261E2A261C7BF700C43BA2 /* Products */,
+				259C8EA73E7FEF689179E9F6 /* Pods */,
+				7973E856A284EE6040F62BC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,13 +706,15 @@
 		EE261E2B261C7BF700C43BA2 /* YProjet */ = {
 			isa = PBXGroup;
 			children = (
+				EE11BFD9261E19CA005E724D /* UIComponents */,
+				8D225A41263D4A4C0050B329 /* Flows */,
+				8D225A6E263D509E0050B329 /* Util */,
+				8D225AB9263D5A290050B329 /* Extensions */,
+				8D7967C0263E143000C5C341 /* Resources */,
 				EE261E2C261C7BF700C43BA2 /* AppDelegate.swift */,
 				EE261E2E261C7BF700C43BA2 /* SceneDelegate.swift */,
-				EE11BFD9261E19CA005E724D /* UI */,
-				EE261E35261C7BF800C43BA2 /* Assets.xcassets */,
 				EE261E37261C7BF800C43BA2 /* LaunchScreen.storyboard */,
 				EE261E3A261C7BF800C43BA2 /* Info.plist */,
-				EE241C52261C84C6002DF800 /* Aeonik-font */,
 			);
 			path = YProjet;
 			sourceTree = "<group>";
@@ -150,9 +726,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE261E3D261C7BF800C43BA2 /* Build configuration list for PBXNativeTarget "YProjet" */;
 			buildPhases = (
+				DA8965E51E8CA05E3D51E705 /* [CP] Check Pods Manifest.lock */,
 				EE261E25261C7BF700C43BA2 /* Sources */,
 				EE261E26261C7BF700C43BA2 /* Frameworks */,
 				EE261E27261C7BF700C43BA2 /* Resources */,
+				5AFB8593382601B596B64F46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,6 +782,7 @@
 				EE241C69261C84C6002DF800 /* Aeonik-AirItalic.otf in Resources */,
 				EE241C68261C84C6002DF800 /* Aeonik-Medium.otf in Resources */,
 				EE241C6C261C84C6002DF800 /* Aeonik-BoldItalic.otf in Resources */,
+				8D225A7E263D51640050B329 /* MainTabBar.storyboard in Resources */,
 				EE241C66261C84C6002DF800 /* Aeonik-Air.otf in Resources */,
 				EE241C64261C84C6002DF800 /* Aeonik-Thin.otf in Resources */,
 				EE241C63261C84C6002DF800 /* Aeonik-LightItalic.otf in Resources */,
@@ -216,38 +795,111 @@
 				EE241C6B261C84C6002DF800 /* Aeonik-Regular.otf in Resources */,
 				EE241C65261C84C6002DF800 /* Aeonik-BlackItalic.otf in Resources */,
 				EE261E36261C7BF800C43BA2 /* Assets.xcassets in Resources */,
-				EE261E34261C7BF700C43BA2 /* Main.storyboard in Resources */,
+				EE261E34261C7BF700C43BA2 /* Welcome.storyboard in Resources */,
 				EE241C61261C84C6002DF800 /* Aeonik-RegularItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5AFB8593382601B596B64F46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YProjet/Pods-YProjet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YProjet/Pods-YProjet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YProjet/Pods-YProjet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8965E51E8CA05E3D51E705 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YProjet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE261E25261C7BF700C43BA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE11BFCD261E0599005E724D /* YWalletColletPhraseVC.swift in Sources */,
-				EE11BFD7261E1755005E724D /* YWalletWatchVC.swift in Sources */,
-				EE261E44261C811000C43BA2 /* YWelcomeVC.swift in Sources */,
+				EE11BFCD261E0599005E724D /* CollectPhraseViewController.swift in Sources */,
+				EE11BFD7261E1755005E724D /* WatchWalletViewController.swift in Sources */,
+				8D225AC5263D5E960050B329 /* Scene.swift in Sources */,
+				8DFE7683263DD4AA00EA8E24 /* CreateWalletViewModel.swift in Sources */,
+				EE261E44261C811000C43BA2 /* WelcomeViewController.swift in Sources */,
+				8D225A80263D51640050B329 /* MainTabBarViewController.swift in Sources */,
+				8D225AD6263D62D20050B329 /* BaseViewController.swift in Sources */,
+				8D225ACC263D5F460050B329 /* BaseViewModel.swift in Sources */,
+				8D225A73263D50AF0050B329 /* CoordinableViewModel.swift in Sources */,
+				8D225ADC263D63F10050B329 /* HomeTableViewController.swift in Sources */,
+				8D225ADF263D642E0050B329 /* BaseTableViewController.swift in Sources */,
+				8D225AB6263D57660050B329 /* HomeCoordinator.swift in Sources */,
+				8D225AC2263D5CBF0050B329 /* UIImage+assets.swift in Sources */,
+				8DFE767F263DCEB900EA8E24 /* CreateWalletTableViewCell.swift in Sources */,
+				8D225AEC263D69230050B329 /* DataSourceState.swift in Sources */,
 				EE261E2D261C7BF700C43BA2 /* AppDelegate.swift in Sources */,
+				8D225AEF263D69A20050B329 /* CustomTableViewSection.swift in Sources */,
 				EE261E2F261C7BF700C43BA2 /* SceneDelegate.swift in Sources */,
-				EE11BFD0261E0C91005E724D /* YWalletConfirmPhrase.swift in Sources */,
-				EE11BFCA261E0382005E724D /* YWalletCreateVC.swift in Sources */,
-				EE11BFD3261E1486005E724D /* YWalletImportVC.swift in Sources */,
+				8D225A99263D558D0050B329 /* WelcomeCoordinator.swift in Sources */,
+				8D225A92263D551C0050B329 /* RefreshableTabProtocol.swift in Sources */,
+				8D225ABF263D5C730050B329 /* String+extension.swift in Sources */,
+				8D225A7F263D51640050B329 /* TabBarCoordinator.swift in Sources */,
+				8D225A8E263D54970050B329 /* ScrollableToTop.swift in Sources */,
+				8D225A8A263D544E0050B329 /* BaseNavigationController.swift in Sources */,
+				EE11BFD0261E0C91005E724D /* ConfirmPhraseViewController.swift in Sources */,
+				8D225A6C263D50620050B329 /* AppCoordinator.swift in Sources */,
+				8D225AD0263D60370050B329 /* HomeViewController.swift in Sources */,
+				8D225A75263D50AF0050B329 /* Coordinator.swift in Sources */,
+				8D225AD3263D60790050B329 /* BindableType.swift in Sources */,
+				8D225A74263D50AF0050B329 /* TransitionType.swift in Sources */,
+				EE11BFCA261E0382005E724D /* CreateWalletViewController.swift in Sources */,
+				8D225AC8263D5F0B0050B329 /* HomeViewModel.swift in Sources */,
+				8D225ABB263D5A4C0050B329 /* UIStoryboard+extension.swift in Sources */,
+				EE11BFD3261E1486005E724D /* ImportWalletViewController.swift in Sources */,
+				8D225AD9263D635F0050B329 /* KeyboardMonitor.swift in Sources */,
+				8D225AE5263D67B00050B329 /* WelcomeViewModel.swift in Sources */,
+				8D225A96263D557F0050B329 /* CreateWalletCoordinator.swift in Sources */,
+				8D225A86263D52CA0050B329 /* StoryboardIdentifiable.swift in Sources */,
+				8D225AE2263D65210050B329 /* UINavigationController+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE261E32261C7BF700C43BA2 /* Main.storyboard */ = {
+		EE261E32261C7BF700C43BA2 /* Welcome.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EE261E33261C7BF700C43BA2 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Welcome.storyboard;
 			sourceTree = "<group>";
 		};
 		EE261E37261C7BF800C43BA2 /* LaunchScreen.storyboard */ = {
@@ -379,6 +1031,7 @@
 		};
 		EE261E3E261C7BF800C43BA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E58EF2BD14C9494175075C59 /* Pods-YProjet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,6 +1052,7 @@
 		};
 		EE261E3F261C7BF800C43BA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBDED3B427782413690F9437 /* Pods-YProjet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
