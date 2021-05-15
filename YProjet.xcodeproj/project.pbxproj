@@ -38,6 +38,8 @@
 		8D225AE5263D67B00050B329 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AE4263D67B00050B329 /* WelcomeViewModel.swift */; };
 		8D225AEC263D69230050B329 /* DataSourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AEB263D69220050B329 /* DataSourceState.swift */; };
 		8D225AEF263D69A20050B329 /* CustomTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AEE263D69A20050B329 /* CustomTableViewSection.swift */; };
+		8DBB2009264DA8D30083614F /* NewWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */; };
+		8DBB200D264DA96E0083614F /* NewWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */; };
 		8DFE767F263DCEB900EA8E24 /* CreateWalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE767E263DCEB900EA8E24 /* CreateWalletTableViewCell.swift */; };
 		8DFE7683263DD4AA00EA8E24 /* CreateWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE7682263DD4AA00EA8E24 /* CreateWalletViewModel.swift */; };
 		EE11BFC3261DF3F7005E724D /* CreateWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE11BFC2261DF3F7005E724D /* CreateWallet.storyboard */; };
@@ -99,6 +101,8 @@
 		8D225AE4263D67B00050B329 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		8D225AEB263D69220050B329 /* DataSourceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceState.swift; sourceTree = "<group>"; };
 		8D225AEE263D69A20050B329 /* CustomTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewSection.swift; sourceTree = "<group>"; };
+		8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletCoordinator.swift; sourceTree = "<group>"; };
+		8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletViewModel.swift; sourceTree = "<group>"; };
 		8DFE767E263DCEB900EA8E24 /* CreateWalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletTableViewCell.swift; sourceTree = "<group>"; };
 		8DFE7682263DD4AA00EA8E24 /* CreateWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewModel.swift; sourceTree = "<group>"; };
 		B9166D0CAE24FE1B8A749CC2 /* Pods_YProjet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YProjet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,7 +174,6 @@
 				8D225A43263D4A7F0050B329 /* Create wallet */,
 				8D225AA0263D565E0050B329 /* TabBarItems */,
 				8D225A60263D4E070050B329 /* Base */,
-				8D225A49263D4AF80050B329 /* New Flow */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -179,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				8D225A5A263D4D0F0050B329 /* Coordinators */,
-				8D225A58263D4D0F0050B329 /* Models */,
+				8DBB2000264DA7BE0083614F /* Models */,
 				8D225A59263D4D0F0050B329 /* ViewControllers */,
 				8D225A57263D4D0F0050B329 /* ViewModels */,
 				8D225A56263D4D0F0050B329 /* Views */,
@@ -191,59 +194,12 @@
 			isa = PBXGroup;
 			children = (
 				8D225A5F263D4D340050B329 /* Coordinators */,
-				8D225A5E263D4D340050B329 /* Models */,
+				8DBB2001264DA7C80083614F /* Models */,
 				8D225A5D263D4D340050B329 /* ViewControllers */,
 				8D225A5B263D4D340050B329 /* ViewModels */,
 				8D225A5C263D4D340050B329 /* Views */,
 			);
 			path = "Create wallet";
-			sourceTree = "<group>";
-		};
-		8D225A44263D4A9E0050B329 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		8D225A45263D4AA70050B329 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8D225A46263D4AAF0050B329 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		8D225A47263D4AC70050B329 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		8D225A48263D4AF00050B329 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		8D225A49263D4AF80050B329 /* New Flow */ = {
-			isa = PBXGroup;
-			children = (
-				8D225A46263D4AAF0050B329 /* Coordinators */,
-				8D225A45263D4AA70050B329 /* Models */,
-				8D225A44263D4A9E0050B329 /* Views */,
-				8D225A48263D4AF00050B329 /* ViewModels */,
-				8D225A47263D4AC70050B329 /* ViewControllers */,
-			);
-			path = "New Flow";
 			sourceTree = "<group>";
 		};
 		8D225A56263D4D0F0050B329 /* Views */ = {
@@ -261,13 +217,6 @@
 				8D225AE4263D67B00050B329 /* WelcomeViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		8D225A58263D4D0F0050B329 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		8D225A59263D4D0F0050B329 /* ViewControllers */ = {
@@ -290,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				8DFE7682263DD4AA00EA8E24 /* CreateWalletViewModel.swift */,
+				8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -307,24 +257,18 @@
 			children = (
 				EE11BFC9261E0382005E724D /* CreateWalletViewController.swift */,
 				EE11BFCC261E0599005E724D /* CollectPhraseViewController.swift */,
+				EE11BFCF261E0C91005E724D /* ConfirmPhraseViewController.swift */,
 				EE11BFD2261E1486005E724D /* ImportWalletViewController.swift */,
 				EE11BFD6261E1755005E724D /* WatchWalletViewController.swift */,
-				EE11BFCF261E0C91005E724D /* ConfirmPhraseViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		8D225A5E263D4D340050B329 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		8D225A5F263D4D340050B329 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
 				8D225A95263D557F0050B329 /* CreateWalletCoordinator.swift */,
+				8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -429,48 +373,11 @@
 			isa = PBXGroup;
 			children = (
 				8D225AA8263D56FD0050B329 /* Coordinators */,
-				8D225AA9263D56FD0050B329 /* Models */,
 				8D225AA6263D56FD0050B329 /* ViewControllers */,
 				8D225AA7263D56FD0050B329 /* ViewModels */,
-				8D225AAA263D56FD0050B329 /* Views */,
+				8DBB2004264DA8200083614F /* Views */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		8D225A9D263D56360050B329 /* Swap */ = {
-			isa = PBXGroup;
-			children = (
-				8D225AA3263D56EB0050B329 /* Coordinators */,
-				8D225AA1263D56EB0050B329 /* Models */,
-				8D225AA5263D56EB0050B329 /* ViewControllers */,
-				8D225AA2263D56EB0050B329 /* ViewModels */,
-				8D225AA4263D56EB0050B329 /* Views */,
-			);
-			path = Swap;
-			sourceTree = "<group>";
-		};
-		8D225A9E263D56480050B329 /* Staking */ = {
-			isa = PBXGroup;
-			children = (
-				8D225AAD263D570C0050B329 /* Coordinators */,
-				8D225AAE263D570C0050B329 /* Models */,
-				8D225AAB263D570C0050B329 /* ViewControllers */,
-				8D225AAC263D570C0050B329 /* ViewModels */,
-				8D225AAF263D570C0050B329 /* Views */,
-			);
-			path = Staking;
-			sourceTree = "<group>";
-		};
-		8D225A9F263D56550050B329 /* Gov */ = {
-			isa = PBXGroup;
-			children = (
-				8D225AB0263D57190050B329 /* Coordinators */,
-				8D225AB3263D57190050B329 /* Models */,
-				8D225AB1263D57190050B329 /* ViewControllers */,
-				8D225AB2263D57190050B329 /* ViewModels */,
-				8D225AB4263D57190050B329 /* Views */,
-			);
-			path = Gov;
 			sourceTree = "<group>";
 		};
 		8D225AA0263D565E0050B329 /* TabBarItems */ = {
@@ -478,46 +385,11 @@
 			children = (
 				8D225A77263D51470050B329 /* MainTabBar */,
 				8D225A9C263D56300050B329 /* Home */,
-				8D225A9D263D56360050B329 /* Swap */,
-				8D225A9E263D56480050B329 /* Staking */,
-				8D225A9F263D56550050B329 /* Gov */,
+				8DBB2005264DA8350083614F /* Swap */,
+				8DBB2006264DA83B0083614F /* Staking */,
+				8DBB2007264DA8400083614F /* Gov */,
 			);
 			path = TabBarItems;
-			sourceTree = "<group>";
-		};
-		8D225AA1263D56EB0050B329 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8D225AA2263D56EB0050B329 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		8D225AA3263D56EB0050B329 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		8D225AA4263D56EB0050B329 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		8D225AA5263D56EB0050B329 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		8D225AA6263D56FD0050B329 /* ViewControllers */ = {
@@ -543,90 +415,6 @@
 				8D225AB5263D57660050B329 /* HomeCoordinator.swift */,
 			);
 			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		8D225AA9263D56FD0050B329 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8D225AAA263D56FD0050B329 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		8D225AAB263D570C0050B329 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		8D225AAC263D570C0050B329 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		8D225AAD263D570C0050B329 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		8D225AAE263D570C0050B329 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8D225AAF263D570C0050B329 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		8D225AB0263D57190050B329 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		8D225AB1263D57190050B329 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		8D225AB2263D57190050B329 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		8D225AB3263D57190050B329 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8D225AB4263D57190050B329 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		8D225AB9263D5A290050B329 /* Extensions */ = {
@@ -657,11 +445,53 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		EE11BFD9261E19CA005E724D /* UIComponents */ = {
+		8DBB1FF9264DA7780083614F /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		8DBB2000264DA7BE0083614F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DBB2001264DA7C80083614F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DBB2004264DA8200083614F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8DBB2005264DA8350083614F /* Swap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Swap;
+			sourceTree = "<group>";
+		};
+		8DBB2006264DA83B0083614F /* Staking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Staking;
+			sourceTree = "<group>";
+		};
+		8DBB2007264DA8400083614F /* Gov */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gov;
 			sourceTree = "<group>";
 		};
 		EE241C52261C84C6002DF800 /* Aeonik-font */ = {
@@ -706,7 +536,7 @@
 		EE261E2B261C7BF700C43BA2 /* YProjet */ = {
 			isa = PBXGroup;
 			children = (
-				EE11BFD9261E19CA005E724D /* UIComponents */,
+				8DBB1FF9264DA7780083614F /* UIComponents */,
 				8D225A41263D4A4C0050B329 /* Flows */,
 				8D225A6E263D509E0050B329 /* Util */,
 				8D225AB9263D5A290050B329 /* Extensions */,
@@ -866,6 +696,7 @@
 				8D225AEC263D69230050B329 /* DataSourceState.swift in Sources */,
 				EE261E2D261C7BF700C43BA2 /* AppDelegate.swift in Sources */,
 				8D225AEF263D69A20050B329 /* CustomTableViewSection.swift in Sources */,
+				8DBB200D264DA96E0083614F /* NewWalletViewModel.swift in Sources */,
 				EE261E2F261C7BF700C43BA2 /* SceneDelegate.swift in Sources */,
 				8D225A99263D558D0050B329 /* WelcomeCoordinator.swift in Sources */,
 				8D225A92263D551C0050B329 /* RefreshableTabProtocol.swift in Sources */,
@@ -877,6 +708,7 @@
 				8D225A6C263D50620050B329 /* AppCoordinator.swift in Sources */,
 				8D225AD0263D60370050B329 /* HomeViewController.swift in Sources */,
 				8D225A75263D50AF0050B329 /* Coordinator.swift in Sources */,
+				8DBB2009264DA8D30083614F /* NewWalletCoordinator.swift in Sources */,
 				8D225AD3263D60790050B329 /* BindableType.swift in Sources */,
 				8D225A74263D50AF0050B329 /* TransitionType.swift in Sources */,
 				EE11BFCA261E0382005E724D /* CreateWalletViewController.swift in Sources */,

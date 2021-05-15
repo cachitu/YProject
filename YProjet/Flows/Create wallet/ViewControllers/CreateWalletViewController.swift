@@ -19,7 +19,7 @@ class CreateWalletViewController: BaseViewController, BindableType, StoryboardId
     }
 
     @IBAction func newWalletAction(_ sender: Any) {
-        //TODO
+        viewModel.createNewWallet()
     }
     
     @IBAction func importWalletAction(_ sender: Any) {

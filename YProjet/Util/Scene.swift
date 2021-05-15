@@ -16,6 +16,10 @@ enum Scene {
     case importWallet(CreateWalletViewModel)
     case watchWallet(CreateWalletViewModel)
 
+    // New wallet
+    case collectPhrase(NewWalletViewModel)
+    case confirmPhrase(NewWalletViewModel)
+
     // Home
     case home(HomeViewModel)
 }
@@ -27,6 +31,10 @@ extension Scene {
             return instantiateViewController(with: WelcomeViewController.self, from: .welcome, bindWith: viewModel)
         case let .createWallet(viewModel):
             return instantiateViewController(with: CreateWalletViewController.self, from: .createWallet, bindWith: viewModel)
+        case let .collectPhrase(viewModel):
+            return instantiateViewController(with: CollectPhraseViewController.self, from: .createWallet, bindWith: viewModel)
+        case let .confirmPhrase(viewModel):
+            return instantiateViewController(with: ConfirmPhraseViewController.self, from: .createWallet, bindWith: viewModel)
         case let .importWallet(viewModel):
             return instantiateViewController(with: ImportWalletViewController.self, from: .createWallet, bindWith: viewModel)
         case let .watchWallet(viewModel):

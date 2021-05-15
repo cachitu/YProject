@@ -8,6 +8,9 @@
 import UIKit
 
 class CreateWalletCoordinator: Coordinator {
+
+    private var newWalletCoordinator: NewWalletCoordinator?
+
     override func start() {
         transition(to: .createWallet(CreateWalletViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
     }
@@ -16,11 +19,21 @@ class CreateWalletCoordinator: Coordinator {
         pop(animated: true, completion: nil)
         childCoordinatorDidFinish(coordinator: self)
     }
+
+    override func childCoordinatorDidFinish(coordinator: Coordinator) {
+        switch coordinator {
+        case is NewWalletCoordinator:
+            newWalletCoordinator = nil
+        default:
+            break
+        }
+    }
 }
 
 extension CreateWalletCoordinator: CreateWalletCoordinatorProtocol {
     func createNewWallet() {
-
+        newWalletCoordinator = NewWalletCoordinator(parentCoordinator: self, navigationController: self.navigationController)
+        newWalletCoordinator?.start()
     }
 
     func importWallet() {

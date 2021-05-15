@@ -97,7 +97,6 @@ add an existing address.</string>
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="96"/>
                                         <connections>
                                             <action selector="newWalletAction:" destination="h9y-40-doF" eventType="touchUpInside" id="sdZ-eu-6nG"/>
-                                            <segue destination="fcw-ae-HZG" kind="show" id="Rzn-Py-Ees"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -438,7 +437,6 @@ the following phrase.</string>
                                 </state>
                                 <connections>
                                     <action selector="continueAction:" destination="fcw-ae-HZG" eventType="touchUpInside" id="P10-56-KMe"/>
-                                    <segue destination="agv-d3-9td" kind="show" id="ILW-7Y-JJy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -475,7 +473,7 @@ the following phrase.</string>
                     </view>
                     <navigationItem key="navigationItem" id="VBH-9x-VB4"/>
                     <connections>
-                        <outlet property="confirmButton" destination="1IB-21-I8d" id="y4z-DG-nlW"/>
+                        <outlet property="continueButton" destination="1IB-21-I8d" id="s2C-w4-pXW"/>
                         <outlet property="networkLogoImage" destination="pUD-Sl-EAf" id="t4E-d1-03D"/>
                         <outlet property="phraseTextView" destination="NOE-ka-MtE" id="y7t-ac-OcE"/>
                     </connections>
