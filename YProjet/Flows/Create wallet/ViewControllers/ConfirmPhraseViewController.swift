@@ -11,11 +11,8 @@ class ConfirmPhraseViewController: BaseViewController, BindableType, StoryboardI
 
     @IBOutlet weak var networkLogoImage: UIImageView!
     @IBOutlet weak var confirmPhraseButton: UIButton!
-    
-    @IBAction func backAction(_ sender: Any) {
-        viewModel.pop(animated: true)
-    }
-    
+    @IBOutlet weak var navigationView: NavigationView!
+        
     @IBAction func confirmAction(_ sender: Any) {
         
     }
@@ -25,7 +22,20 @@ class ConfirmPhraseViewController: BaseViewController, BindableType, StoryboardI
     override func viewDidLoad() {
         super.viewDidLoad()
         confirmPhraseButton.layer.cornerRadius = 10
+        navigationView.viewDelegate = self
+        configureUI()
+    }
+
+    private func configureUI() {
+        navigationView.title = "New Wallet".localized
+        navigationView.configure(showBackButton: true)
     }
 
     func bindViewModel() {}
+}
+
+extension ConfirmPhraseViewController: NavigationViewDelegate {
+    func backAction() {
+        viewModel.pop(animated: true)
+    }
 }

@@ -10,22 +10,25 @@ import UIKit
 class WelcomeViewController: BaseViewController, BindableType, StoryboardIdentifiable {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBAction func settingsAction(_ sender: Any) {
-        viewModel.showSettings()
-    }
+    @IBOutlet weak var navigationView: NavigationView!
 
     var viewModel: WelcomeViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationView.viewDelegate = self
+        configureUI()
+    }
 
+    private func configureUI() {
+        navigationView.title = "Welcome".localized
+        navigationView.configure(showNotificationButton: true, showSettingsButton: true)
     }
 
     func bindViewModel() {}
 }
 
 extension WelcomeViewController: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         30
     }
@@ -37,7 +40,6 @@ extension WelcomeViewController: UITableViewDataSource {
 }
 
 extension WelcomeViewController: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0
     }
@@ -49,5 +51,15 @@ extension WelcomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         viewModel.createWallet()
+    }
+}
+
+extension WelcomeViewController: NavigationViewDelegate {
+    func notificationAction() {
+        
+    }
+
+    func settingsAction() {
+        viewModel.showSettings()
     }
 }

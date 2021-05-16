@@ -12,11 +12,8 @@ class WatchWalletViewController: BaseViewController, BindableType, StoryboardIde
     @IBOutlet weak var networkLogoImage: UIImageView!
     @IBOutlet weak var networkLabel: UILabel!
     @IBOutlet weak var confirmButton: UIButton!
-    
-    @IBAction func backAction(_ sender: Any) {
-        viewModel.pop(animated: true)
-    }
-    
+    @IBOutlet weak var navigationView: NavigationView!
+        
     @IBAction func confirmAction(_ sender: Any) {
     }
 
@@ -24,8 +21,21 @@ class WatchWalletViewController: BaseViewController, BindableType, StoryboardIde
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationView.viewDelegate = self
+        configureUI()
+    }
+
+    private func configureUI() {
         confirmButton.layer.cornerRadius = 10
+        navigationView.title = "Watch Wallet".localized
+        navigationView.configure(showBackButton: true)
     }
 
     func bindViewModel() {}
+}
+
+extension WatchWalletViewController: NavigationViewDelegate {
+    func backAction() {
+        viewModel.pop(animated: true)
+    }
 }

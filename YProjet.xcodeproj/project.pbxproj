@@ -40,6 +40,9 @@
 		8D225AEC263D69230050B329 /* DataSourceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AEB263D69220050B329 /* DataSourceState.swift */; };
 		8D225AEF263D69A20050B329 /* CustomTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D225AEE263D69A20050B329 /* CustomTableViewSection.swift */; };
 		8D3DD3652651744F00C68655 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DD3642651744F00C68655 /* Localizable.strings */; };
+		8D3DD36A2651789300C68655 /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DD3692651789300C68655 /* NavigationView.xib */; };
+		8D3DD36D2651789F00C68655 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DD36C2651789F00C68655 /* NavigationView.swift */; };
+		8D3DD37026517BCD00C68655 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DD36F26517BCD00C68655 /* UIView+extension.swift */; };
 		8DBB2009264DA8D30083614F /* NewWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */; };
 		8DBB200D264DA96E0083614F /* NewWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */; };
 		8DD3C8E1264FEADB00BEA8B7 /* UIColor+StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3C8E0264FEADB00BEA8B7 /* UIColor+StyleGuide.swift */; };
@@ -107,6 +110,9 @@
 		8D225AEB263D69220050B329 /* DataSourceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceState.swift; sourceTree = "<group>"; };
 		8D225AEE263D69A20050B329 /* CustomTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewSection.swift; sourceTree = "<group>"; };
 		8D3DD3642651744F00C68655 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8D3DD3692651789300C68655 /* NavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationView.xib; sourceTree = "<group>"; };
+		8D3DD36C2651789F00C68655 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		8D3DD36F26517BCD00C68655 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletCoordinator.swift; sourceTree = "<group>"; };
 		8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletViewModel.swift; sourceTree = "<group>"; };
 		8DD3C8E0264FEADB00BEA8B7 /* UIColor+StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+StyleGuide.swift"; sourceTree = "<group>"; };
@@ -433,6 +439,7 @@
 				8D225AC1263D5CBF0050B329 /* UIImage+assets.swift */,
 				8D225AE1263D65210050B329 /* UINavigationController+extension.swift */,
 				8DD3C8E0264FEADB00BEA8B7 /* UIColor+StyleGuide.swift */,
+				8D3DD36F26517BCD00C68655 /* UIView+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -443,6 +450,15 @@
 				8D225ACB263D5F460050B329 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D3DD3682651784000C68655 /* Navigation Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D3DD3692651789300C68655 /* NavigationView.xib */,
+				8D3DD36C2651789F00C68655 /* NavigationView.swift */,
+			);
+			path = "Navigation Views";
 			sourceTree = "<group>";
 		};
 		8D7967C0263E143000C5C341 /* Resources */ = {
@@ -460,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				8D09E3F3264FCF0500B8C839 /* CustomButton.swift */,
+				8D3DD3682651784000C68655 /* Navigation Views */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -622,6 +639,7 @@
 			files = (
 				EE241C62261C84C6002DF800 /* Aeonik-Bold.otf in Resources */,
 				EE241C69261C84C6002DF800 /* Aeonik-AirItalic.otf in Resources */,
+				8D3DD36A2651789300C68655 /* NavigationView.xib in Resources */,
 				8D3DD3652651744F00C68655 /* Localizable.strings in Resources */,
 				EE241C68261C84C6002DF800 /* Aeonik-Medium.otf in Resources */,
 				EE241C6C261C84C6002DF800 /* Aeonik-BoldItalic.otf in Resources */,
@@ -695,6 +713,7 @@
 			files = (
 				EE11BFCD261E0599005E724D /* CollectPhraseViewController.swift in Sources */,
 				EE11BFD7261E1755005E724D /* WatchWalletViewController.swift in Sources */,
+				8D3DD36D2651789F00C68655 /* NavigationView.swift in Sources */,
 				8D225AC5263D5E960050B329 /* Scene.swift in Sources */,
 				8DD3C8E1264FEADB00BEA8B7 /* UIColor+StyleGuide.swift in Sources */,
 				8DFE7683263DD4AA00EA8E24 /* CreateWalletViewModel.swift in Sources */,
@@ -722,6 +741,7 @@
 				EE11BFD0261E0C91005E724D /* ConfirmPhraseViewController.swift in Sources */,
 				8D225A6C263D50620050B329 /* AppCoordinator.swift in Sources */,
 				8D225AD0263D60370050B329 /* HomeViewController.swift in Sources */,
+				8D3DD37026517BCD00C68655 /* UIView+extension.swift in Sources */,
 				8D225A75263D50AF0050B329 /* Coordinator.swift in Sources */,
 				8DBB2009264DA8D30083614F /* NewWalletCoordinator.swift in Sources */,
 				8D225AD3263D60790050B329 /* BindableType.swift in Sources */,

@@ -19,4 +19,8 @@ extension UIColor {
     class var buttonGreen: UIColor {
         return color(with: "ButtonGreen")
     }
+
+    class var topBarBlue: UIColor {
+        return color(with: "TopBarBlue")
+    }
 }

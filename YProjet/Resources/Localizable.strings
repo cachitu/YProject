@@ -7,4 +7,8 @@
 */
 
 // New Wallet
+"New Wallet" = "New Wallet";
 "Collect Phrase Button Title" = "I have written down my mnemonics";
+
+// Import Wallet
+"Import Wallet" = "Import Wallet";

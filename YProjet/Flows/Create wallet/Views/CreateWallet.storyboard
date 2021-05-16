@@ -25,51 +25,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiT-8R-Q14" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="-16" width="375" height="160"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICw-og-BnK">
-                                        <rect key="frame" x="66" y="103" width="122.33333333333331" height="30"/>
-                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNo-Ir-1MK">
-                                        <rect key="frame" x="18" y="96" width="44" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="1bc-Rp-qqi"/>
-                                            <constraint firstAttribute="height" constant="44" id="6GM-DU-NPt"/>
-                                        </constraints>
-                                        <state key="normal" image="left-arrow"/>
-                                        <connections>
-                                            <action selector="backAction:" destination="h9y-40-doF" eventType="touchUpInside" id="8is-bH-HSZ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="TopBar"/>
-                                <constraints>
-                                    <constraint firstItem="ICw-og-BnK" firstAttribute="leading" secondItem="kNo-Ir-1MK" secondAttribute="trailing" constant="4" id="0Cm-Rm-pHd"/>
-                                    <constraint firstItem="kNo-Ir-1MK" firstAttribute="centerY" secondItem="ICw-og-BnK" secondAttribute="centerY" id="6RG-Vd-yrI"/>
-                                    <constraint firstAttribute="height" constant="160" id="IE6-Rt-QvH"/>
-                                    <constraint firstAttribute="bottom" secondItem="ICw-og-BnK" secondAttribute="bottom" constant="27" id="SWV-mA-Ox9"/>
-                                    <constraint firstItem="ICw-og-BnK" firstAttribute="leading" secondItem="MiT-8R-Q14" secondAttribute="leading" constant="66" id="g8u-WT-Idl"/>
-                                </constraints>
-                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="OA0-GC-XEG">
-                                <rect key="frame" x="162.66666666666666" y="224" width="50" height="50"/>
+                                <rect key="frame" x="162.66666666666666" y="200" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="I85-Zk-hVN"/>
                                     <constraint firstAttribute="height" constant="50" id="Qee-fB-lNv"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos Network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Poz-Xi-voS">
-                                <rect key="frame" x="36" y="284" width="303" height="29.333333333333314"/>
+                                <rect key="frame" x="36" y="260" width="303" height="29.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
                                 <color key="textColor" name="TopBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYt-KC-NTi">
-                                <rect key="frame" x="36" y="343.33333333333331" width="303" height="35"/>
+                                <rect key="frame" x="36" y="319.33333333333331" width="303" height="35"/>
                                 <string key="text">Create a new wallet, import or
 add an existing address.</string>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
@@ -77,7 +47,7 @@ add an existing address.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2z-68-otK">
-                                <rect key="frame" x="36" y="448.33333333333331" width="303" height="95.999999999999943"/>
+                                <rect key="frame" x="36" y="424.33333333333331" width="303" height="95.999999999999943"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-icon" translatesAutoresizingMaskIntoConstraints="NO" id="h1p-rh-sfc">
                                         <rect key="frame" x="98" y="40" width="16" height="16"/>
@@ -114,7 +84,7 @@ add an existing address.</string>
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pg2-Yt-zx6">
-                                <rect key="frame" x="36" y="554.33333333333337" width="303" height="96"/>
+                                <rect key="frame" x="36" y="530.33333333333337" width="303" height="96"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="Yuh-Ph-ygH">
                                         <rect key="frame" x="98" y="40" width="16" height="16"/>
@@ -151,7 +121,7 @@ add an existing address.</string>
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOC-W1-uvt">
-                                <rect key="frame" x="36" y="660.33333333333337" width="303" height="96"/>
+                                <rect key="frame" x="36" y="636.33333333333337" width="303" height="96"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text" translatesAutoresizingMaskIntoConstraints="NO" id="56e-bO-N4v">
                                         <rect key="frame" x="98" y="40" width="16" height="16"/>
@@ -187,28 +157,34 @@ add an existing address.</string>
                                     <constraint firstItem="56e-bO-N4v" firstAttribute="centerY" secondItem="jOC-W1-uvt" secondAttribute="centerY" id="dn8-SE-wjd"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHx-GQ-FaL" customClass="NavigationView" customModule="YProjet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <color key="backgroundColor" name="TopBarBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="iWb-gv-a0R"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O8V-yc-EO1"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="pg2-Yt-zx6" firstAttribute="top" secondItem="C2z-68-otK" secondAttribute="bottom" constant="10" id="0ek-wM-Mnf"/>
                             <constraint firstItem="C2z-68-otK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gYt-KC-NTi" secondAttribute="bottom" constant="5" id="1vH-eb-Ey7"/>
+                            <constraint firstItem="OA0-GC-XEG" firstAttribute="top" secondItem="xHx-GQ-FaL" secondAttribute="bottom" priority="750" constant="80" id="4qe-PJ-tLD"/>
                             <constraint firstItem="pg2-Yt-zx6" firstAttribute="leading" secondItem="C2z-68-otK" secondAttribute="leading" id="7iU-45-t3l"/>
                             <constraint firstItem="pg2-Yt-zx6" firstAttribute="trailing" secondItem="C2z-68-otK" secondAttribute="trailing" id="8hS-gw-5Dj"/>
                             <constraint firstItem="Poz-Xi-voS" firstAttribute="leading" secondItem="O8V-yc-EO1" secondAttribute="leading" constant="36" id="9WS-EN-rYY"/>
                             <constraint firstItem="O8V-yc-EO1" firstAttribute="trailing" secondItem="Poz-Xi-voS" secondAttribute="trailing" constant="36" id="Cbe-OW-mhm"/>
                             <constraint firstItem="gYt-KC-NTi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Poz-Xi-voS" secondAttribute="bottom" constant="5" id="Gh4-79-0tQ"/>
-                            <constraint firstItem="MiT-8R-Q14" firstAttribute="leading" secondItem="O8V-yc-EO1" secondAttribute="leading" id="ME3-gi-xlm"/>
+                            <constraint firstAttribute="trailing" secondItem="xHx-GQ-FaL" secondAttribute="trailing" id="N07-AE-5MO"/>
                             <constraint firstItem="O8V-yc-EO1" firstAttribute="trailing" secondItem="C2z-68-otK" secondAttribute="trailing" constant="36" id="O21-ez-bNh"/>
                             <constraint firstItem="jOC-W1-uvt" firstAttribute="top" secondItem="pg2-Yt-zx6" secondAttribute="bottom" constant="10" id="P3p-pS-DnS"/>
                             <constraint firstItem="C2z-68-otK" firstAttribute="top" secondItem="gYt-KC-NTi" secondAttribute="bottom" priority="750" constant="70" id="PN6-xr-fOu"/>
+                            <constraint firstItem="OA0-GC-XEG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xHx-GQ-FaL" secondAttribute="bottom" constant="10" id="RPr-Q0-L1v"/>
                             <constraint firstItem="Poz-Xi-voS" firstAttribute="centerX" secondItem="OA0-GC-XEG" secondAttribute="centerX" id="SX5-NG-CBn"/>
                             <constraint firstItem="jOC-W1-uvt" firstAttribute="leading" secondItem="C2z-68-otK" secondAttribute="leading" id="VBx-oQ-MdX"/>
-                            <constraint firstItem="OA0-GC-XEG" firstAttribute="top" secondItem="MiT-8R-Q14" secondAttribute="bottom" priority="250" constant="80" id="VT2-I3-98g"/>
-                            <constraint firstItem="O8V-yc-EO1" firstAttribute="trailing" secondItem="MiT-8R-Q14" secondAttribute="trailing" id="ZFS-wG-0eU"/>
-                            <constraint firstItem="OA0-GC-XEG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MiT-8R-Q14" secondAttribute="bottom" constant="10" id="ZKx-1w-fPB"/>
+                            <constraint firstItem="xHx-GQ-FaL" firstAttribute="top" secondItem="lbq-7M-OGK" secondAttribute="top" id="XUa-Ge-XbN"/>
                             <constraint firstItem="O8V-yc-EO1" firstAttribute="trailing" secondItem="gYt-KC-NTi" secondAttribute="trailing" constant="36" id="Zad-Di-ZR6"/>
-                            <constraint firstItem="O8V-yc-EO1" firstAttribute="top" secondItem="MiT-8R-Q14" secondAttribute="top" constant="60" id="aQ1-oV-erE"/>
                             <constraint firstItem="gYt-KC-NTi" firstAttribute="leading" secondItem="O8V-yc-EO1" secondAttribute="leading" constant="36" id="aVF-zf-h9S"/>
                             <constraint firstItem="OA0-GC-XEG" firstAttribute="centerX" secondItem="O8V-yc-EO1" secondAttribute="centerX" id="cf0-Q0-xTI"/>
                             <constraint firstItem="jOC-W1-uvt" firstAttribute="trailing" secondItem="C2z-68-otK" secondAttribute="trailing" id="g8A-Zj-sc9"/>
@@ -217,12 +193,14 @@ add an existing address.</string>
                             <constraint firstItem="O8V-yc-EO1" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jOC-W1-uvt" secondAttribute="bottom" constant="20" id="sgl-jh-uFj"/>
                             <constraint firstItem="C2z-68-otK" firstAttribute="leading" secondItem="O8V-yc-EO1" secondAttribute="leading" constant="36" id="tdf-qm-aab"/>
                             <constraint firstItem="gYt-KC-NTi" firstAttribute="centerX" secondItem="Poz-Xi-voS" secondAttribute="centerX" id="waJ-FE-vbj"/>
+                            <constraint firstItem="xHx-GQ-FaL" firstAttribute="leading" secondItem="O8V-yc-EO1" secondAttribute="leading" id="wbx-cH-d4R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j7Q-sE-0zV"/>
                     <connections>
                         <outlet property="createView" destination="C2z-68-otK" id="eEm-Kp-hjA"/>
                         <outlet property="importView" destination="pg2-Yt-zx6" id="azU-Hc-bpp"/>
+                        <outlet property="navigationView" destination="xHx-GQ-FaL" id="lMh-yC-rGL"/>
                         <outlet property="networkLogoImageView" destination="OA0-GC-XEG" id="ecv-8y-hCw"/>
                         <outlet property="networkNameLabel" destination="Poz-Xi-voS" id="IAO-N2-wNv"/>
                         <outlet property="watchView" destination="jOC-W1-uvt" id="e8P-Hb-OTp"/>
@@ -240,51 +218,21 @@ add an existing address.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBr-rB-WTS" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="-16" width="375" height="160"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2z-49-bPR">
-                                        <rect key="frame" x="66" y="103" width="122.33333333333331" height="30"/>
-                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKe-Yq-Khb">
-                                        <rect key="frame" x="18" y="96" width="44" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="hAE-pd-dRM"/>
-                                            <constraint firstAttribute="height" constant="44" id="lMq-0J-rll"/>
-                                        </constraints>
-                                        <state key="normal" image="left-arrow"/>
-                                        <connections>
-                                            <action selector="backAction:" destination="agv-d3-9td" eventType="touchUpInside" id="how-wC-Ucb"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="TopBar"/>
-                                <constraints>
-                                    <constraint firstItem="lKe-Yq-Khb" firstAttribute="centerY" secondItem="F2z-49-bPR" secondAttribute="centerY" id="J3m-mZ-msh"/>
-                                    <constraint firstAttribute="bottom" secondItem="F2z-49-bPR" secondAttribute="bottom" constant="27" id="MCe-vU-fP9"/>
-                                    <constraint firstItem="F2z-49-bPR" firstAttribute="leading" secondItem="XBr-rB-WTS" secondAttribute="leading" constant="66" id="R2z-qu-2P7"/>
-                                    <constraint firstAttribute="height" constant="160" id="eGb-Ne-KEV"/>
-                                    <constraint firstItem="F2z-49-bPR" firstAttribute="leading" secondItem="lKe-Yq-Khb" secondAttribute="trailing" constant="4" id="gOP-is-lqs"/>
-                                </constraints>
-                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="YRF-gP-lFK">
-                                <rect key="frame" x="162.66666666666666" y="224" width="50" height="50"/>
+                                <rect key="frame" x="162.66666666666666" y="200" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="NF7-GM-Q5V"/>
                                     <constraint firstAttribute="height" constant="50" id="Nuo-fQ-ebB"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos Network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCN-3u-VmV">
-                                <rect key="frame" x="36" y="284" width="303" height="29.333333333333314"/>
+                                <rect key="frame" x="36" y="260" width="303" height="29.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
                                 <color key="textColor" name="TopBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXO-A9-KCa">
-                                <rect key="frame" x="36" y="363.33333333333331" width="303" height="35"/>
+                                <rect key="frame" x="36" y="339.33333333333331" width="303" height="35"/>
                                 <string key="text">Which one is the 10th word
 from your mnemonics phrase?</string>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
@@ -306,37 +254,45 @@ from your mnemonics phrase?</string>
                                     <action selector="continueAction:" destination="fcw-ae-HZG" eventType="touchUpInside" id="UBs-4S-yM9"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPN-Dg-REy" customClass="NavigationView" customModule="YProjet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <color key="backgroundColor" name="TopBarBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="qud-d1-mcJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dGX-Ld-LdT"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
-                            <constraint firstItem="dGX-Ld-LdT" firstAttribute="trailing" secondItem="XBr-rB-WTS" secondAttribute="trailing" id="7P0-1z-sQk"/>
                             <constraint firstItem="FXO-A9-KCa" firstAttribute="leading" secondItem="dGX-Ld-LdT" secondAttribute="leading" constant="36" id="8Vw-Y6-QIa"/>
-                            <constraint firstItem="YRF-gP-lFK" firstAttribute="top" secondItem="XBr-rB-WTS" secondAttribute="bottom" constant="80" id="At6-jF-Tz5"/>
                             <constraint firstItem="pCN-3u-VmV" firstAttribute="top" secondItem="YRF-gP-lFK" secondAttribute="bottom" constant="10" id="MJG-qj-0ts"/>
+                            <constraint firstItem="EPN-Dg-REy" firstAttribute="top" secondItem="sZh-V5-9W8" secondAttribute="top" id="Mms-2a-m0S"/>
                             <constraint firstItem="FXO-A9-KCa" firstAttribute="centerX" secondItem="pCN-3u-VmV" secondAttribute="centerX" id="N5e-dw-Zn1"/>
+                            <constraint firstItem="YRF-gP-lFK" firstAttribute="top" secondItem="EPN-Dg-REy" secondAttribute="bottom" constant="80" id="b6Y-gO-otT"/>
                             <constraint firstItem="dGX-Ld-LdT" firstAttribute="trailing" secondItem="9eO-JJ-0hN" secondAttribute="trailing" constant="36" id="bPW-wq-qoY"/>
                             <constraint firstItem="YRF-gP-lFK" firstAttribute="centerX" secondItem="dGX-Ld-LdT" secondAttribute="centerX" id="bTa-L7-TA9"/>
                             <constraint firstItem="dGX-Ld-LdT" firstAttribute="trailing" secondItem="pCN-3u-VmV" secondAttribute="trailing" constant="36" id="cVY-Yc-dFn"/>
                             <constraint firstItem="pCN-3u-VmV" firstAttribute="leading" secondItem="dGX-Ld-LdT" secondAttribute="leading" constant="36" id="dKc-qP-JLH"/>
                             <constraint firstItem="FXO-A9-KCa" firstAttribute="top" secondItem="pCN-3u-VmV" secondAttribute="bottom" constant="50" id="hOy-97-BYL"/>
+                            <constraint firstAttribute="trailing" secondItem="EPN-Dg-REy" secondAttribute="trailing" id="iwt-Cg-ArQ"/>
                             <constraint firstItem="dGX-Ld-LdT" firstAttribute="trailing" secondItem="FXO-A9-KCa" secondAttribute="trailing" constant="36" id="o6x-Uv-fVI"/>
                             <constraint firstItem="9eO-JJ-0hN" firstAttribute="leading" secondItem="dGX-Ld-LdT" secondAttribute="leading" constant="36" id="poA-qw-BMh"/>
-                            <constraint firstItem="XBr-rB-WTS" firstAttribute="leading" secondItem="dGX-Ld-LdT" secondAttribute="leading" id="qx3-be-G4X"/>
                             <constraint firstItem="dGX-Ld-LdT" firstAttribute="bottom" secondItem="9eO-JJ-0hN" secondAttribute="bottom" constant="30" id="tMd-gE-V3s"/>
+                            <constraint firstItem="EPN-Dg-REy" firstAttribute="leading" secondItem="dGX-Ld-LdT" secondAttribute="leading" id="uDG-AG-3s3"/>
                             <constraint firstItem="pCN-3u-VmV" firstAttribute="centerX" secondItem="YRF-gP-lFK" secondAttribute="centerX" id="wVW-OE-SMd"/>
-                            <constraint firstItem="dGX-Ld-LdT" firstAttribute="top" secondItem="XBr-rB-WTS" secondAttribute="top" constant="60" id="ygm-jo-dXl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5gh-Lg-F6h"/>
                     <connections>
                         <outlet property="confirmPhraseButton" destination="9eO-JJ-0hN" id="4pM-c0-3SD"/>
+                        <outlet property="navigationView" destination="EPN-Dg-REy" id="mWA-UF-eiH"/>
                         <outlet property="networkLogoImage" destination="YRF-gP-lFK" id="lSg-8f-GAq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAr-wH-Mdx" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2740" y="-601"/>
+            <point key="canvasLocation" x="2682" y="-596"/>
         </scene>
         <!--Collect Phrase View Controller-->
         <scene sceneID="upd-Ga-SwE">
@@ -346,45 +302,15 @@ from your mnemonics phrase?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNE-wm-XVF" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="-16" width="375" height="160"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbF-Zq-hzd">
-                                        <rect key="frame" x="66" y="103" width="122.33333333333331" height="30"/>
-                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmi-Oz-n8g">
-                                        <rect key="frame" x="18" y="96" width="44" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="CBx-4U-tIy"/>
-                                            <constraint firstAttribute="height" constant="44" id="CYc-Lj-oBD"/>
-                                        </constraints>
-                                        <state key="normal" image="left-arrow"/>
-                                        <connections>
-                                            <action selector="backAction:" destination="fcw-ae-HZG" eventType="touchUpInside" id="orU-An-ddr"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="TopBar"/>
-                                <constraints>
-                                    <constraint firstItem="IbF-Zq-hzd" firstAttribute="leading" secondItem="Hmi-Oz-n8g" secondAttribute="trailing" constant="4" id="HAo-KC-qvc"/>
-                                    <constraint firstItem="IbF-Zq-hzd" firstAttribute="leading" secondItem="jNE-wm-XVF" secondAttribute="leading" constant="66" id="SW4-ey-yVW"/>
-                                    <constraint firstAttribute="height" constant="160" id="ZrP-3K-YwY"/>
-                                    <constraint firstItem="Hmi-Oz-n8g" firstAttribute="centerY" secondItem="IbF-Zq-hzd" secondAttribute="centerY" id="lsd-qV-pcX"/>
-                                    <constraint firstAttribute="bottom" secondItem="IbF-Zq-hzd" secondAttribute="bottom" constant="27" id="ohy-0w-aZg"/>
-                                </constraints>
-                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="pUD-Sl-EAf">
-                                <rect key="frame" x="162.66666666666666" y="224" width="50" height="50"/>
+                                <rect key="frame" x="162.66666666666666" y="204" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="BXW-ey-lLw"/>
                                     <constraint firstAttribute="height" constant="50" id="kDn-Q2-nIR"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZE-tq-gmy">
-                                <rect key="frame" x="36" y="284" width="303" height="58.333333333333314"/>
+                                <rect key="frame" x="36" y="264" width="303" height="58.333333333333314"/>
                                 <string key="text">Write down
 the following phrase.</string>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
@@ -392,7 +318,7 @@ the following phrase.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOE-ka-MtE">
-                                <rect key="frame" x="36" y="362.33333333333331" width="303" height="87.666666666666686"/>
+                                <rect key="frame" x="36" y="342.33333333333331" width="303" height="87.666666666666686"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">nice grace chef rural enable voice patch mimic tortoise wealth canal limb alarm mixed between minute detail sock cruel pole response property sample need</string>
                                 <color key="textColor" name="TopBar"/>
@@ -400,16 +326,16 @@ the following phrase.</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copy phrase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bag-5l-jB1">
-                                <rect key="frame" x="156.66666666666666" y="470" width="86" height="18"/>
+                                <rect key="frame" x="156.66666666666666" y="450" width="86" height="18"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                 <color key="textColor" name="TopBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="copy" translatesAutoresizingMaskIntoConstraints="NO" id="9dA-yx-JkD">
-                                <rect key="frame" x="129.66666666666666" y="469" width="17" height="20"/>
+                                <rect key="frame" x="129.66666666666666" y="449" width="17" height="20"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-H2-vBF" userLabel="copy phrase">
-                                <rect key="frame" x="99.666666666666686" y="457" width="200" height="44"/>
+                                <rect key="frame" x="99.666666666666686" y="437" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Dc2-MN-oS4"/>
                                     <constraint firstAttribute="width" constant="200" id="Tpa-98-Psf"/>
@@ -419,7 +345,7 @@ the following phrase.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cq0-Pv-yBn">
-                                <rect key="frame" x="36" y="508.00000000000006" width="303" height="87.666666666666686"/>
+                                <rect key="frame" x="36" y="488.00000000000006" width="303" height="87.666666666666686"/>
                                 <string key="text">Loosing your mnemonics could lead to loss of your asset. We highly reccommend keeping your mnemonics offline in a secure location, and never share your mnemonics with anyone else.</string>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                 <color key="textColor" name="TextRed"/>
@@ -435,30 +361,37 @@ the following phrase.</string>
                                     <action selector="confirmButtonAction:" destination="fcw-ae-HZG" eventType="touchUpInside" id="cqa-8I-63n"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boI-RO-kAX" customClass="NavigationView" customModule="YProjet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <color key="backgroundColor" name="TopBarBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="tob-q3-PNa"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CGE-ZR-pjN"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="5AA-H2-vBF" firstAttribute="centerX" secondItem="bag-5l-jB1" secondAttribute="centerX" id="0T5-uA-86G"/>
+                            <constraint firstItem="boI-RO-kAX" firstAttribute="trailing" secondItem="CGE-ZR-pjN" secondAttribute="trailing" id="4Vm-2V-yND"/>
                             <constraint firstItem="NOE-ka-MtE" firstAttribute="leading" secondItem="CGE-ZR-pjN" secondAttribute="leading" constant="36" id="7El-qu-6vz"/>
+                            <constraint firstItem="pUD-Sl-EAf" firstAttribute="top" secondItem="boI-RO-kAX" secondAttribute="bottom" priority="750" constant="84" id="BI8-ho-yfx"/>
                             <constraint firstItem="CGE-ZR-pjN" firstAttribute="trailing" secondItem="AZE-tq-gmy" secondAttribute="trailing" constant="36" id="CGJ-7w-Jhk"/>
                             <constraint firstItem="9dA-yx-JkD" firstAttribute="centerY" secondItem="bag-5l-jB1" secondAttribute="centerY" id="G1m-pl-xut"/>
                             <constraint firstItem="Cq0-Pv-yBn" firstAttribute="leading" secondItem="NOE-ka-MtE" secondAttribute="leading" id="GgV-hs-5Mq"/>
                             <constraint firstItem="bag-5l-jB1" firstAttribute="top" secondItem="NOE-ka-MtE" secondAttribute="bottom" constant="20" id="HYL-0R-OyL"/>
+                            <constraint firstItem="pUD-Sl-EAf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="boI-RO-kAX" secondAttribute="bottom" constant="5" id="JmZ-uh-gGn"/>
                             <constraint firstItem="AZE-tq-gmy" firstAttribute="leading" secondItem="CGE-ZR-pjN" secondAttribute="leading" constant="36" id="KKh-2B-xTE"/>
                             <constraint firstItem="AZE-tq-gmy" firstAttribute="centerX" secondItem="pUD-Sl-EAf" secondAttribute="centerX" id="KW3-ub-rOb"/>
                             <constraint firstItem="Cq0-Pv-yBn" firstAttribute="trailing" secondItem="NOE-ka-MtE" secondAttribute="trailing" id="KjS-B0-lQ1"/>
-                            <constraint firstItem="CGE-ZR-pjN" firstAttribute="trailing" secondItem="jNE-wm-XVF" secondAttribute="trailing" id="Nui-xx-Yy0"/>
-                            <constraint firstItem="pUD-Sl-EAf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jNE-wm-XVF" secondAttribute="bottom" constant="5" id="Pe2-G2-cCc"/>
+                            <constraint firstItem="boI-RO-kAX" firstAttribute="top" secondItem="qkV-IF-xFC" secondAttribute="top" id="LKr-dJ-zO8"/>
                             <constraint firstItem="AZE-tq-gmy" firstAttribute="top" secondItem="pUD-Sl-EAf" secondAttribute="bottom" constant="10" id="Rvi-IH-Jw9"/>
-                            <constraint firstItem="jNE-wm-XVF" firstAttribute="leading" secondItem="CGE-ZR-pjN" secondAttribute="leading" id="Ubf-Sw-3AF"/>
+                            <constraint firstItem="boI-RO-kAX" firstAttribute="leading" secondItem="CGE-ZR-pjN" secondAttribute="leading" id="SIR-uZ-9VM"/>
                             <constraint firstItem="CGE-ZR-pjN" firstAttribute="bottom" secondItem="IJQ-we-Mpm" secondAttribute="bottom" constant="30" id="YSG-H8-ynO"/>
                             <constraint firstItem="pUD-Sl-EAf" firstAttribute="centerX" secondItem="CGE-ZR-pjN" secondAttribute="centerX" id="gan-No-3qf"/>
                             <constraint firstItem="bag-5l-jB1" firstAttribute="leading" secondItem="9dA-yx-JkD" secondAttribute="trailing" constant="10" id="hNy-dl-XEe"/>
                             <constraint firstItem="Cq0-Pv-yBn" firstAttribute="top" secondItem="bag-5l-jB1" secondAttribute="bottom" constant="20" id="hkW-rO-mUZ"/>
                             <constraint firstItem="CGE-ZR-pjN" firstAttribute="trailing" secondItem="IJQ-we-Mpm" secondAttribute="trailing" constant="36" id="mn7-6d-Aq8"/>
-                            <constraint firstItem="CGE-ZR-pjN" firstAttribute="top" secondItem="jNE-wm-XVF" secondAttribute="top" constant="60" id="s9m-0j-D2R"/>
-                            <constraint firstItem="pUD-Sl-EAf" firstAttribute="top" secondItem="jNE-wm-XVF" secondAttribute="bottom" priority="750" constant="80" id="se9-7h-xzC"/>
                             <constraint firstItem="IJQ-we-Mpm" firstAttribute="leading" secondItem="CGE-ZR-pjN" secondAttribute="leading" constant="36" id="ssK-NY-e3S"/>
                             <constraint firstItem="CGE-ZR-pjN" firstAttribute="trailing" secondItem="NOE-ka-MtE" secondAttribute="trailing" constant="36" id="uTo-87-Az3"/>
                             <constraint firstItem="bag-5l-jB1" firstAttribute="centerX" secondItem="NOE-ka-MtE" secondAttribute="centerX" constant="12" id="uhk-fc-vMJ"/>
@@ -469,6 +402,7 @@ the following phrase.</string>
                     <navigationItem key="navigationItem" id="VBH-9x-VB4"/>
                     <connections>
                         <outlet property="confirmButton" destination="IJQ-we-Mpm" id="RMf-ay-1st"/>
+                        <outlet property="navigationView" destination="boI-RO-kAX" id="rSP-bq-SJ8"/>
                         <outlet property="networkLogoImage" destination="pUD-Sl-EAf" id="t4E-d1-03D"/>
                         <outlet property="phraseTextView" destination="NOE-ka-MtE" id="y7t-ac-OcE"/>
                     </connections>
@@ -485,45 +419,15 @@ the following phrase.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wK0-g8-OdU" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="-16" width="375" height="160"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYP-3E-Xuq">
-                                        <rect key="frame" x="66" y="103" width="145" height="30"/>
-                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNa-eF-GZo">
-                                        <rect key="frame" x="18" y="96" width="44" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="Vxm-gq-jXx"/>
-                                            <constraint firstAttribute="width" constant="44" id="jE4-t9-N0r"/>
-                                        </constraints>
-                                        <state key="normal" image="left-arrow"/>
-                                        <connections>
-                                            <action selector="backAction:" destination="raH-U2-1vr" eventType="touchUpInside" id="6m2-es-FIC"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="TopBar"/>
-                                <constraints>
-                                    <constraint firstItem="FYP-3E-Xuq" firstAttribute="leading" secondItem="wK0-g8-OdU" secondAttribute="leading" constant="66" id="58L-KK-fda"/>
-                                    <constraint firstAttribute="height" constant="160" id="OAw-vi-iik"/>
-                                    <constraint firstItem="bNa-eF-GZo" firstAttribute="centerY" secondItem="FYP-3E-Xuq" secondAttribute="centerY" id="W8k-Aq-bHM"/>
-                                    <constraint firstItem="FYP-3E-Xuq" firstAttribute="leading" secondItem="bNa-eF-GZo" secondAttribute="trailing" constant="4" id="vyw-ap-l6M"/>
-                                    <constraint firstAttribute="bottom" secondItem="FYP-3E-Xuq" secondAttribute="bottom" constant="27" id="xxf-pe-4qL"/>
-                                </constraints>
-                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="m3i-Jt-Rg8">
-                                <rect key="frame" x="162.66666666666666" y="224" width="50" height="50"/>
+                                <rect key="frame" x="162.66666666666666" y="200" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8id-bY-Qey"/>
                                     <constraint firstAttribute="width" constant="50" id="IkS-LC-7qA"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltg-zw-DBo">
-                                <rect key="frame" x="36" y="284" width="303" height="58.333333333333314"/>
+                                <rect key="frame" x="36" y="260" width="303" height="58.333333333333314"/>
                                 <string key="text">Please enter
 Your mnemonics phrase</string>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
@@ -531,7 +435,7 @@ Your mnemonics phrase</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="0HK-A4-p1j">
-                                <rect key="frame" x="36" y="362.33333333333331" width="303" height="88"/>
+                                <rect key="frame" x="36" y="338.33333333333331" width="303" height="88"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="xd9-KK-HYz"/>
@@ -557,6 +461,13 @@ Your mnemonics phrase</string>
                                     <action selector="continueAction:" destination="fcw-ae-HZG" eventType="touchUpInside" id="gXD-ZU-kVm"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06d-Qj-ach" customClass="NavigationView" customModule="YProjet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <color key="backgroundColor" name="TopBarBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="d1i-7B-atF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Gs-7u-sYF"/>
                         <color key="backgroundColor" name="Background"/>
@@ -569,19 +480,20 @@ Your mnemonics phrase</string>
                             <constraint firstItem="0HK-A4-p1j" firstAttribute="leading" secondItem="9Gs-7u-sYF" secondAttribute="leading" constant="36" id="RIh-Sl-NpH"/>
                             <constraint firstItem="ltg-zw-DBo" firstAttribute="top" secondItem="m3i-Jt-Rg8" secondAttribute="bottom" constant="10" id="TN6-xh-rCC"/>
                             <constraint firstItem="9Gs-7u-sYF" firstAttribute="trailing" secondItem="ltg-zw-DBo" secondAttribute="trailing" constant="36" id="VFl-zJ-xJe"/>
-                            <constraint firstItem="wK0-g8-OdU" firstAttribute="leading" secondItem="9Gs-7u-sYF" secondAttribute="leading" id="ZVU-7d-CDZ"/>
+                            <constraint firstAttribute="trailing" secondItem="06d-Qj-ach" secondAttribute="trailing" id="b9j-Cf-lvW"/>
                             <constraint firstItem="Ee7-Bd-nxj" firstAttribute="leading" secondItem="0HK-A4-p1j" secondAttribute="leading" id="cO1-sQ-bLU"/>
                             <constraint firstItem="0HK-A4-p1j" firstAttribute="top" secondItem="ltg-zw-DBo" secondAttribute="bottom" constant="20" id="f6R-3Q-OAU"/>
-                            <constraint firstItem="m3i-Jt-Rg8" firstAttribute="top" secondItem="wK0-g8-OdU" secondAttribute="bottom" constant="80" id="g0S-q4-H9N"/>
-                            <constraint firstItem="9Gs-7u-sYF" firstAttribute="top" secondItem="wK0-g8-OdU" secondAttribute="top" constant="60" id="hnh-yc-hbf"/>
+                            <constraint firstItem="06d-Qj-ach" firstAttribute="top" secondItem="4Oj-Jx-ek7" secondAttribute="top" id="iAK-Lu-IR5"/>
+                            <constraint firstItem="m3i-Jt-Rg8" firstAttribute="top" secondItem="06d-Qj-ach" secondAttribute="bottom" constant="80" id="iKo-Fh-urr"/>
                             <constraint firstItem="m3i-Jt-Rg8" firstAttribute="centerX" secondItem="9Gs-7u-sYF" secondAttribute="centerX" id="wOn-X3-GSX"/>
-                            <constraint firstItem="9Gs-7u-sYF" firstAttribute="trailing" secondItem="wK0-g8-OdU" secondAttribute="trailing" id="xvX-sd-kBL"/>
+                            <constraint firstItem="06d-Qj-ach" firstAttribute="leading" secondItem="9Gs-7u-sYF" secondAttribute="leading" id="yCi-XL-Y7S"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7PV-aJ-4jb"/>
                     <connections>
                         <outlet property="confirmButton" destination="Ee7-Bd-nxj" id="sip-LE-nut"/>
                         <outlet property="mnemonicTextView" destination="0HK-A4-p1j" id="ixZ-5R-yDE"/>
+                        <outlet property="navigationView" destination="06d-Qj-ach" id="Mr4-h5-kRX"/>
                         <outlet property="networkImageLogo" destination="m3i-Jt-Rg8" id="U38-tM-plu"/>
                     </connections>
                 </viewController>
@@ -597,57 +509,27 @@ Your mnemonics phrase</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6D-Ap-hl6" userLabel="TopView">
-                                <rect key="frame" x="0.0" y="-16" width="375" height="160"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9l-mI-gcR">
-                                        <rect key="frame" x="65.999999999999986" y="103" width="142.66666666666663" height="30"/>
-                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoO-U0-qlV">
-                                        <rect key="frame" x="18" y="96" width="44" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="MAw-YE-eIe"/>
-                                            <constraint firstAttribute="height" constant="44" id="xW2-7i-QxL"/>
-                                        </constraints>
-                                        <state key="normal" image="left-arrow"/>
-                                        <connections>
-                                            <action selector="backAction:" destination="2zf-vl-A6V" eventType="touchUpInside" id="0QX-Ey-gu0"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="TopBar"/>
-                                <constraints>
-                                    <constraint firstItem="s9l-mI-gcR" firstAttribute="leading" secondItem="R6D-Ap-hl6" secondAttribute="leading" constant="66" id="44X-Wv-8Vu"/>
-                                    <constraint firstItem="qoO-U0-qlV" firstAttribute="centerY" secondItem="s9l-mI-gcR" secondAttribute="centerY" id="Jsq-uA-U5k"/>
-                                    <constraint firstAttribute="height" constant="160" id="Oiq-b7-TPt"/>
-                                    <constraint firstItem="s9l-mI-gcR" firstAttribute="leading" secondItem="qoO-U0-qlV" secondAttribute="trailing" constant="4" id="UuK-b3-ZhO"/>
-                                    <constraint firstAttribute="bottom" secondItem="s9l-mI-gcR" secondAttribute="bottom" constant="27" id="wzc-46-ZdJ"/>
-                                </constraints>
-                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-WX-FNI">
-                                <rect key="frame" x="162.66666666666666" y="224" width="50" height="50"/>
+                                <rect key="frame" x="162.66666666666666" y="200" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Ste-6k-yyD"/>
                                     <constraint firstAttribute="height" constant="50" id="Udq-Dv-LPr"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlK-ie-OPu">
-                                <rect key="frame" x="90.666666666666686" y="284" width="194" height="30"/>
+                                <rect key="frame" x="90.666666666666686" y="260" width="194" height="30"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
                                 <color key="textColor" name="TopBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add an existing address to watch." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7e-pm-WaP">
-                                <rect key="frame" x="36" y="344" width="303" height="17.666666666666686"/>
+                                <rect key="frame" x="36" y="320" width="303" height="17.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                 <color key="textColor" name="TopBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="cosmos1.." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PNk-8w-AaF">
-                                <rect key="frame" x="36" y="379.66666666666669" width="303" height="34"/>
+                                <rect key="frame" x="36" y="355.66666666666669" width="303" height="34"/>
                                 <color key="textColor" name="TopBar"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -668,32 +550,40 @@ Your mnemonics phrase</string>
                                     <action selector="continueAction:" destination="fcw-ae-HZG" eventType="touchUpInside" id="cZA-Mw-NMq"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGG-4j-k6g" customClass="NavigationView" customModule="YProjet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <color key="backgroundColor" name="TopBarBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="C9n-1I-b1i"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nIW-us-You"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="nIW-us-You" firstAttribute="trailing" secondItem="r7e-pm-WaP" secondAttribute="trailing" constant="36" id="2JI-4e-SEw"/>
                             <constraint firstItem="hlK-ie-OPu" firstAttribute="centerX" secondItem="oA3-WX-FNI" secondAttribute="centerX" id="2Sn-9P-pBS"/>
+                            <constraint firstItem="yGG-4j-k6g" firstAttribute="top" secondItem="6mP-s2-z3c" secondAttribute="top" id="3ld-9A-T6s"/>
+                            <constraint firstItem="oA3-WX-FNI" firstAttribute="top" secondItem="yGG-4j-k6g" secondAttribute="bottom" constant="80" id="Arl-Di-Q4s"/>
                             <constraint firstItem="jJP-Et-NkM" firstAttribute="leading" secondItem="PNk-8w-AaF" secondAttribute="leading" id="AzG-eh-Ll6"/>
                             <constraint firstItem="PNk-8w-AaF" firstAttribute="leading" secondItem="nIW-us-You" secondAttribute="leading" constant="36" id="FmQ-z3-ZKv"/>
                             <constraint firstItem="r7e-pm-WaP" firstAttribute="leading" secondItem="nIW-us-You" secondAttribute="leading" constant="36" id="HNO-v6-xI8"/>
                             <constraint firstItem="PNk-8w-AaF" firstAttribute="top" secondItem="r7e-pm-WaP" secondAttribute="bottom" constant="18" id="Hi9-MN-1jx"/>
                             <constraint firstItem="oA3-WX-FNI" firstAttribute="centerX" secondItem="nIW-us-You" secondAttribute="centerX" id="Ioa-I7-ZPs"/>
                             <constraint firstItem="hlK-ie-OPu" firstAttribute="top" secondItem="oA3-WX-FNI" secondAttribute="bottom" constant="10" id="JVr-s3-mQe"/>
-                            <constraint firstItem="nIW-us-You" firstAttribute="trailing" secondItem="R6D-Ap-hl6" secondAttribute="trailing" id="Re8-eC-SR2"/>
+                            <constraint firstItem="yGG-4j-k6g" firstAttribute="leading" secondItem="nIW-us-You" secondAttribute="leading" id="VNf-CM-bRd"/>
                             <constraint firstItem="jJP-Et-NkM" firstAttribute="trailing" secondItem="PNk-8w-AaF" secondAttribute="trailing" id="aUL-zW-Guf"/>
-                            <constraint firstItem="nIW-us-You" firstAttribute="top" secondItem="R6D-Ap-hl6" secondAttribute="top" constant="60" id="gNC-gl-1fa"/>
                             <constraint firstItem="nIW-us-You" firstAttribute="trailing" secondItem="PNk-8w-AaF" secondAttribute="trailing" constant="36" id="h4K-vw-w4l"/>
                             <constraint firstItem="nIW-us-You" firstAttribute="bottom" secondItem="jJP-Et-NkM" secondAttribute="bottom" constant="30" id="nI7-Uc-jqn"/>
                             <constraint firstItem="r7e-pm-WaP" firstAttribute="centerX" secondItem="hlK-ie-OPu" secondAttribute="centerX" id="ptX-8d-TVg"/>
-                            <constraint firstItem="oA3-WX-FNI" firstAttribute="top" secondItem="R6D-Ap-hl6" secondAttribute="bottom" constant="80" id="qX6-vM-biE"/>
                             <constraint firstItem="r7e-pm-WaP" firstAttribute="top" secondItem="hlK-ie-OPu" secondAttribute="bottom" constant="30" id="vea-kT-sFO"/>
-                            <constraint firstItem="R6D-Ap-hl6" firstAttribute="leading" secondItem="nIW-us-You" secondAttribute="leading" id="yKy-CI-hxw"/>
+                            <constraint firstAttribute="trailing" secondItem="yGG-4j-k6g" secondAttribute="trailing" id="xHo-cL-4eA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZmV-Z7-8f1"/>
                     <connections>
                         <outlet property="confirmButton" destination="jJP-Et-NkM" id="Atf-FZ-zKT"/>
+                        <outlet property="navigationView" destination="yGG-4j-k6g" id="h9T-iw-bdo"/>
                         <outlet property="networkLabel" destination="hlK-ie-OPu" id="jvq-qo-0d0"/>
                         <outlet property="networkLogoImage" destination="oA3-WX-FNI" id="waA-sc-k7x"/>
                     </connections>
@@ -708,7 +598,6 @@ Your mnemonics phrase</string>
         <image name="copy" width="17.479000091552734" height="20.763999938964844"/>
         <image name="cosmos" width="32" height="32"/>
         <image name="down" width="14.743000030517578" height="16"/>
-        <image name="left-arrow" width="11.175999641418457" height="19.023000717163086"/>
         <image name="text" width="16" height="16"/>
         <namedColor name="Background">
             <color red="0.93300002813339233" green="0.94499999284744263" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -720,6 +609,9 @@ Your mnemonics phrase</string>
             <color red="0.83499997854232788" green="0.3059999942779541" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TopBar">
+            <color red="0.14900000393390656" green="0.078000001609325409" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TopBarBlue">
             <color red="0.14900000393390656" green="0.078000001609325409" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">

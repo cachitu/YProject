@@ -12,11 +12,8 @@ class ImportWalletViewController: BaseViewController, BindableType, StoryboardId
     @IBOutlet weak var networkImageLogo: UIImageView!
     @IBOutlet weak var mnemonicTextView: UITextView!
     @IBOutlet weak var confirmButton: UIButton!
-    
-    @IBAction func backAction(_ sender: Any) {
-        viewModel.pop(animated: true)
-    }
-    
+    @IBOutlet weak var navigationView: NavigationView!
+
     @IBAction func confirmAction(_ sender: Any) {
     }
 
@@ -24,8 +21,21 @@ class ImportWalletViewController: BaseViewController, BindableType, StoryboardId
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationView.viewDelegate = self
+        configureUI()
+    }
+
+    private func configureUI() {
         confirmButton.layer.cornerRadius = 10
+        navigationView.title = "Import Wallet".localized
+        navigationView.configure(showBackButton: true)
     }
     
     func bindViewModel() {}
+}
+
+extension ImportWalletViewController: NavigationViewDelegate {
+    func backAction() {
+        viewModel.pop(animated: true)
+    }
 }

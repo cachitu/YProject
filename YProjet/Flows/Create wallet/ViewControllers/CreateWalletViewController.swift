@@ -14,9 +14,7 @@ class CreateWalletViewController: BaseViewController, BindableType, StoryboardId
     @IBOutlet weak var importView: UIView!
     @IBOutlet weak var watchView: UIView!
     
-    @IBAction func backAction(_ sender: Any) {
-        viewModel.pop(animated: true)
-    }
+    @IBOutlet weak var navigationView: NavigationView!
 
     @IBAction func newWalletAction(_ sender: Any) {
         viewModel.createNewWallet()
@@ -34,10 +32,23 @@ class CreateWalletViewController: BaseViewController, BindableType, StoryboardId
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationView.viewDelegate = self
+        configureUI()
+    }
+
+    private func configureUI() {
         createView.layer.cornerRadius = 10
         importView.layer.cornerRadius = 10
         watchView.layer.cornerRadius = 10
+        navigationView.title = "New Wallet".localized
+        navigationView.configure(showBackButton: true)
     }
 
     func bindViewModel() {}
+}
+
+extension CreateWalletViewController: NavigationViewDelegate {
+    func backAction() {
+        viewModel.pop(animated: true)
+    }
 }
