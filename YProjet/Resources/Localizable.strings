@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  YProjet
+
+  Created by cristina.virlan on 16/05/2021.
+  
+*/
+
+// New Wallet
+"Collect Phrase Button Title" = "I have written down my mnemonics";

@@ -30,5 +30,9 @@ extension String {
         let regex = "(-)?(\\d)+"
         return NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: self)
     }
+
+    var localized: String {
+        return NSLocalizedString(self, comment: "")
+    }
 }
 
