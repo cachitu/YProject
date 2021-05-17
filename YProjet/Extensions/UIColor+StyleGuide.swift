@@ -23,4 +23,8 @@ extension UIColor {
     class var topBarBlue: UIColor {
         return color(with: "TopBarBlue")
     }
+
+    class var textRed: UIColor {
+        return color(with: "TextRed")
+    }
 }

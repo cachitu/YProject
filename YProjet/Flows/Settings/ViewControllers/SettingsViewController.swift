@@ -41,7 +41,10 @@ class SettingsViewController: BaseViewController, BindableType, StoryboardIdenti
         navigationView.configure(showBackButton: true, showNotificationButton: true, showSettingsButton: true) // Settings n-ar trebui sa fie aici
 
         disconnectButton.setTitle("Disconnect".localized, for: .normal)
-        deleteWalletButton.style = CustomButton.Style.generic(fillColor: .buttonGreen, textColor: .white)
+        disconnectButton.style = CustomButton.Style.generic(fillColor: .topBarBlue, textColor: .white)
+
+        deleteWalletButton.setTitle("Delete Wallet".localized, for: .normal)
+        deleteWalletButton.style = CustomButton.Style.delete
     }
 
     func bindViewModel() {}

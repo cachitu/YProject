@@ -12,7 +12,7 @@ class CustomButton: UIButton {
     enum Style {
         case generic(fillColor: UIColor? = .systemBlue, textColor: UIColor? = .white)
         //case cancel
-        //case delete
+        case delete
     }
 
     var style: Style = .generic() {
@@ -35,6 +35,12 @@ class CustomButton: UIButton {
         case let .generic(fillColor, textColor):
             backgroundColor = fillColor
             setTitleColor(textColor, for: .normal)
+
+        case .delete:
+            backgroundColor = .clear
+            setTitleColor(.textRed, for: .normal)
+            layer.borderColor = UIColor.textRed.cgColor
+            layer.borderWidth = 2.0
         }
     }
 
