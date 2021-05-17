@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "fi-rr-bell-ring.svg",
+      "filename" : "fi-rr-bell-ring.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "fi-rr-bell-ring@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "fi-rr-bell-ring@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

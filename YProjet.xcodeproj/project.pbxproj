@@ -43,10 +43,17 @@
 		8D3DD36A2651789300C68655 /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DD3692651789300C68655 /* NavigationView.xib */; };
 		8D3DD36D2651789F00C68655 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DD36C2651789F00C68655 /* NavigationView.swift */; };
 		8D3DD37026517BCD00C68655 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DD36F26517BCD00C68655 /* UIView+extension.swift */; };
+		8D84B0DA2652FDCE009F461C /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84B0D92652FDCE009F461C /* ReusableCell.swift */; };
+		8D84B0DD265300B5009F461C /* SettingsChangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84B0DC265300B5009F461C /* SettingsChangeTableViewCell.swift */; };
+		8D84B0E026530229009F461C /* UITableView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84B0DF26530229009F461C /* UITableView+extensions.swift */; };
 		8DBB2009264DA8D30083614F /* NewWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */; };
 		8DBB200D264DA96E0083614F /* NewWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */; };
 		8DD3C8E1264FEADB00BEA8B7 /* UIColor+StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3C8E0264FEADB00BEA8B7 /* UIColor+StyleGuide.swift */; };
 		8DD3C8E4264FEB1900BEA8B7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3C8E3264FEB1900BEA8B7 /* Colors.xcassets */; };
+		8DD7CFCB2652E8E000A0D5C8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD7CFCA2652E8E000A0D5C8 /* Settings.storyboard */; };
+		8DD7CFCE2652E91400A0D5C8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7CFCD2652E91400A0D5C8 /* SettingsViewController.swift */; };
+		8DD7CFD12652E98F00A0D5C8 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7CFD02652E98F00A0D5C8 /* SettingsViewModel.swift */; };
+		8DD7CFD42652EBC200A0D5C8 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7CFD32652EBC200A0D5C8 /* SettingsCoordinator.swift */; };
 		8DFE767F263DCEB900EA8E24 /* CreateWalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE767E263DCEB900EA8E24 /* CreateWalletTableViewCell.swift */; };
 		8DFE7683263DD4AA00EA8E24 /* CreateWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE7682263DD4AA00EA8E24 /* CreateWalletViewModel.swift */; };
 		EE11BFC3261DF3F7005E724D /* CreateWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE11BFC2261DF3F7005E724D /* CreateWallet.storyboard */; };
@@ -113,10 +120,17 @@
 		8D3DD3692651789300C68655 /* NavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationView.xib; sourceTree = "<group>"; };
 		8D3DD36C2651789F00C68655 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		8D3DD36F26517BCD00C68655 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		8D84B0D92652FDCE009F461C /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		8D84B0DC265300B5009F461C /* SettingsChangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsChangeTableViewCell.swift; sourceTree = "<group>"; };
+		8D84B0DF26530229009F461C /* UITableView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extensions.swift"; sourceTree = "<group>"; };
 		8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletCoordinator.swift; sourceTree = "<group>"; };
 		8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletViewModel.swift; sourceTree = "<group>"; };
 		8DD3C8E0264FEADB00BEA8B7 /* UIColor+StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+StyleGuide.swift"; sourceTree = "<group>"; };
 		8DD3C8E3264FEB1900BEA8B7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8DD7CFCA2652E8E000A0D5C8 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		8DD7CFCD2652E91400A0D5C8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8DD7CFD02652E98F00A0D5C8 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		8DD7CFD32652EBC200A0D5C8 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		8DFE767E263DCEB900EA8E24 /* CreateWalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletTableViewCell.swift; sourceTree = "<group>"; };
 		8DFE7682263DD4AA00EA8E24 /* CreateWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewModel.swift; sourceTree = "<group>"; };
 		B9166D0CAE24FE1B8A749CC2 /* Pods_YProjet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YProjet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +200,7 @@
 			children = (
 				8D225A42263D4A510050B329 /* Welcome */,
 				8D225A43263D4A7F0050B329 /* Create wallet */,
+				8DD7CFC52652E8A300A0D5C8 /* Settings */,
 				8D225AA0263D565E0050B329 /* TabBarItems */,
 				8D225A60263D4E070050B329 /* Base */,
 			);
@@ -314,6 +329,7 @@
 				8D225AD8263D635F0050B329 /* KeyboardMonitor.swift */,
 				8D225AEB263D69220050B329 /* DataSourceState.swift */,
 				8D225AEE263D69A20050B329 /* CustomTableViewSection.swift */,
+				8D84B0D92652FDCE009F461C /* ReusableCell.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -440,6 +456,7 @@
 				8D225AE1263D65210050B329 /* UINavigationController+extension.swift */,
 				8DD3C8E0264FEADB00BEA8B7 /* UIColor+StyleGuide.swift */,
 				8D3DD36F26517BCD00C68655 /* UIView+extension.swift */,
+				8D84B0DF26530229009F461C /* UITableView+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -521,6 +538,50 @@
 			children = (
 			);
 			path = Gov;
+			sourceTree = "<group>";
+		};
+		8DD7CFC52652E8A300A0D5C8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8DD7CFC92652E8C900A0D5C8 /* Coordinators */,
+				8DD7CFC82652E8C200A0D5C8 /* ViewControllers */,
+				8DD7CFC72652E8B900A0D5C8 /* ViewModels */,
+				8DD7CFC62652E8AE00A0D5C8 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8DD7CFC62652E8AE00A0D5C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DD7CFCA2652E8E000A0D5C8 /* Settings.storyboard */,
+				8D84B0DC265300B5009F461C /* SettingsChangeTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8DD7CFC72652E8B900A0D5C8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8DD7CFD02652E98F00A0D5C8 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8DD7CFC82652E8C200A0D5C8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DD7CFCD2652E91400A0D5C8 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8DD7CFC92652E8C900A0D5C8 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8DD7CFD32652EBC200A0D5C8 /* SettingsCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		EE241C52261C84C6002DF800 /* Aeonik-font */ = {
@@ -639,6 +700,7 @@
 			files = (
 				EE241C62261C84C6002DF800 /* Aeonik-Bold.otf in Resources */,
 				EE241C69261C84C6002DF800 /* Aeonik-AirItalic.otf in Resources */,
+				8DD7CFCB2652E8E000A0D5C8 /* Settings.storyboard in Resources */,
 				8D3DD36A2651789300C68655 /* NavigationView.xib in Resources */,
 				8D3DD3652651744F00C68655 /* Localizable.strings in Resources */,
 				EE241C68261C84C6002DF800 /* Aeonik-Medium.otf in Resources */,
@@ -719,21 +781,27 @@
 				8DFE7683263DD4AA00EA8E24 /* CreateWalletViewModel.swift in Sources */,
 				EE261E44261C811000C43BA2 /* WelcomeViewController.swift in Sources */,
 				8D225A80263D51640050B329 /* MainTabBarViewController.swift in Sources */,
+				8D84B0DD265300B5009F461C /* SettingsChangeTableViewCell.swift in Sources */,
 				8D225AD6263D62D20050B329 /* BaseViewController.swift in Sources */,
 				8D225ACC263D5F460050B329 /* BaseViewModel.swift in Sources */,
+				8D84B0DA2652FDCE009F461C /* ReusableCell.swift in Sources */,
 				8D225A73263D50AF0050B329 /* CoordinableViewModel.swift in Sources */,
 				8D225ADC263D63F10050B329 /* HomeTableViewController.swift in Sources */,
 				8D225ADF263D642E0050B329 /* BaseTableViewController.swift in Sources */,
+				8D84B0E026530229009F461C /* UITableView+extensions.swift in Sources */,
 				8D225AB6263D57660050B329 /* HomeCoordinator.swift in Sources */,
 				8D225AC2263D5CBF0050B329 /* UIImage+assets.swift in Sources */,
+				8DD7CFCE2652E91400A0D5C8 /* SettingsViewController.swift in Sources */,
 				8DFE767F263DCEB900EA8E24 /* CreateWalletTableViewCell.swift in Sources */,
 				8D225AEC263D69230050B329 /* DataSourceState.swift in Sources */,
 				EE261E2D261C7BF700C43BA2 /* AppDelegate.swift in Sources */,
 				8D225AEF263D69A20050B329 /* CustomTableViewSection.swift in Sources */,
+				8DD7CFD12652E98F00A0D5C8 /* SettingsViewModel.swift in Sources */,
 				8DBB200D264DA96E0083614F /* NewWalletViewModel.swift in Sources */,
 				EE261E2F261C7BF700C43BA2 /* SceneDelegate.swift in Sources */,
 				8D225A99263D558D0050B329 /* WelcomeCoordinator.swift in Sources */,
 				8D225A92263D551C0050B329 /* RefreshableTabProtocol.swift in Sources */,
+				8DD7CFD42652EBC200A0D5C8 /* SettingsCoordinator.swift in Sources */,
 				8D225ABF263D5C730050B329 /* String+extension.swift in Sources */,
 				8D225A7F263D51640050B329 /* TabBarCoordinator.swift in Sources */,
 				8D225A8E263D54970050B329 /* ScrollableToTop.swift in Sources */,
@@ -907,6 +975,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = SKYG56VM4S;
 				INFOPLIST_FILE = YProjet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -928,6 +997,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = SKYG56VM4S;
 				INFOPLIST_FILE = YProjet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

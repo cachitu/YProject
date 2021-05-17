@@ -13,6 +13,7 @@ extension UIStoryboard {
         case mainTabBar
         case welcome
         case createWallet
+        case settings
         case home
         case swap
         case staking

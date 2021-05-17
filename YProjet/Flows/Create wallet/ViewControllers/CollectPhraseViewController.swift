@@ -30,10 +30,11 @@ class CollectPhraseViewController: BaseViewController, BindableType, StoryboardI
     }
 
     private func configureUI() {
-        confirmButton.setTitle("Collect Phrase Button Title".localized, for: .normal)
-        confirmButton.style = CustomButton.Style.generic(fillColor: .buttonGreen, textColor: .white)
         navigationView.title = "New Wallet".localized
         navigationView.configure(showBackButton: true)
+
+        confirmButton.setTitle("Collect Phrase Button Title".localized, for: .normal)
+        confirmButton.style = CustomButton.Style.generic(fillColor: .buttonGreen, textColor: .white)
     }
 
     func bindViewModel() {}

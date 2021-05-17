@@ -14,6 +14,16 @@ enum Images {
         case staking = "001-stacked-files"
         case gov = "004-check"
     }
+
+    enum NavigationBarIcons: String, ImageAsset {
+        case notification = "bell-ring"
+        case settings = "settings"
+    }
+
+    enum Wallet: String, ImageAsset {
+        case copy = "copy"
+        case qrCode = "qr-icon"
+    }
 }
 
 protocol ImageAsset {
