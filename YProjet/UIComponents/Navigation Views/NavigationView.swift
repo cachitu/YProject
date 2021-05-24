@@ -23,6 +23,7 @@ class NavigationView: UIView {
 
     @IBOutlet var view: UIView!
     @IBOutlet weak var backButtonWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var settingsWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var navigationTitleLabel: UILabel!
     @IBOutlet weak var notificationButton: UIButton!
     @IBOutlet weak var settingsButton: UIButton!
@@ -116,5 +117,6 @@ class NavigationView: UIView {
 
     private func configureSettingsButton() {
         settingsButton.isHidden = !showSettingsButton
+        settingsWidthConstraint.constant = showSettingsButton ? 44.0 : 0.0
     }
 }

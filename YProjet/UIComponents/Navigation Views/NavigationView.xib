@@ -19,6 +19,7 @@
                 <outlet property="navigationTitleLabel" destination="cqD-6L-9bO" id="BAA-H3-lqs"/>
                 <outlet property="notificationButton" destination="o3z-nG-Iue" id="GmD-cW-SX4"/>
                 <outlet property="settingsButton" destination="7u4-I3-4h9" id="bVg-X9-Jt8"/>
+                <outlet property="settingsWidthConstraint" destination="9JL-qr-XPu" id="HGn-pL-c72"/>
                 <outlet property="view" destination="R99-1Y-Nqj" id="keb-S9-e45"/>
             </connections>
         </placeholder>
@@ -86,7 +87,7 @@
         </view>
     </objects>
     <resources>
-        <image name="bell-ring" width="18.214000701904297" height="18.243999481201172"/>
+        <image name="bell-ring" width="18.5" height="18.5"/>
         <image name="left-arrow" width="11.175999641418457" height="19.023000717163086"/>
         <image name="settings" width="16.415000915527344" height="18.243999481201172"/>
         <namedColor name="TopBar">

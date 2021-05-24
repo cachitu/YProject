@@ -48,7 +48,7 @@ class SettingsViewController: BaseViewController, BindableType, StoryboardIdenti
 
     private func configureUI() {
         navigationView.title = "wallet name"
-        navigationView.configure(showBackButton: true, showNotificationButton: true, showSettingsButton: true) // Settings n-ar trebui sa fie aici
+        navigationView.configure(showBackButton: true, showNotificationButton: true) 
 
         disconnectButton.setTitle("Disconnect".localized, for: .normal)
         disconnectButton.style = CustomButton.Style.generic(fillColor: .topBarBlue, textColor: .white)
