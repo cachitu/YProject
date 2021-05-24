@@ -55,11 +55,11 @@ extension WelcomeViewController: UITableViewDelegate {
 }
 
 extension WelcomeViewController: NavigationViewDelegate {
-    func notificationAction() {
-        
-    }
-
     func settingsAction() {
         viewModel.showSettings()
+    }
+
+    func notificationAction() {
+        
     }
 }

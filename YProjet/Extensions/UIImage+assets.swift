@@ -20,9 +20,13 @@ enum Images {
         case settings = "settings"
     }
 
-    enum Wallet: String, ImageAsset {
+    enum WalletActions: String, ImageAsset {
         case copy = "copy"
         case qrCode = "qr-icon"
+    }
+
+    enum WalletTypes: String, ImageAsset {
+        case cosmos = "cosmos"
     }
 }
 

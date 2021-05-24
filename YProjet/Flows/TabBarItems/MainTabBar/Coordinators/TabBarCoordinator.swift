@@ -34,7 +34,7 @@ class TabBarCoordinator: Coordinator {
         tabBarViewController = tabBarController
 
         homeCoordinator.navigationController.tabBarItem =
-            UITabBarItem(title: NSLocalizedString("tab_home", comment: ""),
+            UITabBarItem(title: "Home".localized,
                          image: Images.TabBarIcons.home.image,
                          tag: Tab.home.rawValue)
 

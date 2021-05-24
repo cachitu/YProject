@@ -23,6 +23,11 @@ class AppCoordinator: Coordinator {
         }
     }
 
+    // TODO: bool that indicates if the current user has at least one wallet
+    private var noWallet: Bool {
+        return false
+    }
+
     required init(window: UIWindow) {
         self.window = window
         super.init(parentCoordinator: nil)
@@ -43,20 +48,15 @@ private extension AppCoordinator {
         // Dismissing all the viewControllers above current rootViewController before adding the new rootViewController
         window?.rootViewController?.dismiss(animated: false, completion: nil)
 
-        welcomeCoordinator = WelcomeCoordinator(parentCoordinator: self, navigationController: navigationController)
-        welcomeCoordinator?.start()
-        
-//        if !isUserLogged {
-//            accountAccessCoordinator = AccessAccountCoordinator(parentCoordinator: self, navigationController: navigationController)
-//            accountAccessCoordinator?.start()
-//
-//            tabBarCoordinator = nil
-//        } else {
-//            tabBarCoordinator = TabBarCoordinator(parentCoordinator: self, navigationController: navigationController)
-//            tabBarCoordinator?.start()
-//
-//            accountAccessCoordinator = nil
-//        }
+        if noWallet {
+            welcomeCoordinator = WelcomeCoordinator(parentCoordinator: self, navigationController: navigationController)
+            welcomeCoordinator?.start()
+            tabBarCoordinator = nil
+        } else {
+            tabBarCoordinator = TabBarCoordinator(parentCoordinator: self, navigationController: navigationController)
+            tabBarCoordinator?.start()
+            welcomeCoordinator = nil
+        }
         window?.rootViewController = navigationController
     }
 }

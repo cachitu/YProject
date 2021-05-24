@@ -36,6 +36,16 @@ class SettingsViewController: BaseViewController, BindableType, StoryboardIdenti
         configureUI()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.tabBarController?.tabBar.isHidden = true
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.tabBarController?.tabBar.isHidden = false
+    }
+
     private func configureUI() {
         navigationView.title = "wallet name"
         navigationView.configure(showBackButton: true, showNotificationButton: true, showSettingsButton: true) // Settings n-ar trebui sa fie aici

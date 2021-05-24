@@ -9,7 +9,8 @@ import Foundation
 import RxSwift
 
 protocol HomeCoordinatorProtocol: Coordinator {
-
+    func showWalletDetails()
+    func showSettings()
 }
 
 class HomeViewModel: BaseViewModel, CoordinableViewModel  {
@@ -19,5 +20,16 @@ class HomeViewModel: BaseViewModel, CoordinableViewModel  {
         self.coordinator = coordinator
         super.init()
 
+    }
+}
+
+// Navigation
+extension HomeViewModel {
+    func showWalletDetails() {
+        coordinator?.showWalletDetails()
+    }
+
+    func showSettings() {
+        coordinator?.showSettings()
     }
 }

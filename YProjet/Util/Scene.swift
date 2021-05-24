@@ -45,7 +45,7 @@ extension Scene {
         case let .showSettings(viewModel):
             return instantiateViewController(with: SettingsViewController.self, from: .settings, bindWith: viewModel)
         case let .home(viewModel):
-            return instantiateViewController(with: HomeViewController.self, from: .welcome, bindWith: viewModel)
+            return instantiateViewController(with: HomeViewController.self, from: .home, bindWith: viewModel)
         }
     }
 

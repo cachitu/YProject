@@ -7,6 +7,8 @@
 
 import UIKit
 
+// TODO: extend ReusableCell
+
 class CreateWalletTableViewCell: UITableViewCell {
 
     @IBOutlet weak var roundedView: UIView!
