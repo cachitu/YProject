@@ -20,6 +20,10 @@
 		8D03D3DF265CE80100421D8A /* GovViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3DE265CE80100421D8A /* GovViewModel.swift */; };
 		8D03D3E2265CE80A00421D8A /* GovViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3E1265CE80A00421D8A /* GovViewController.swift */; };
 		8D03D3E6265CE81C00421D8A /* GovCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3E5265CE81C00421D8A /* GovCoordinator.swift */; };
+		8D03D3E9265D0E4800421D8A /* GovTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D03D3E8265D0E4800421D8A /* GovTableViewCell.xib */; };
+		8D03D3EC265D0E5300421D8A /* GovTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3EB265D0E5300421D8A /* GovTableViewCell.swift */; };
+		8D03D3F0265D128100421D8A /* GovModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3EF265D128100421D8A /* GovModel.swift */; };
+		8D03D3F3265D1E9000421D8A /* GovDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3F2265D1E9000421D8A /* GovDetailsViewController.swift */; };
 		8D09E3F4264FCF0500B8C839 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D09E3F3264FCF0500B8C839 /* CustomButton.swift */; };
 		8D19BF7D265BCBDC009805F5 /* WalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D19BF7C265BCBDC009805F5 /* WalletTableViewCell.xib */; };
 		8D19BF80265BCC05009805F5 /* WalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19BF7F265BCC05009805F5 /* WalletTableViewCell.swift */; };
@@ -112,6 +116,10 @@
 		8D03D3DE265CE80100421D8A /* GovViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovViewModel.swift; sourceTree = "<group>"; };
 		8D03D3E1265CE80A00421D8A /* GovViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovViewController.swift; sourceTree = "<group>"; };
 		8D03D3E5265CE81C00421D8A /* GovCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovCoordinator.swift; sourceTree = "<group>"; };
+		8D03D3E8265D0E4800421D8A /* GovTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GovTableViewCell.xib; sourceTree = "<group>"; };
+		8D03D3EB265D0E5300421D8A /* GovTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovTableViewCell.swift; sourceTree = "<group>"; };
+		8D03D3EF265D128100421D8A /* GovModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovModel.swift; sourceTree = "<group>"; };
+		8D03D3F2265D1E9000421D8A /* GovDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovDetailsViewController.swift; sourceTree = "<group>"; };
 		8D09E3F3264FCF0500B8C839 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8D19BF7C265BCBDC009805F5 /* WalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletTableViewCell.xib; sourceTree = "<group>"; };
 		8D19BF7F265BCC05009805F5 /* WalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTableViewCell.swift; sourceTree = "<group>"; };
@@ -293,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				8D03D3DB265CE7F500421D8A /* Gov.storyboard */,
+				8D03D3E8265D0E4800421D8A /* GovTableViewCell.xib */,
+				8D03D3EB265D0E5300421D8A /* GovTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				8D03D3E1265CE80A00421D8A /* GovViewController.swift */,
+				8D03D3F2265D1E9000421D8A /* GovDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -319,6 +330,14 @@
 				8D03D3E5265CE81C00421D8A /* GovCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D03D3EE265D127300421D8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3EF265D128100421D8A /* GovModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8D225A41263D4A4C0050B329 /* Flows */ = {
@@ -665,6 +684,7 @@
 		8DBB2007264DA8400083614F /* Gov */ = {
 			isa = PBXGroup;
 			children = (
+				8D03D3EE265D127300421D8A /* Models */,
 				8D03D3D9265CE7DF00421D8A /* Coordinators */,
 				8D03D3D8265CE7DA00421D8A /* ViewControllers */,
 				8D03D3D7265CE7D400421D8A /* ViewModels */,
@@ -845,6 +865,7 @@
 				EE241C66261C84C6002DF800 /* Aeonik-Air.otf in Resources */,
 				EE241C64261C84C6002DF800 /* Aeonik-Thin.otf in Resources */,
 				8D03D3C4265CE01300421D8A /* Swap.storyboard in Resources */,
+				8D03D3E9265D0E4800421D8A /* GovTableViewCell.xib in Resources */,
 				EE241C63261C84C6002DF800 /* Aeonik-LightItalic.otf in Resources */,
 				EE11BFC3261DF3F7005E724D /* CreateWallet.storyboard in Resources */,
 				EE261E39261C7BF800C43BA2 /* LaunchScreen.storyboard in Resources */,
@@ -919,8 +940,10 @@
 				8DFE7683263DD4AA00EA8E24 /* CreateWalletViewModel.swift in Sources */,
 				EE261E44261C811000C43BA2 /* WelcomeViewController.swift in Sources */,
 				8D225A80263D51640050B329 /* MainTabBarViewController.swift in Sources */,
+				8D03D3EC265D0E5300421D8A /* GovTableViewCell.swift in Sources */,
 				8D84B0DD265300B5009F461C /* SettingsChangeTableViewCell.swift in Sources */,
 				8D225AD6263D62D20050B329 /* BaseViewController.swift in Sources */,
+				8D03D3F0265D128100421D8A /* GovModel.swift in Sources */,
 				8D225ACC263D5F460050B329 /* BaseViewModel.swift in Sources */,
 				8D84B0DA2652FDCE009F461C /* ReusableCell.swift in Sources */,
 				8D225A73263D50AF0050B329 /* CoordinableViewModel.swift in Sources */,
@@ -951,6 +974,7 @@
 				8D225A7F263D51640050B329 /* TabBarCoordinator.swift in Sources */,
 				8D225A8E263D54970050B329 /* ScrollableToTop.swift in Sources */,
 				8D225A8A263D544E0050B329 /* BaseNavigationController.swift in Sources */,
+				8D03D3F3265D1E9000421D8A /* GovDetailsViewController.swift in Sources */,
 				EE11BFD0261E0C91005E724D /* ConfirmPhraseViewController.swift in Sources */,
 				8D225A6C263D50620050B329 /* AppCoordinator.swift in Sources */,
 				8D03D3E6265CE81C00421D8A /* GovCoordinator.swift in Sources */,

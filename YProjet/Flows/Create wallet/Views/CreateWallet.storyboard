@@ -447,7 +447,7 @@ Your mnemonics phrase</string>
                             </textView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ee7-Bd-nxj">
                                 <rect key="frame" x="36" y="678" width="303" height="70"/>
-                                <color key="backgroundColor" name="ButtonGreen"/>
+                                <color key="backgroundColor" name="CustomGreen"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="ga5-LS-YHC"/>
                                 </constraints>
@@ -603,6 +603,9 @@ Your mnemonics phrase</string>
             <color red="0.93300002813339233" green="0.94499999284744263" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ButtonGreen">
+            <color red="0.10599999874830246" green="0.76499998569488525" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomGreen">
             <color red="0.10599999874830246" green="0.76499998569488525" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextRed">

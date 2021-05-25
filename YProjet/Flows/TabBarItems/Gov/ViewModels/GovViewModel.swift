@@ -8,7 +8,7 @@
 import Foundation
 
 protocol GovCoordinatorProtocol: Coordinator {
-
+    func showDetails()
 }
 
 class GovViewModel: BaseViewModel, CoordinableViewModel  {
@@ -19,9 +19,15 @@ class GovViewModel: BaseViewModel, CoordinableViewModel  {
         super.init()
 
     }
+
+    func pop(animated: Bool) {
+        coordinator?.pop(animated: animated, completion: nil)
+    }
 }
 
 // Navigation
 extension GovViewModel {
-
+    func showDetails() {
+        coordinator?.showDetails()
+    }
 }

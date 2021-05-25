@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Bold.otf">
+            <string>Aeonik-Bold</string>
+        </array>
+        <array key="Aeonik-Regular.otf">
+            <string>Aeonik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GovTableViewCell" rowHeight="100" id="hBO-Wb-TKJ" customClass="GovTableViewCell" customModule="YProjet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hBO-Wb-TKJ" id="zF9-hh-T4S">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIT-1b-tUc" userLabel="Rounded View">
+                        <rect key="frame" x="36" y="2" width="342" height="96"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxv-IQ-u1L">
+                                <rect key="frame" x="15" y="15" width="25.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                <color key="textColor" name="LightLilac"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luna Mission - Funding $Atom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c09-mJ-kSO">
+                                <rect key="frame" x="15" y="43" width="206" height="18"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                <color key="textColor" name="CustomBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$23,872.88" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHM-ua-CX9">
+                                <rect key="frame" x="251.5" y="15" width="75.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                <color key="textColor" name="LightLilac"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Cosmos Hub (ATOM) community is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hf-lU-i4e">
+                                <rect key="frame" x="15" y="63" width="264.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                <color key="textColor" name="CustomBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4hf-lU-i4e" secondAttribute="trailing" constant="15" id="04Y-b4-3Eh"/>
+                            <constraint firstItem="Oxv-IQ-u1L" firstAttribute="leading" secondItem="KIT-1b-tUc" secondAttribute="leading" constant="15" id="1tY-Z5-Frn"/>
+                            <constraint firstItem="4hf-lU-i4e" firstAttribute="top" secondItem="c09-mJ-kSO" secondAttribute="bottom" constant="2" id="6yj-2Y-ULy"/>
+                            <constraint firstItem="4hf-lU-i4e" firstAttribute="leading" secondItem="c09-mJ-kSO" secondAttribute="leading" id="9Uh-sX-siH"/>
+                            <constraint firstItem="Oxv-IQ-u1L" firstAttribute="top" secondItem="KIT-1b-tUc" secondAttribute="top" constant="15" id="Yx7-3z-WWA"/>
+                            <constraint firstItem="c09-mJ-kSO" firstAttribute="leading" secondItem="Oxv-IQ-u1L" secondAttribute="leading" id="gLq-Lt-eHI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c09-mJ-kSO" secondAttribute="trailing" constant="15" id="hGR-5U-Khg"/>
+                            <constraint firstItem="VHM-ua-CX9" firstAttribute="top" secondItem="Oxv-IQ-u1L" secondAttribute="top" id="hZh-dh-6Oo"/>
+                            <constraint firstAttribute="trailing" secondItem="VHM-ua-CX9" secondAttribute="trailing" constant="15" id="kfI-L2-lZE"/>
+                            <constraint firstItem="c09-mJ-kSO" firstAttribute="top" secondItem="Oxv-IQ-u1L" secondAttribute="bottom" constant="10" id="nXv-OF-oPI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="KIT-1b-tUc" firstAttribute="top" secondItem="zF9-hh-T4S" secondAttribute="top" constant="2" id="F6H-ba-aLq"/>
+                    <constraint firstAttribute="trailing" secondItem="KIT-1b-tUc" secondAttribute="trailing" constant="36" id="Fmd-RP-Im0"/>
+                    <constraint firstItem="KIT-1b-tUc" firstAttribute="leading" secondItem="zF9-hh-T4S" secondAttribute="leading" constant="36" id="gHl-wH-XCo"/>
+                    <constraint firstAttribute="bottom" secondItem="KIT-1b-tUc" secondAttribute="bottom" constant="2" id="h5W-yr-Fde"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="4hf-lU-i4e" id="cOu-jl-Bv3"/>
+                <outlet property="numberLabel" destination="Oxv-IQ-u1L" id="tNU-bw-3LS"/>
+                <outlet property="roundedView" destination="KIT-1b-tUc" id="dIk-CT-JxZ"/>
+                <outlet property="statusLabel" destination="VHM-ua-CX9" id="uOv-uP-LEE"/>
+                <outlet property="titleLabel" destination="c09-mJ-kSO" id="9OY-uX-98V"/>
+            </connections>
+            <point key="canvasLocation" x="11.594202898550726" y="80.357142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CustomBlue">
+            <color red="0.14900000393390656" green="0.078000001609325409" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightLilac">
+            <color red="0.61176470588235299" green="0.56862745098039214" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

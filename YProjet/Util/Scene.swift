@@ -34,6 +34,7 @@ enum Scene {
 
     // Gov
     case gov(GovViewModel)
+    case govDetails(GovViewModel)
 }
 
 extension Scene {
@@ -61,6 +62,8 @@ extension Scene {
             return instantiateViewController(with: StakingViewController.self, from: .staking, bindWith: viewModel)
         case let .gov(viewModel):
             return instantiateViewController(with: GovViewController.self, from: .gov, bindWith: viewModel)
+        case let .govDetails(viewModel):
+            return instantiateViewController(with: GovDetailsViewController.self, from: .gov, bindWith: viewModel)
         }
     }
 
