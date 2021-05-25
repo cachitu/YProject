@@ -16,15 +16,15 @@ extension UIColor {
         return color
     }
 
-    class var buttonGreen: UIColor {
-        return color(with: "ButtonGreen")
+    class var customGreen: UIColor {
+        return color(with: "CustomGreen")
     }
 
-    class var topBarBlue: UIColor {
-        return color(with: "TopBarBlue")
+    class var customBlue: UIColor {
+        return color(with: "CustomBlue")
     }
 
-    class var textRed: UIColor {
-        return color(with: "TextRed")
+    class var customRed: UIColor {
+        return color(with: "CustomRed")
     }
 }

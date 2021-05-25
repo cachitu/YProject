@@ -38,8 +38,8 @@ class CustomButton: UIButton {
 
         case .delete:
             backgroundColor = .clear
-            setTitleColor(.textRed, for: .normal)
-            layer.borderColor = UIColor.textRed.cgColor
+            setTitleColor(.customRed, for: .normal)
+            layer.borderColor = UIColor.customRed.cgColor
             layer.borderWidth = 2.0
         }
     }

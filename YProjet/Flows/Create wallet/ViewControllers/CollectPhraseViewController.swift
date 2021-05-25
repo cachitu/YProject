@@ -34,7 +34,7 @@ class CollectPhraseViewController: BaseViewController, BindableType, StoryboardI
         navigationView.configure(showBackButton: true)
 
         confirmButton.setTitle("Collect Phrase Button Title".localized, for: .normal)
-        confirmButton.style = CustomButton.Style.generic(fillColor: .buttonGreen, textColor: .white)
+        confirmButton.style = CustomButton.Style.generic(fillColor: .customGreen, textColor: .white)
     }
 
     func bindViewModel() {}

@@ -98,7 +98,7 @@ class NavigationView: UIView {
         configureSettingsButton()
         navigationTitleLabel.font = UIFont(name: "Aeonik-Bold", size: 25.0)
         navigationTitleLabel.textColor = .white
-        backgroundColor = .topBarBlue
+        backgroundColor = .customBlue
     }
 
     public func configure(showBackButton: Bool = false, showNotificationButton: Bool = false, showSettingsButton: Bool = false) {
