@@ -25,6 +25,15 @@ enum Scene {
 
     // Home
     case home(HomeViewModel)
+
+    // Swap
+    case swap(SwapViewModel)
+
+    // Staking
+    case staking(StakingViewModel)
+
+    // Gov
+    case gov(GovViewModel)
 }
 
 extension Scene {
@@ -46,6 +55,12 @@ extension Scene {
             return instantiateViewController(with: SettingsViewController.self, from: .settings, bindWith: viewModel)
         case let .home(viewModel):
             return instantiateViewController(with: HomeViewController.self, from: .home, bindWith: viewModel)
+        case let .swap(viewModel):
+            return instantiateViewController(with: SwapViewController.self, from: .swap, bindWith: viewModel)
+        case let .staking(viewModel):
+            return instantiateViewController(with: StakingViewController.self, from: .staking, bindWith: viewModel)
+        case let .gov(viewModel):
+            return instantiateViewController(with: GovViewController.self, from: .gov, bindWith: viewModel)
         }
     }
 

@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2B0AD9975201F3B488C5D1E2 /* Pods_YProjet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9166D0CAE24FE1B8A749CC2 /* Pods_YProjet.framework */; };
+		8D03D3B9265CDFDB00421D8A /* SwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3B8265CDFDB00421D8A /* SwapViewController.swift */; };
+		8D03D3BE265CDFFA00421D8A /* SwapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3BD265CDFFA00421D8A /* SwapCoordinator.swift */; };
+		8D03D3C1265CE00600421D8A /* SwapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3C0265CE00600421D8A /* SwapViewModel.swift */; };
+		8D03D3C4265CE01300421D8A /* Swap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D03D3C3265CE01300421D8A /* Swap.storyboard */; };
+		8D03D3CB265CE59B00421D8A /* Staking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D03D3CA265CE59B00421D8A /* Staking.storyboard */; };
+		8D03D3CE265CE5AC00421D8A /* StakingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3CD265CE5AC00421D8A /* StakingViewModel.swift */; };
+		8D03D3D1265CE5B800421D8A /* StakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3D0265CE5B800421D8A /* StakingViewController.swift */; };
+		8D03D3D4265CE5C200421D8A /* StakingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3D3265CE5C200421D8A /* StakingCoordinator.swift */; };
+		8D03D3DC265CE7F500421D8A /* Gov.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D03D3DB265CE7F500421D8A /* Gov.storyboard */; };
+		8D03D3DF265CE80100421D8A /* GovViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3DE265CE80100421D8A /* GovViewModel.swift */; };
+		8D03D3E2265CE80A00421D8A /* GovViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3E1265CE80A00421D8A /* GovViewController.swift */; };
+		8D03D3E6265CE81C00421D8A /* GovCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03D3E5265CE81C00421D8A /* GovCoordinator.swift */; };
 		8D09E3F4264FCF0500B8C839 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D09E3F3264FCF0500B8C839 /* CustomButton.swift */; };
 		8D19BF7D265BCBDC009805F5 /* WalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D19BF7C265BCBDC009805F5 /* WalletTableViewCell.xib */; };
 		8D19BF80265BCC05009805F5 /* WalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19BF7F265BCC05009805F5 /* WalletTableViewCell.swift */; };
@@ -88,6 +100,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D03D3B8265CDFDB00421D8A /* SwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewController.swift; sourceTree = "<group>"; };
+		8D03D3BD265CDFFA00421D8A /* SwapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapCoordinator.swift; sourceTree = "<group>"; };
+		8D03D3C0265CE00600421D8A /* SwapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewModel.swift; sourceTree = "<group>"; };
+		8D03D3C3265CE01300421D8A /* Swap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Swap.storyboard; sourceTree = "<group>"; };
+		8D03D3CA265CE59B00421D8A /* Staking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Staking.storyboard; sourceTree = "<group>"; };
+		8D03D3CD265CE5AC00421D8A /* StakingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakingViewModel.swift; sourceTree = "<group>"; };
+		8D03D3D0265CE5B800421D8A /* StakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakingViewController.swift; sourceTree = "<group>"; };
+		8D03D3D3265CE5C200421D8A /* StakingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakingCoordinator.swift; sourceTree = "<group>"; };
+		8D03D3DB265CE7F500421D8A /* Gov.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gov.storyboard; sourceTree = "<group>"; };
+		8D03D3DE265CE80100421D8A /* GovViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovViewModel.swift; sourceTree = "<group>"; };
+		8D03D3E1265CE80A00421D8A /* GovViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovViewController.swift; sourceTree = "<group>"; };
+		8D03D3E5265CE81C00421D8A /* GovCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovCoordinator.swift; sourceTree = "<group>"; };
 		8D09E3F3264FCF0500B8C839 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8D19BF7C265BCBDC009805F5 /* WalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletTableViewCell.xib; sourceTree = "<group>"; };
 		8D19BF7F265BCC05009805F5 /* WalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTableViewCell.swift; sourceTree = "<group>"; };
@@ -199,6 +223,102 @@
 				B9166D0CAE24FE1B8A749CC2 /* Pods_YProjet.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D03D3B4265CDFAC00421D8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3C3265CE01300421D8A /* Swap.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D03D3B5265CDFB500421D8A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3B8265CDFDB00421D8A /* SwapViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D03D3B6265CDFBC00421D8A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3BD265CDFFA00421D8A /* SwapCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D03D3B7265CDFC400421D8A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3C0265CE00600421D8A /* SwapViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D03D3C6265CE57D00421D8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3CA265CE59B00421D8A /* Staking.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D03D3C7265CE58200421D8A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3CD265CE5AC00421D8A /* StakingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D03D3C8265CE58800421D8A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3D0265CE5B800421D8A /* StakingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D03D3C9265CE58E00421D8A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3D3265CE5C200421D8A /* StakingCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8D03D3D6265CE7D000421D8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3DB265CE7F500421D8A /* Gov.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D03D3D7265CE7D400421D8A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3DE265CE80100421D8A /* GovViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D03D3D8265CE7DA00421D8A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3E1265CE80A00421D8A /* GovViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D03D3D9265CE7DF00421D8A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8D03D3E5265CE81C00421D8A /* GovCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		8D225A41263D4A4C0050B329 /* Flows */ = {
@@ -523,6 +643,10 @@
 		8DBB2005264DA8350083614F /* Swap */ = {
 			isa = PBXGroup;
 			children = (
+				8D03D3B6265CDFBC00421D8A /* Coordinators */,
+				8D03D3B5265CDFB500421D8A /* ViewControllers */,
+				8D03D3B7265CDFC400421D8A /* ViewModels */,
+				8D03D3B4265CDFAC00421D8A /* Views */,
 			);
 			path = Swap;
 			sourceTree = "<group>";
@@ -530,6 +654,10 @@
 		8DBB2006264DA83B0083614F /* Staking */ = {
 			isa = PBXGroup;
 			children = (
+				8D03D3C9265CE58E00421D8A /* Coordinators */,
+				8D03D3C8265CE58800421D8A /* ViewControllers */,
+				8D03D3C7265CE58200421D8A /* ViewModels */,
+				8D03D3C6265CE57D00421D8A /* Views */,
 			);
 			path = Staking;
 			sourceTree = "<group>";
@@ -537,6 +665,10 @@
 		8DBB2007264DA8400083614F /* Gov */ = {
 			isa = PBXGroup;
 			children = (
+				8D03D3D9265CE7DF00421D8A /* Coordinators */,
+				8D03D3D8265CE7DA00421D8A /* ViewControllers */,
+				8D03D3D7265CE7D400421D8A /* ViewModels */,
+				8D03D3D6265CE7D000421D8A /* Views */,
 			);
 			path = Gov;
 			sourceTree = "<group>";
@@ -700,6 +832,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE241C62261C84C6002DF800 /* Aeonik-Bold.otf in Resources */,
+				8D03D3DC265CE7F500421D8A /* Gov.storyboard in Resources */,
 				EE241C69261C84C6002DF800 /* Aeonik-AirItalic.otf in Resources */,
 				8DD7CFCB2652E8E000A0D5C8 /* Settings.storyboard in Resources */,
 				8D3DD36A2651789300C68655 /* NavigationView.xib in Resources */,
@@ -707,9 +840,11 @@
 				EE241C68261C84C6002DF800 /* Aeonik-Medium.otf in Resources */,
 				EE241C6C261C84C6002DF800 /* Aeonik-BoldItalic.otf in Resources */,
 				8D225A7E263D51640050B329 /* MainTabBar.storyboard in Resources */,
+				8D03D3CB265CE59B00421D8A /* Staking.storyboard in Resources */,
 				8DD3C8E4264FEB1900BEA8B7 /* Colors.xcassets in Resources */,
 				EE241C66261C84C6002DF800 /* Aeonik-Air.otf in Resources */,
 				EE241C64261C84C6002DF800 /* Aeonik-Thin.otf in Resources */,
+				8D03D3C4265CE01300421D8A /* Swap.storyboard in Resources */,
 				EE241C63261C84C6002DF800 /* Aeonik-LightItalic.otf in Resources */,
 				EE11BFC3261DF3F7005E724D /* CreateWallet.storyboard in Resources */,
 				EE261E39261C7BF800C43BA2 /* LaunchScreen.storyboard in Resources */,
@@ -789,14 +924,21 @@
 				8D225ACC263D5F460050B329 /* BaseViewModel.swift in Sources */,
 				8D84B0DA2652FDCE009F461C /* ReusableCell.swift in Sources */,
 				8D225A73263D50AF0050B329 /* CoordinableViewModel.swift in Sources */,
+				8D03D3E2265CE80A00421D8A /* GovViewController.swift in Sources */,
 				8D225ADC263D63F10050B329 /* HomeTableViewController.swift in Sources */,
+				8D03D3C1265CE00600421D8A /* SwapViewModel.swift in Sources */,
 				8D225ADF263D642E0050B329 /* BaseTableViewController.swift in Sources */,
+				8D03D3B9265CDFDB00421D8A /* SwapViewController.swift in Sources */,
 				8D84B0E026530229009F461C /* UITableView+extensions.swift in Sources */,
+				8D03D3BE265CDFFA00421D8A /* SwapCoordinator.swift in Sources */,
+				8D03D3DF265CE80100421D8A /* GovViewModel.swift in Sources */,
 				8D225AB6263D57660050B329 /* HomeCoordinator.swift in Sources */,
 				8D225AC2263D5CBF0050B329 /* UIImage+assets.swift in Sources */,
 				8DD7CFCE2652E91400A0D5C8 /* SettingsViewController.swift in Sources */,
+				8D03D3D4265CE5C200421D8A /* StakingCoordinator.swift in Sources */,
 				8DFE767F263DCEB900EA8E24 /* CreateWalletTableViewCell.swift in Sources */,
 				8D225AEC263D69230050B329 /* DataSourceState.swift in Sources */,
+				8D03D3D1265CE5B800421D8A /* StakingViewController.swift in Sources */,
 				EE261E2D261C7BF700C43BA2 /* AppDelegate.swift in Sources */,
 				8D225AEF263D69A20050B329 /* CustomTableViewSection.swift in Sources */,
 				8DD7CFD12652E98F00A0D5C8 /* SettingsViewModel.swift in Sources */,
@@ -811,6 +953,7 @@
 				8D225A8A263D544E0050B329 /* BaseNavigationController.swift in Sources */,
 				EE11BFD0261E0C91005E724D /* ConfirmPhraseViewController.swift in Sources */,
 				8D225A6C263D50620050B329 /* AppCoordinator.swift in Sources */,
+				8D03D3E6265CE81C00421D8A /* GovCoordinator.swift in Sources */,
 				8D225AD0263D60370050B329 /* HomeViewController.swift in Sources */,
 				8D3DD37026517BCD00C68655 /* UIView+extension.swift in Sources */,
 				8D225A75263D50AF0050B329 /* Coordinator.swift in Sources */,
@@ -819,6 +962,7 @@
 				8D225A74263D50AF0050B329 /* TransitionType.swift in Sources */,
 				8D09E3F4264FCF0500B8C839 /* CustomButton.swift in Sources */,
 				EE11BFCA261E0382005E724D /* CreateWalletViewController.swift in Sources */,
+				8D03D3CE265CE5AC00421D8A /* StakingViewModel.swift in Sources */,
 				8D225AC8263D5F0B0050B329 /* HomeViewModel.swift in Sources */,
 				8D225ABB263D5A4C0050B329 /* UIStoryboard+extension.swift in Sources */,
 				EE11BFD3261E1486005E724D /* ImportWalletViewController.swift in Sources */,

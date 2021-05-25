@@ -19,7 +19,17 @@ class TabBarCoordinator: Coordinator {
         return HomeCoordinator(parentCoordinator: self)
     }()
 
-    //TODO: declaere the rest of coordinators
+    private lazy var swapCoordinator: SwapCoordinator = {
+        return SwapCoordinator(parentCoordinator: self)
+    }()
+
+    private lazy var stakingCoordinator: StakingCoordinator = {
+        return StakingCoordinator(parentCoordinator: self)
+    }()
+
+    private lazy var govCoordinator: GovCoordinator = {
+        return GovCoordinator(parentCoordinator: self)
+    }()
 
     private var tabBarViewController: MainTabBarViewController?
 
@@ -38,15 +48,30 @@ class TabBarCoordinator: Coordinator {
                          image: Images.TabBarIcons.home.image,
                          tag: Tab.home.rawValue)
 
-        //TODO: the same for the rest of coordinators
+        swapCoordinator.navigationController.tabBarItem =
+            UITabBarItem(title: "Swap".localized,
+                         image: Images.TabBarIcons.swap.image,
+                         tag: Tab.swap.rawValue)
 
-        tabBarController.setViewControllers([homeCoordinator.navigationController//,
-                                             //SwapCoordinator.navigationController,
-                                             //...
+        stakingCoordinator.navigationController.tabBarItem =
+            UITabBarItem(title: "Staking".localized,
+                         image: Images.TabBarIcons.staking.image,
+                         tag: Tab.staking.rawValue)
+
+        govCoordinator.navigationController.tabBarItem =
+            UITabBarItem(title: "Gov".localized,
+                         image: Images.TabBarIcons.gov.image,
+                         tag: Tab.gov.rawValue)
+
+        tabBarController.setViewControllers([homeCoordinator.navigationController,
+                                             swapCoordinator.navigationController,
+                                             stakingCoordinator.navigationController,
+                                             govCoordinator.navigationController
                                                 ], animated: true)
         homeCoordinator.start()
-
-        //TODO: the same for the rest of coordinators
+        swapCoordinator.start()
+        stakingCoordinator.start()
+        govCoordinator.start()
 
         navigationController.setViewControllers([tabBarController], animated: false)
     }
