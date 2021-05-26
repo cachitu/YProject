@@ -26,6 +26,10 @@ extension String {
         return self.components(separatedBy: .whitespacesAndNewlines).filter { !$0.isEmpty }.joined(separator: " ")
     }
 
+    func addRightWhitespaces() -> String {
+        return self + "               "
+    }
+
     func isNumeric() -> Bool {
         let regex = "(-)?(\\d)+"
         return NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: self)

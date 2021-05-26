@@ -8,7 +8,9 @@
 import Foundation
 
 protocol StakingCoordinatorProtocol: Coordinator {
-
+    func claimRewards()
+    func showSummary()
+    func showDetails()
 }
 
 class StakingViewModel: BaseViewModel, CoordinableViewModel  {
@@ -27,5 +29,15 @@ class StakingViewModel: BaseViewModel, CoordinableViewModel  {
 
 // Navigation
 extension StakingViewModel {
+    func claimRewards() {
+        coordinator?.claimRewards()
+    }
 
+    func showSummary() {
+        coordinator?.showSummary()
+    }
+
+    func showDetails() {
+        coordinator?.showDetails()
+    }
 }

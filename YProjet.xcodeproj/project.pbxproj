@@ -64,6 +64,8 @@
 		8D84B0DA2652FDCE009F461C /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84B0D92652FDCE009F461C /* ReusableCell.swift */; };
 		8D84B0DD265300B5009F461C /* SettingsChangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84B0DC265300B5009F461C /* SettingsChangeTableViewCell.swift */; };
 		8D84B0E026530229009F461C /* UITableView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84B0DF26530229009F461C /* UITableView+extensions.swift */; };
+		8D9C1238265E45BE000F08DC /* StakingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D9C1237265E45BE000F08DC /* StakingTableViewCell.xib */; };
+		8D9C123B265E45EB000F08DC /* StakingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C123A265E45EB000F08DC /* StakingTableViewCell.swift */; };
 		8DBB2009264DA8D30083614F /* NewWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */; };
 		8DBB200D264DA96E0083614F /* NewWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */; };
 		8DD0F2642657DC20002B02A8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD0F2632657DC20002B02A8 /* Home.storyboard */; };
@@ -160,6 +162,8 @@
 		8D84B0D92652FDCE009F461C /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		8D84B0DC265300B5009F461C /* SettingsChangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsChangeTableViewCell.swift; sourceTree = "<group>"; };
 		8D84B0DF26530229009F461C /* UITableView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extensions.swift"; sourceTree = "<group>"; };
+		8D9C1237265E45BE000F08DC /* StakingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StakingTableViewCell.xib; sourceTree = "<group>"; };
+		8D9C123A265E45EB000F08DC /* StakingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakingTableViewCell.swift; sourceTree = "<group>"; };
 		8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletCoordinator.swift; sourceTree = "<group>"; };
 		8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletViewModel.swift; sourceTree = "<group>"; };
 		8DD0F2632657DC20002B02A8 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -269,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				8D03D3CA265CE59B00421D8A /* Staking.storyboard */,
+				8D9C1237265E45BE000F08DC /* StakingTableViewCell.xib */,
+				8D9C123A265E45EB000F08DC /* StakingTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -858,6 +864,7 @@
 				8D3DD36A2651789300C68655 /* NavigationView.xib in Resources */,
 				8D3DD3652651744F00C68655 /* Localizable.strings in Resources */,
 				EE241C68261C84C6002DF800 /* Aeonik-Medium.otf in Resources */,
+				8D9C1238265E45BE000F08DC /* StakingTableViewCell.xib in Resources */,
 				EE241C6C261C84C6002DF800 /* Aeonik-BoldItalic.otf in Resources */,
 				8D225A7E263D51640050B329 /* MainTabBar.storyboard in Resources */,
 				8D03D3CB265CE59B00421D8A /* Staking.storyboard in Resources */,
@@ -995,6 +1002,7 @@
 				8D19BF80265BCC05009805F5 /* WalletTableViewCell.swift in Sources */,
 				8D225A96263D557F0050B329 /* CreateWalletCoordinator.swift in Sources */,
 				8D225A86263D52CA0050B329 /* StoryboardIdentifiable.swift in Sources */,
+				8D9C123B265E45EB000F08DC /* StakingTableViewCell.swift in Sources */,
 				8D225AE2263D65210050B329 /* UINavigationController+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
