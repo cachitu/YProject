@@ -31,19 +31,86 @@
                                     <constraint firstAttribute="height" constant="120" id="717-dN-5cK"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Tx-yF-pLY">
-                                <rect key="frame" x="0.0" y="185" width="414" height="677"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="h10-eu-NMr" id="Tdb-Kt-ZDi"/>
-                                    <outlet property="delegate" destination="h10-eu-NMr" id="Sr2-HW-5EQ"/>
-                                </connections>
-                            </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlR-Ls-JDD">
-                                <rect key="frame" x="0.0" y="120" width="414" height="65"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVd-tg-6ld" userLabel="DelegationView">
+                                <rect key="frame" x="0.0" y="120" width="414" height="190"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5000000 LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4o-Yz-91U">
+                                        <rect key="frame" x="263" y="30" width="115" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000005 LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erH-G2-Mkd">
+                                        <rect key="frame" x="263" y="58" width="115" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azT-xM-2V3" customClass="CustomButton" customModule="YProjet" customModuleProvider="target">
+                                        <rect key="frame" x="36" y="100" width="168.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hzu-dO-o60"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <state key="normal" title="Claim rewards">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="claimAction:" destination="h10-eu-NMr" eventType="touchUpInside" id="Ck8-eF-xE2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-iI-nJO" customClass="CustomButton" customModule="YProjet" customModuleProvider="target">
+                                        <rect key="frame" x="209.5" y="100" width="168.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="F4S-rc-qVx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <state key="normal" title="Summary">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="summaryAction:" destination="h10-eu-NMr" eventType="touchUpInside" id="1h8-1Y-UmF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGN-p8-YIC">
+                                        <rect key="frame" x="36" y="30" width="68.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyF-PG-IXw">
+                                        <rect key="frame" x="36" y="58" width="59" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="CustomBlue"/>
+                                <constraints>
+                                    <constraint firstItem="erH-G2-Mkd" firstAttribute="trailing" secondItem="B4o-Yz-91U" secondAttribute="trailing" id="5rA-95-GxB"/>
+                                    <constraint firstItem="azT-xM-2V3" firstAttribute="width" secondItem="Yqx-iI-nJO" secondAttribute="width" id="BoV-5a-tM7"/>
+                                    <constraint firstAttribute="height" constant="190" id="E2S-0z-G9T"/>
+                                    <constraint firstItem="Yqx-iI-nJO" firstAttribute="bottom" secondItem="azT-xM-2V3" secondAttribute="bottom" id="J63-ed-ckq"/>
+                                    <constraint firstItem="uyF-PG-IXw" firstAttribute="top" secondItem="qGN-p8-YIC" secondAttribute="bottom" constant="10" id="KSH-FE-tef"/>
+                                    <constraint firstAttribute="trailing" secondItem="B4o-Yz-91U" secondAttribute="trailing" constant="36" id="LIp-wf-ALj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yqx-iI-nJO" secondAttribute="trailing" constant="36" id="MBF-P8-Pz4"/>
+                                    <constraint firstItem="erH-G2-Mkd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uyF-PG-IXw" secondAttribute="trailing" constant="5" id="MR5-aZ-uKf"/>
+                                    <constraint firstItem="erH-G2-Mkd" firstAttribute="bottom" secondItem="uyF-PG-IXw" secondAttribute="bottom" id="Q8X-QM-rrN"/>
+                                    <constraint firstItem="B4o-Yz-91U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qGN-p8-YIC" secondAttribute="trailing" constant="5" id="Sqy-uT-Xim"/>
+                                    <constraint firstAttribute="bottom" secondItem="azT-xM-2V3" secondAttribute="bottom" constant="40" id="XTg-t7-Q4Y"/>
+                                    <constraint firstItem="uyF-PG-IXw" firstAttribute="leading" secondItem="qGN-p8-YIC" secondAttribute="leading" id="afm-Ph-kbQ"/>
+                                    <constraint firstItem="qGN-p8-YIC" firstAttribute="top" secondItem="OVd-tg-6ld" secondAttribute="top" constant="30" id="dlT-nW-r5H"/>
+                                    <constraint firstItem="B4o-Yz-91U" firstAttribute="bottom" secondItem="qGN-p8-YIC" secondAttribute="bottom" id="icb-GI-OZ8"/>
+                                    <constraint firstItem="qGN-p8-YIC" firstAttribute="leading" secondItem="OVd-tg-6ld" secondAttribute="leading" constant="36" id="pF6-z0-IxP"/>
+                                    <constraint firstItem="azT-xM-2V3" firstAttribute="leading" secondItem="OVd-tg-6ld" secondAttribute="leading" constant="36" id="rhS-kg-Jne"/>
+                                    <constraint firstItem="Yqx-iI-nJO" firstAttribute="leading" secondItem="azT-xM-2V3" secondAttribute="trailing" constant="5" id="yq8-eG-QtW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlR-Ls-JDD" userLabel="OrderByView">
+                                <rect key="frame" x="0.0" y="310" width="414" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validators" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqs-Pu-Cwd">
-                                        <rect key="frame" x="36" y="33.5" width="70" height="18"/>
+                                        <rect key="frame" x="36" y="33.5" width="66" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
@@ -66,7 +133,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order by: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adg-aq-1yq">
-                                        <rect key="frame" x="163.5" y="33.5" width="65.5" height="18"/>
+                                        <rect key="frame" x="162" y="33.5" width="67" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
@@ -86,12 +153,23 @@
                                     <constraint firstAttribute="trailing" secondItem="zjK-CK-t87" secondAttribute="trailing" constant="5" id="wlg-hi-DUu"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Tx-yF-pLY">
+                                <rect key="frame" x="0.0" y="375" width="414" height="487"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h10-eu-NMr" id="Tdb-Kt-ZDi"/>
+                                    <outlet property="delegate" destination="h10-eu-NMr" id="Sr2-HW-5EQ"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aNA-de-wvw"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
+                            <constraint firstItem="aNA-de-wvw" firstAttribute="trailing" secondItem="OVd-tg-6ld" secondAttribute="trailing" id="5pO-sE-K5J"/>
+                            <constraint firstItem="ZlR-Ls-JDD" firstAttribute="top" secondItem="OVd-tg-6ld" secondAttribute="bottom" id="6T0-dK-cgf"/>
                             <constraint firstItem="3Tx-yF-pLY" firstAttribute="top" secondItem="ZlR-Ls-JDD" secondAttribute="bottom" id="7KO-7C-eBd"/>
-                            <constraint firstItem="ZlR-Ls-JDD" firstAttribute="top" secondItem="24E-F7-XEx" secondAttribute="bottom" id="8OP-uS-LGa"/>
+                            <constraint firstItem="OVd-tg-6ld" firstAttribute="top" secondItem="24E-F7-XEx" secondAttribute="bottom" id="B5a-J4-HDp"/>
+                            <constraint firstItem="OVd-tg-6ld" firstAttribute="leading" secondItem="aNA-de-wvw" secondAttribute="leading" id="BVc-w2-bBi"/>
                             <constraint firstItem="aNA-de-wvw" firstAttribute="bottom" secondItem="3Tx-yF-pLY" secondAttribute="bottom" id="CkZ-aD-pZZ"/>
                             <constraint firstItem="24E-F7-XEx" firstAttribute="leading" secondItem="aNA-de-wvw" secondAttribute="leading" id="K3v-3j-boN"/>
                             <constraint firstItem="3Tx-yF-pLY" firstAttribute="leading" secondItem="aNA-de-wvw" secondAttribute="leading" id="Omb-m3-6dy"/>
@@ -105,9 +183,17 @@
                     <navigationItem key="navigationItem" id="TaS-Qs-vks"/>
                     <connections>
                         <outlet property="arrowImageView" destination="IAG-yW-IsJ" id="uVF-F4-OVe"/>
+                        <outlet property="claimButton" destination="azT-xM-2V3" id="erW-ri-XBC"/>
+                        <outlet property="delegatedLabel" destination="qGN-p8-YIC" id="PWs-5g-h23"/>
+                        <outlet property="delegatedValueLabel" destination="B4o-Yz-91U" id="z1m-xm-BqT"/>
+                        <outlet property="delegationView" destination="OVd-tg-6ld" id="7Vx-DM-zZn"/>
+                        <outlet property="delegationViewHeightContraint" destination="E2S-0z-G9T" id="hkd-38-bpG"/>
                         <outlet property="navigationView" destination="24E-F7-XEx" id="dUR-e8-m4l"/>
                         <outlet property="orderButton" destination="zjK-CK-t87" id="OTZ-pA-YM9"/>
                         <outlet property="orderByLabel" destination="Adg-aq-1yq" id="DZ6-Xz-dms"/>
+                        <outlet property="rewardsLabel" destination="uyF-PG-IXw" id="hcr-ne-a7e"/>
+                        <outlet property="rewardsValueLabel" destination="erH-G2-Mkd" id="MqL-Zs-C8z"/>
+                        <outlet property="summaryButton" destination="Yqx-iI-nJO" id="HQB-xe-md6"/>
                         <outlet property="tableView" destination="3Tx-yF-pLY" id="kNL-85-IBy"/>
                         <outlet property="validatorsLabel" destination="iqs-Pu-Cwd" id="DaM-PE-rkW"/>
                     </connections>
