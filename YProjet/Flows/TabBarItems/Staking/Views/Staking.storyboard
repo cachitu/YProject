@@ -1051,8 +1051,121 @@
             </objects>
             <point key="canvasLocation" x="4647.826086956522" y="87.723214285714278"/>
         </scene>
+        <!--Delegation Success View Controller-->
+        <scene sceneID="brk-ik-z4B">
+            <objects>
+                <viewController storyboardIdentifier="DelegationSuccessViewController" id="EZW-gI-KrJ" customClass="DelegationSuccessViewController" customModule="YProjet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fNY-dN-NuQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="toE-t2-YSR" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="718"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked-icon" translatesAutoresizingMaskIntoConstraints="NO" id="9g4-GB-XTl">
+                                        <rect key="frame" x="182" y="191" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1nL-Y2-46q"/>
+                                            <constraint firstAttribute="width" constant="50" id="KKL-Td-iTH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9V-KW-Sx2">
+                                        <rect key="frame" x="153.5" y="251" width="107" height="30"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
+                                        <color key="textColor" name="CustomGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aZx-Yo-vpL">
+                                        <rect key="frame" x="146.5" y="341" width="121.5" height="36"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You DELEGATED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOw-AQ-cnc">
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="18"/>
+                                                <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                                <color key="textColor" name="CustomBlue"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5000000 LUNA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLW-Xy-iF9">
+                                                <rect key="frame" x="0.0" y="18" width="121.5" height="18"/>
+                                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                                <color key="textColor" name="CustomBlue"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAr-TC-Ase">
+                                        <rect key="frame" x="200.5" y="407" width="13.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" name="CustomBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obase.vc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IO4-5M-kYD">
+                                        <rect key="frame" x="174.5" y="455" width="65" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" name="CustomBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9g4-GB-XTl" firstAttribute="centerX" secondItem="toE-t2-YSR" secondAttribute="centerX" id="66J-Fu-BRo"/>
+                                    <constraint firstItem="X9V-KW-Sx2" firstAttribute="centerX" secondItem="toE-t2-YSR" secondAttribute="centerX" id="6IZ-yO-hVy"/>
+                                    <constraint firstItem="aZx-Yo-vpL" firstAttribute="top" secondItem="X9V-KW-Sx2" secondAttribute="bottom" constant="60" id="9Xa-dl-vet"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aZx-Yo-vpL" secondAttribute="trailing" constant="10" id="B9m-SA-V9t"/>
+                                    <constraint firstItem="aZx-Yo-vpL" firstAttribute="centerY" secondItem="toE-t2-YSR" secondAttribute="centerY" id="Dbx-Ge-WGS"/>
+                                    <constraint firstItem="aZx-Yo-vpL" firstAttribute="centerX" secondItem="toE-t2-YSR" secondAttribute="centerX" id="Qgu-5L-CEO"/>
+                                    <constraint firstItem="zAr-TC-Ase" firstAttribute="top" secondItem="aZx-Yo-vpL" secondAttribute="bottom" constant="30" id="Roq-c4-EO7"/>
+                                    <constraint firstItem="X9V-KW-Sx2" firstAttribute="top" secondItem="9g4-GB-XTl" secondAttribute="bottom" constant="10" id="Zfq-w3-Tcd"/>
+                                    <constraint firstItem="IO4-5M-kYD" firstAttribute="centerX" secondItem="toE-t2-YSR" secondAttribute="centerX" id="ctK-dC-5qg"/>
+                                    <constraint firstItem="zAr-TC-Ase" firstAttribute="centerX" secondItem="toE-t2-YSR" secondAttribute="centerX" id="dNE-jE-XHv"/>
+                                    <constraint firstItem="IO4-5M-kYD" firstAttribute="top" secondItem="zAr-TC-Ase" secondAttribute="bottom" constant="30" id="e7c-Pj-jnx"/>
+                                    <constraint firstItem="aZx-Yo-vpL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="toE-t2-YSR" secondAttribute="leading" constant="10" id="nfs-fR-8if"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6et-ko-Zzr" customClass="CustomButton" customModule="YProjet" customModuleProvider="target">
+                                <rect key="frame" x="36" y="762" width="342" height="70"/>
+                                <color key="backgroundColor" name="CustomBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="cGa-zI-6ss"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                <state key="normal" title="Back to staking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToStakingAction:" destination="EZW-gI-KrJ" eventType="touchUpInside" id="I7X-pt-Mg2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bz3-Rv-w9m"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="bz3-Rv-w9m" firstAttribute="trailing" secondItem="6et-ko-Zzr" secondAttribute="trailing" constant="36" id="Dgb-FZ-KVd"/>
+                            <constraint firstItem="toE-t2-YSR" firstAttribute="trailing" secondItem="bz3-Rv-w9m" secondAttribute="trailing" id="iHf-KC-puI"/>
+                            <constraint firstItem="bz3-Rv-w9m" firstAttribute="bottom" secondItem="6et-ko-Zzr" secondAttribute="bottom" constant="30" id="kWs-TL-EoL"/>
+                            <constraint firstItem="6et-ko-Zzr" firstAttribute="leading" secondItem="bz3-Rv-w9m" secondAttribute="leading" constant="36" id="ldX-2z-5d2"/>
+                            <constraint firstItem="6et-ko-Zzr" firstAttribute="top" secondItem="toE-t2-YSR" secondAttribute="bottom" id="oJU-Sd-6FT"/>
+                            <constraint firstItem="toE-t2-YSR" firstAttribute="leading" secondItem="bz3-Rv-w9m" secondAttribute="leading" id="ofP-qY-0aD"/>
+                            <constraint firstItem="toE-t2-YSR" firstAttribute="top" secondItem="bz3-Rv-w9m" secondAttribute="top" id="tJ0-xO-Qqg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ygC-ne-Wrq"/>
+                    <connections>
+                        <outlet property="backToStakingButton" destination="6et-ko-Zzr" id="PSy-WM-5eK"/>
+                        <outlet property="delegateLabel" destination="LOw-AQ-cnc" id="6s3-YA-mPE"/>
+                        <outlet property="delegationAmountLabel" destination="WLW-Xy-iF9" id="sTA-OL-Mo1"/>
+                        <outlet property="successLabel" destination="X9V-KW-Sx2" id="Rfd-nO-rPh"/>
+                        <outlet property="toLabel" destination="zAr-TC-Ase" id="yLt-PB-C5l"/>
+                        <outlet property="validatorNameLabel" destination="IO4-5M-kYD" id="R0x-qn-08d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xza-jx-E61" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5362.3188405797109" y="88.392857142857139"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="checked-icon" width="50" height="50"/>
         <image name="down-arrow" width="11" height="6.5"/>
         <image name="faceid" width="45" height="45"/>
         <image name="validator-icon" width="14" height="15"/>

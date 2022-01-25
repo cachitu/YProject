@@ -22,8 +22,8 @@ class InputPasswordViewController: BaseViewController, BindableType, StoryboardI
     }
 
     @IBAction func delegateAction(_ sender: UIButton) {
-        // TODO: API request
-        viewModel.popToRoot(animated: true)
+        // TODO: API request and then
+        viewModel.showDelegationSuccess()
     }
 
     override func viewWillAppear(_ animated: Bool) {

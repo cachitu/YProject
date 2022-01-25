@@ -44,7 +44,11 @@ extension StakingCoordinator: StakingCoordinatorProtocol {
         transition(to: .confirmDelegation(StakingViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
     }
 
-    func delegate() {
-        transition(to: .delegate(StakingViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
+    func passwordToDelegate() {
+        transition(to: .passwordToDelegate(StakingViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
+    }
+
+    func showDelegationSuccess() {
+        transition(to: .showDelegationSuccess(StakingViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
     }
 }

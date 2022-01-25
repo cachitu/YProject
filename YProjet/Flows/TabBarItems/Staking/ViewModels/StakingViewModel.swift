@@ -13,7 +13,8 @@ protocol StakingCoordinatorProtocol: Coordinator {
     func showValidatorDetails()
     func startDelegateFlow()
     func confirmDelegation()
-    func delegate()
+    func passwordToDelegate()
+    func showDelegationSuccess()
 }
 
 class StakingViewModel: BaseViewModel, CoordinableViewModel  {
@@ -57,6 +58,10 @@ extension StakingViewModel {
     }
 
     func delegate() {
-        coordinator?.delegate()
+        coordinator?.passwordToDelegate()
+    }
+
+    func showDelegationSuccess() {
+        coordinator?.showDelegationSuccess()
     }
 }

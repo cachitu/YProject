@@ -61,6 +61,7 @@
 		8D3DD36A2651789300C68655 /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DD3692651789300C68655 /* NavigationView.xib */; };
 		8D3DD36D2651789F00C68655 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DD36C2651789F00C68655 /* NavigationView.swift */; };
 		8D3DD37026517BCD00C68655 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DD36F26517BCD00C68655 /* UIView+extension.swift */; };
+		8D4C07BC27A0A6670097ED93 /* DelegationSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C07BB27A0A6670097ED93 /* DelegationSuccessViewController.swift */; };
 		8D84B0DA2652FDCE009F461C /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84B0D92652FDCE009F461C /* ReusableCell.swift */; };
 		8D84B0DD265300B5009F461C /* SettingsChangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84B0DC265300B5009F461C /* SettingsChangeTableViewCell.swift */; };
 		8D84B0E026530229009F461C /* UITableView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84B0DF26530229009F461C /* UITableView+extensions.swift */; };
@@ -170,6 +171,7 @@
 		8D3DD3692651789300C68655 /* NavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationView.xib; sourceTree = "<group>"; };
 		8D3DD36C2651789F00C68655 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		8D3DD36F26517BCD00C68655 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		8D4C07BB27A0A6670097ED93 /* DelegationSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationSuccessViewController.swift; sourceTree = "<group>"; };
 		8D84B0D92652FDCE009F461C /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		8D84B0DC265300B5009F461C /* SettingsChangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsChangeTableViewCell.swift; sourceTree = "<group>"; };
 		8D84B0DF26530229009F461C /* UITableView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extensions.swift"; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 				8DB3CDC627A0524C00741077 /* DelegateViewController.swift */,
 				8DB3CDC827A05A9B00741077 /* ConfirmDelegationViewController.swift */,
 				8DB3CDCA27A06BFB00741077 /* InputPasswordViewController.swift */,
+				8D4C07BB27A0A6670097ED93 /* DelegationSuccessViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1053,6 +1056,7 @@
 				8D19BF80265BCC05009805F5 /* WalletTableViewCell.swift in Sources */,
 				8D225A96263D557F0050B329 /* CreateWalletCoordinator.swift in Sources */,
 				8DB3CDBA27A0208D00741077 /* StakingDelegateTableViewCell.swift in Sources */,
+				8D4C07BC27A0A6670097ED93 /* DelegationSuccessViewController.swift in Sources */,
 				8D225A86263D52CA0050B329 /* StoryboardIdentifiable.swift in Sources */,
 				8D9C123B265E45EB000F08DC /* StakingTableViewCell.swift in Sources */,
 				8D225AE2263D65210050B329 /* UINavigationController+extension.swift in Sources */,
