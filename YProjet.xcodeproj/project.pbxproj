@@ -76,6 +76,7 @@
 		8DB3CDC527A0350800741077 /* ValidatorDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3CDC427A0350800741077 /* ValidatorDetailsTableViewCell.swift */; };
 		8DB3CDC727A0524C00741077 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3CDC627A0524C00741077 /* DelegateViewController.swift */; };
 		8DB3CDC927A05A9B00741077 /* ConfirmDelegationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3CDC827A05A9B00741077 /* ConfirmDelegationViewController.swift */; };
+		8DB3CDCB27A06BFB00741077 /* InputPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3CDCA27A06BFB00741077 /* InputPasswordViewController.swift */; };
 		8DBB2009264DA8D30083614F /* NewWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */; };
 		8DBB200D264DA96E0083614F /* NewWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */; };
 		8DD0F2642657DC20002B02A8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD0F2632657DC20002B02A8 /* Home.storyboard */; };
@@ -184,6 +185,7 @@
 		8DB3CDC427A0350800741077 /* ValidatorDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		8DB3CDC627A0524C00741077 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
 		8DB3CDC827A05A9B00741077 /* ConfirmDelegationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDelegationViewController.swift; sourceTree = "<group>"; };
+		8DB3CDCA27A06BFB00741077 /* InputPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordViewController.swift; sourceTree = "<group>"; };
 		8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletCoordinator.swift; sourceTree = "<group>"; };
 		8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletViewModel.swift; sourceTree = "<group>"; };
 		8DD0F2632657DC20002B02A8 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 				8D9C123D265E5DE8000F08DC /* ValidatorDetailsViewController.swift */,
 				8DB3CDC627A0524C00741077 /* DelegateViewController.swift */,
 				8DB3CDC827A05A9B00741077 /* ConfirmDelegationViewController.swift */,
+				8DB3CDCA27A06BFB00741077 /* InputPasswordViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1036,6 +1039,7 @@
 				8D225AD3263D60790050B329 /* BindableType.swift in Sources */,
 				8D225A74263D50AF0050B329 /* TransitionType.swift in Sources */,
 				8D09E3F4264FCF0500B8C839 /* CustomButton.swift in Sources */,
+				8DB3CDCB27A06BFB00741077 /* InputPasswordViewController.swift in Sources */,
 				EE11BFCA261E0382005E724D /* CreateWalletViewController.swift in Sources */,
 				8D03D3CE265CE5AC00421D8A /* StakingViewModel.swift in Sources */,
 				8DB3CDB827A0150900741077 /* StakingSummaryViewController.swift in Sources */,

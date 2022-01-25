@@ -11,8 +11,9 @@ protocol StakingCoordinatorProtocol: Coordinator {
     func claimRewards()
     func showSummary()
     func showValidatorDetails()
-    func delegate()
+    func startDelegateFlow()
     func confirmDelegation()
+    func delegate()
 }
 
 class StakingViewModel: BaseViewModel, CoordinableViewModel  {
@@ -26,6 +27,10 @@ class StakingViewModel: BaseViewModel, CoordinableViewModel  {
 
     func pop(animated: Bool) {
         coordinator?.pop(animated: animated, completion: nil)
+    }
+
+    func popToRoot(animated: Bool) {
+        coordinator?.popToRoot(animated: animated, completion: nil)
     }
 }
 
@@ -43,11 +48,15 @@ extension StakingViewModel {
         coordinator?.showValidatorDetails()
     }
 
-    func delegate() {
-        coordinator?.delegate()
+    func startDelegateFlow() {
+        coordinator?.startDelegateFlow()
     }
 
     func confirmDelegation() {
         coordinator?.confirmDelegation()
+    }
+
+    func delegate() {
+        coordinator?.delegate()
     }
 }

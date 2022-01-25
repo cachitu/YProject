@@ -33,8 +33,9 @@ enum Scene {
     case staking(StakingViewModel)
     case stakingSummary(StakingViewModel)
     case showValidatorDetails(StakingViewModel)
-    case delegate(StakingViewModel)
+    case startDelegateFlow(StakingViewModel)
     case confirmDelegation(StakingViewModel)
+    case delegate(StakingViewModel)
 
     // Gov
     case gov(GovViewModel)
@@ -80,10 +81,12 @@ extension Scene {
             return instantiateViewController(with: StakingSummaryViewController.self, from: .staking, bindWith: viewModel)
         case let .showValidatorDetails(viewModel):
             return instantiateViewController(with: ValidatorDetailsViewController.self, from: .staking, bindWith: viewModel)
-        case let .delegate(viewModel):
+        case let .startDelegateFlow(viewModel):
             return instantiateViewController(with: DelegateViewController.self, from: .staking, bindWith: viewModel)
         case let .confirmDelegation(viewModel):
             return instantiateViewController(with: ConfirmDelegationViewController.self, from: .staking, bindWith: viewModel)
+        case let .delegate(viewModel):
+            return instantiateViewController(with: InputPasswordViewController.self, from: .staking, bindWith: viewModel)
 
         // Governance
         case let .gov(viewModel):

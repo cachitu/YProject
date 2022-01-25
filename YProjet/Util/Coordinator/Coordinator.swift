@@ -95,6 +95,18 @@ class Coordinator {
         }
     }
 
+    func popToRoot(animated: Bool, completion: (() -> Void)?) {
+
+        if currentViewController?.presentingViewController != nil {
+            currentViewController?.dismiss(animated: animated, completion: completion)
+
+        } else if let navigationController = currentViewController?.navigationController {
+            navigationController.popToRootViewController(animated: animated)
+        } else {
+            print("Not a modal, no navigation controller: can't navigate back from \(String(describing: currentViewController))")
+        }
+    }
+
     func flowFinished() {
         assertionFailure("Flow finished not implemented")
     }

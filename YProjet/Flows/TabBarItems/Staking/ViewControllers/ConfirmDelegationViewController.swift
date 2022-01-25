@@ -21,7 +21,7 @@ class ConfirmDelegationViewController: BaseViewController, BindableType, Storybo
     @IBOutlet weak var feeSelectionButton: UIButton! // TODO: highlighted style
     
     @IBAction func nextAction(_ sender: UIButton) {
-
+        viewModel.delegate()
     }
 
     @IBAction func selectAction(_ sender: UIButton) {
