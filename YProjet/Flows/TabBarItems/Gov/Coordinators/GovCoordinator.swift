@@ -23,5 +23,7 @@ class GovCoordinator: Coordinator {
 }
 
 extension GovCoordinator: GovCoordinatorProtocol {
-
+    func showDetails() {
+        transition(to: .govDetails(GovViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
+    }
 }

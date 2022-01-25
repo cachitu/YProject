@@ -21,6 +21,10 @@ class HomeViewModel: BaseViewModel, CoordinableViewModel  {
         super.init()
 
     }
+
+    func pop(animated: Bool) {
+        coordinator?.pop(animated: animated, completion: nil)
+    }
 }
 
 // Navigation

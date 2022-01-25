@@ -24,4 +24,15 @@ class StakingCoordinator: Coordinator {
 
 extension StakingCoordinator: StakingCoordinatorProtocol {
 
+    func claimRewards() {
+        //        transition(to: .watchWallet(CreateWalletViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
+    }
+
+    func showSummary() {
+        transition(to: .stakingSummary(StakingViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
+    }
+
+    func showValidatorDetails() {
+//        transition(to: .watchWallet(CreateWalletViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
+    }
 }

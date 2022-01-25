@@ -28,6 +28,10 @@ enum Images {
     enum WalletTypes: String, ImageAsset {
         case cosmos = "cosmos"
     }
+
+    enum Arrows: String, ImageAsset {
+        case down = "down-arrow"
+    }
 }
 
 protocol ImageAsset {
@@ -37,6 +41,16 @@ protocol ImageAsset {
 extension ImageAsset where Self: RawRepresentable {
     var image: UIImage? {
         return (rawValue as? String).flatMap { UIImage(named: $0) }
+    }
+}
+
+extension UIImage {
+    var rotated: UIImage? {
+        guard let cgImage = self.cgImage else {
+            print("Error rotating image")
+            return self
+        }
+        return UIImage(cgImage: cgImage, scale: 1.0, orientation: .down)
     }
 }
 

@@ -22,10 +22,10 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-    <key>NSUserActivityTypes</key>
-    <array>
-        <string>com.softvision.gmeofpods.mainSceneActivity</string>
-    </array>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>com.softvision.gmeofpods.mainSceneActivity</string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Aeonik-Regular.otf</string>
@@ -65,8 +65,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

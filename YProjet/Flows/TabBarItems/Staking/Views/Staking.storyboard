@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Bold.otf">
+            <string>Aeonik-Bold</string>
+        </array>
+        <array key="Aeonik-Regular.otf">
+            <string>Aeonik-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Staking View Controller-->
         <scene sceneID="LyX-PH-Ipe">
@@ -23,31 +32,336 @@
                                     <constraint firstAttribute="height" constant="120" id="717-dN-5cK"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVd-tg-6ld" userLabel="DelegationView">
+                                <rect key="frame" x="0.0" y="120" width="414" height="190"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5000000 LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4o-Yz-91U">
+                                        <rect key="frame" x="261" y="30" width="117" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000005 LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erH-G2-Mkd">
+                                        <rect key="frame" x="261" y="58" width="117" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azT-xM-2V3" customClass="CustomButton" customModule="YProjet" customModuleProvider="target">
+                                        <rect key="frame" x="36" y="100" width="168.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hzu-dO-o60"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <state key="normal" title="Claim rewards">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="claimAction:" destination="h10-eu-NMr" eventType="touchUpInside" id="Ck8-eF-xE2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-iI-nJO" customClass="CustomButton" customModule="YProjet" customModuleProvider="target">
+                                        <rect key="frame" x="209.5" y="100" width="168.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="F4S-rc-qVx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <state key="normal" title="Summary">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="summaryAction:" destination="h10-eu-NMr" eventType="touchUpInside" id="1h8-1Y-UmF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGN-p8-YIC">
+                                        <rect key="frame" x="36" y="30" width="72.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyF-PG-IXw">
+                                        <rect key="frame" x="36" y="58" width="61" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="CustomBlue"/>
+                                <constraints>
+                                    <constraint firstItem="erH-G2-Mkd" firstAttribute="trailing" secondItem="B4o-Yz-91U" secondAttribute="trailing" id="5rA-95-GxB"/>
+                                    <constraint firstItem="azT-xM-2V3" firstAttribute="width" secondItem="Yqx-iI-nJO" secondAttribute="width" id="BoV-5a-tM7"/>
+                                    <constraint firstAttribute="height" constant="190" id="E2S-0z-G9T"/>
+                                    <constraint firstItem="Yqx-iI-nJO" firstAttribute="bottom" secondItem="azT-xM-2V3" secondAttribute="bottom" id="J63-ed-ckq"/>
+                                    <constraint firstItem="uyF-PG-IXw" firstAttribute="top" secondItem="qGN-p8-YIC" secondAttribute="bottom" constant="10" id="KSH-FE-tef"/>
+                                    <constraint firstAttribute="trailing" secondItem="B4o-Yz-91U" secondAttribute="trailing" constant="36" id="LIp-wf-ALj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yqx-iI-nJO" secondAttribute="trailing" constant="36" id="MBF-P8-Pz4"/>
+                                    <constraint firstItem="erH-G2-Mkd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uyF-PG-IXw" secondAttribute="trailing" constant="5" id="MR5-aZ-uKf"/>
+                                    <constraint firstItem="erH-G2-Mkd" firstAttribute="bottom" secondItem="uyF-PG-IXw" secondAttribute="bottom" id="Q8X-QM-rrN"/>
+                                    <constraint firstItem="B4o-Yz-91U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qGN-p8-YIC" secondAttribute="trailing" constant="5" id="Sqy-uT-Xim"/>
+                                    <constraint firstAttribute="bottom" secondItem="azT-xM-2V3" secondAttribute="bottom" constant="40" id="XTg-t7-Q4Y"/>
+                                    <constraint firstItem="uyF-PG-IXw" firstAttribute="leading" secondItem="qGN-p8-YIC" secondAttribute="leading" id="afm-Ph-kbQ"/>
+                                    <constraint firstItem="qGN-p8-YIC" firstAttribute="top" secondItem="OVd-tg-6ld" secondAttribute="top" constant="30" id="dlT-nW-r5H"/>
+                                    <constraint firstItem="B4o-Yz-91U" firstAttribute="bottom" secondItem="qGN-p8-YIC" secondAttribute="bottom" id="icb-GI-OZ8"/>
+                                    <constraint firstItem="qGN-p8-YIC" firstAttribute="leading" secondItem="OVd-tg-6ld" secondAttribute="leading" constant="36" id="pF6-z0-IxP"/>
+                                    <constraint firstItem="azT-xM-2V3" firstAttribute="leading" secondItem="OVd-tg-6ld" secondAttribute="leading" constant="36" id="rhS-kg-Jne"/>
+                                    <constraint firstItem="Yqx-iI-nJO" firstAttribute="leading" secondItem="azT-xM-2V3" secondAttribute="trailing" constant="5" id="yq8-eG-QtW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlR-Ls-JDD" userLabel="OrderByView">
+                                <rect key="frame" x="0.0" y="310" width="414" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validators" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqs-Pu-Cwd">
+                                        <rect key="frame" x="36" y="33.5" width="70" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" name="CustomBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="500" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjK-CK-t87">
+                                        <rect key="frame" x="231" y="27.5" width="178" height="30"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <state key="normal" title="Delegation return               ">
+                                            <color key="titleColor" name="CustomBlue"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="orderAction:" destination="h10-eu-NMr" eventType="touchUpInside" id="uey-kj-Zpb"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="IAG-yW-IsJ">
+                                        <rect key="frame" x="363" y="36.5" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="3YP-PN-upL"/>
+                                            <constraint firstAttribute="width" constant="15" id="fHR-li-4d7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order by: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adg-aq-1yq">
+                                        <rect key="frame" x="163.5" y="33.5" width="65.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" name="CustomBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Adg-aq-1yq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iqs-Pu-Cwd" secondAttribute="trailing" constant="5" id="Gzs-Hj-0Dt"/>
+                                    <constraint firstItem="zjK-CK-t87" firstAttribute="bottom" secondItem="iqs-Pu-Cwd" secondAttribute="bottom" constant="6" id="NI3-w0-iKc"/>
+                                    <constraint firstItem="IAG-yW-IsJ" firstAttribute="bottom" secondItem="iqs-Pu-Cwd" secondAttribute="bottom" id="NbR-44-htF"/>
+                                    <constraint firstAttribute="trailing" secondItem="IAG-yW-IsJ" secondAttribute="trailing" constant="36" id="PLu-Qb-2Cz"/>
+                                    <constraint firstItem="iqs-Pu-Cwd" firstAttribute="centerY" secondItem="ZlR-Ls-JDD" secondAttribute="centerY" constant="10" id="fps-nd-hFc"/>
+                                    <constraint firstItem="zjK-CK-t87" firstAttribute="leading" secondItem="Adg-aq-1yq" secondAttribute="trailing" constant="2" id="hen-fp-iZW"/>
+                                    <constraint firstItem="Adg-aq-1yq" firstAttribute="bottom" secondItem="iqs-Pu-Cwd" secondAttribute="bottom" id="m5L-dU-YQf"/>
+                                    <constraint firstItem="iqs-Pu-Cwd" firstAttribute="leading" secondItem="ZlR-Ls-JDD" secondAttribute="leading" constant="36" id="qCg-49-GfC"/>
+                                    <constraint firstAttribute="height" constant="65" id="uaV-RC-cQD"/>
+                                    <constraint firstAttribute="trailing" secondItem="zjK-CK-t87" secondAttribute="trailing" constant="5" id="wlg-hi-DUu"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Tx-yF-pLY">
+                                <rect key="frame" x="0.0" y="375" width="414" height="487"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h10-eu-NMr" id="Tdb-Kt-ZDi"/>
+                                    <outlet property="delegate" destination="h10-eu-NMr" id="Sr2-HW-5EQ"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aNA-de-wvw"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
+                            <constraint firstItem="aNA-de-wvw" firstAttribute="trailing" secondItem="OVd-tg-6ld" secondAttribute="trailing" id="5pO-sE-K5J"/>
+                            <constraint firstItem="ZlR-Ls-JDD" firstAttribute="top" secondItem="OVd-tg-6ld" secondAttribute="bottom" id="6T0-dK-cgf"/>
+                            <constraint firstItem="3Tx-yF-pLY" firstAttribute="top" secondItem="ZlR-Ls-JDD" secondAttribute="bottom" id="7KO-7C-eBd"/>
+                            <constraint firstItem="OVd-tg-6ld" firstAttribute="top" secondItem="24E-F7-XEx" secondAttribute="bottom" id="B5a-J4-HDp"/>
+                            <constraint firstItem="OVd-tg-6ld" firstAttribute="leading" secondItem="aNA-de-wvw" secondAttribute="leading" id="BVc-w2-bBi"/>
+                            <constraint firstItem="aNA-de-wvw" firstAttribute="bottom" secondItem="3Tx-yF-pLY" secondAttribute="bottom" id="CkZ-aD-pZZ"/>
                             <constraint firstItem="24E-F7-XEx" firstAttribute="leading" secondItem="aNA-de-wvw" secondAttribute="leading" id="K3v-3j-boN"/>
+                            <constraint firstItem="3Tx-yF-pLY" firstAttribute="leading" secondItem="aNA-de-wvw" secondAttribute="leading" id="Omb-m3-6dy"/>
+                            <constraint firstItem="aNA-de-wvw" firstAttribute="trailing" secondItem="ZlR-Ls-JDD" secondAttribute="trailing" id="otp-jk-hDV"/>
+                            <constraint firstItem="aNA-de-wvw" firstAttribute="trailing" secondItem="3Tx-yF-pLY" secondAttribute="trailing" id="rwF-Bp-xA7"/>
                             <constraint firstItem="24E-F7-XEx" firstAttribute="top" secondItem="Fik-lK-a4Y" secondAttribute="top" id="wdz-yd-Zuj"/>
+                            <constraint firstItem="ZlR-Ls-JDD" firstAttribute="leading" secondItem="aNA-de-wvw" secondAttribute="leading" id="wme-Kl-9O4"/>
                             <constraint firstItem="aNA-de-wvw" firstAttribute="trailing" secondItem="24E-F7-XEx" secondAttribute="trailing" id="wtd-b6-xb2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TaS-Qs-vks"/>
                     <connections>
+                        <outlet property="arrowImageView" destination="IAG-yW-IsJ" id="uVF-F4-OVe"/>
+                        <outlet property="claimButton" destination="azT-xM-2V3" id="erW-ri-XBC"/>
+                        <outlet property="delegatedLabel" destination="qGN-p8-YIC" id="PWs-5g-h23"/>
+                        <outlet property="delegatedValueLabel" destination="B4o-Yz-91U" id="z1m-xm-BqT"/>
+                        <outlet property="delegationView" destination="OVd-tg-6ld" id="7Vx-DM-zZn"/>
+                        <outlet property="delegationViewHeightContraint" destination="E2S-0z-G9T" id="hkd-38-bpG"/>
                         <outlet property="navigationView" destination="24E-F7-XEx" id="dUR-e8-m4l"/>
+                        <outlet property="orderButton" destination="zjK-CK-t87" id="OTZ-pA-YM9"/>
+                        <outlet property="orderByLabel" destination="Adg-aq-1yq" id="DZ6-Xz-dms"/>
+                        <outlet property="rewardsLabel" destination="uyF-PG-IXw" id="hcr-ne-a7e"/>
+                        <outlet property="rewardsValueLabel" destination="erH-G2-Mkd" id="MqL-Zs-C8z"/>
+                        <outlet property="summaryButton" destination="Yqx-iI-nJO" id="HQB-xe-md6"/>
+                        <outlet property="tableView" destination="3Tx-yF-pLY" id="kNL-85-IBy"/>
+                        <outlet property="validatorsLabel" destination="iqs-Pu-Cwd" id="DaM-PE-rkW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qe1-8W-jPS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="923.1884057971015" y="88.392857142857139"/>
         </scene>
+        <!--Staking Summary View Controller-->
+        <scene sceneID="7wX-Wk-Bw9">
+            <objects>
+                <viewController storyboardIdentifier="StakingSummaryViewController" id="28G-rk-XjP" customClass="StakingSummaryViewController" customModule="YProjet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vgP-Ds-2aJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZ0-Ks-28K" customClass="NavigationView" customModule="YProjet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                <color key="backgroundColor" name="TopBarBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="11O-PV-wYM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXF-mj-Lqf" userLabel="DelegationView">
+                                <rect key="frame" x="0.0" y="120" width="414" height="105"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5000000 LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9I-xK-fXp">
+                                        <rect key="frame" x="261" y="30" width="117" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000005 LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjc-YH-JaH">
+                                        <rect key="frame" x="261" y="58" width="117" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0Q-XL-0ge">
+                                        <rect key="frame" x="36" y="30" width="72.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBp-6u-Hl6">
+                                        <rect key="frame" x="36" y="58" width="61" height="18"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="CustomBlue"/>
+                                <constraints>
+                                    <constraint firstItem="RBp-6u-Hl6" firstAttribute="leading" secondItem="d0Q-XL-0ge" secondAttribute="leading" id="34G-iV-gK0"/>
+                                    <constraint firstItem="B9I-xK-fXp" firstAttribute="bottom" secondItem="d0Q-XL-0ge" secondAttribute="bottom" id="8df-cv-p3P"/>
+                                    <constraint firstItem="Rjc-YH-JaH" firstAttribute="bottom" secondItem="RBp-6u-Hl6" secondAttribute="bottom" id="ASl-7p-agG"/>
+                                    <constraint firstItem="d0Q-XL-0ge" firstAttribute="leading" secondItem="GXF-mj-Lqf" secondAttribute="leading" constant="36" id="M00-0j-sSS"/>
+                                    <constraint firstItem="RBp-6u-Hl6" firstAttribute="top" secondItem="d0Q-XL-0ge" secondAttribute="bottom" constant="10" id="PUo-W1-yEG"/>
+                                    <constraint firstAttribute="height" constant="105" id="Wx2-ef-ULh"/>
+                                    <constraint firstItem="d0Q-XL-0ge" firstAttribute="top" secondItem="GXF-mj-Lqf" secondAttribute="top" constant="30" id="aPL-Tk-ckF"/>
+                                    <constraint firstItem="Rjc-YH-JaH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RBp-6u-Hl6" secondAttribute="trailing" constant="5" id="fsj-FO-OHZ"/>
+                                    <constraint firstItem="B9I-xK-fXp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d0Q-XL-0ge" secondAttribute="trailing" constant="5" id="jmK-qD-CwB"/>
+                                    <constraint firstAttribute="trailing" secondItem="B9I-xK-fXp" secondAttribute="trailing" constant="36" id="q3p-eu-czA"/>
+                                    <constraint firstItem="Rjc-YH-JaH" firstAttribute="trailing" secondItem="B9I-xK-fXp" secondAttribute="trailing" id="wm6-vv-AZJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISq-Tu-qFi" customClass="CustomButton" customModule="YProjet" customModuleProvider="target">
+                                <rect key="frame" x="36" y="762" width="342" height="70"/>
+                                <color key="backgroundColor" name="CustomBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6gA-9D-zuG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                <state key="normal" title="Claim rewards">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8gf-Lo-c0X">
+                                <rect key="frame" x="0.0" y="255" width="414" height="487"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DelegationHeaderCell" rowHeight="70" id="JB3-Pr-KLF">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JB3-Pr-KLF" id="993-dv-N2N">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegated to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWM-Ei-Vrp">
+                                                    <rect key="frame" x="36" y="26" width="90" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                                    <color key="textColor" name="CustomBlue"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AR8-Hb-Adq" userLabel="SeparatorView">
+                                                    <rect key="frame" x="36" y="64" width="342" height="1"/>
+                                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="H5E-ho-dFh"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pWM-Ei-Vrp" firstAttribute="leading" secondItem="993-dv-N2N" secondAttribute="leading" constant="36" id="LPd-zP-AzF"/>
+                                                <constraint firstItem="AR8-Hb-Adq" firstAttribute="leading" secondItem="993-dv-N2N" secondAttribute="leading" constant="36" id="jeO-ZT-qt6"/>
+                                                <constraint firstItem="pWM-Ei-Vrp" firstAttribute="centerY" secondItem="993-dv-N2N" secondAttribute="centerY" id="o3K-ZM-FwO"/>
+                                                <constraint firstAttribute="trailing" secondItem="AR8-Hb-Adq" secondAttribute="trailing" constant="36" id="oXv-cr-Mfk"/>
+                                                <constraint firstItem="AR8-Hb-Adq" firstAttribute="top" secondItem="pWM-Ei-Vrp" secondAttribute="bottom" constant="20" id="y9v-4C-Nd4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="28G-rk-XjP" id="tHj-Ca-eat"/>
+                                    <outlet property="delegate" destination="28G-rk-XjP" id="oHK-k6-Egg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hJj-O7-x43"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="8gf-Lo-c0X" firstAttribute="leading" secondItem="hJj-O7-x43" secondAttribute="leading" id="6us-Pd-uch"/>
+                            <constraint firstItem="hJj-O7-x43" firstAttribute="trailing" secondItem="ISq-Tu-qFi" secondAttribute="trailing" constant="36" id="8rb-WB-PTj"/>
+                            <constraint firstItem="8gf-Lo-c0X" firstAttribute="top" secondItem="GXF-mj-Lqf" secondAttribute="bottom" constant="30" id="9Mo-6K-k3K"/>
+                            <constraint firstItem="hJj-O7-x43" firstAttribute="bottom" secondItem="ISq-Tu-qFi" secondAttribute="bottom" constant="30" id="D7M-l1-0Os"/>
+                            <constraint firstItem="wZ0-Ks-28K" firstAttribute="leading" secondItem="hJj-O7-x43" secondAttribute="leading" id="O2H-fS-jSk"/>
+                            <constraint firstItem="hJj-O7-x43" firstAttribute="trailing" secondItem="wZ0-Ks-28K" secondAttribute="trailing" id="PIh-Xa-8Zo"/>
+                            <constraint firstItem="hJj-O7-x43" firstAttribute="trailing" secondItem="GXF-mj-Lqf" secondAttribute="trailing" id="PgA-CQ-4G3"/>
+                            <constraint firstItem="ISq-Tu-qFi" firstAttribute="top" secondItem="8gf-Lo-c0X" secondAttribute="bottom" constant="20" id="R52-5s-O1p"/>
+                            <constraint firstItem="wZ0-Ks-28K" firstAttribute="top" secondItem="vgP-Ds-2aJ" secondAttribute="top" id="S0j-A1-BQe"/>
+                            <constraint firstItem="GXF-mj-Lqf" firstAttribute="top" secondItem="wZ0-Ks-28K" secondAttribute="bottom" id="eEV-vZ-Whi"/>
+                            <constraint firstItem="ISq-Tu-qFi" firstAttribute="leading" secondItem="hJj-O7-x43" secondAttribute="leading" constant="36" id="gf1-9e-U8l"/>
+                            <constraint firstItem="hJj-O7-x43" firstAttribute="trailing" secondItem="8gf-Lo-c0X" secondAttribute="trailing" id="jQt-ZV-Zjq"/>
+                            <constraint firstItem="GXF-mj-Lqf" firstAttribute="leading" secondItem="hJj-O7-x43" secondAttribute="leading" id="kwz-L2-1HG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9pW-U3-vR1"/>
+                    <connections>
+                        <outlet property="delegatedLabel" destination="d0Q-XL-0ge" id="LSM-8A-IL8"/>
+                        <outlet property="delegatedValueLabel" destination="B9I-xK-fXp" id="LOd-xL-ekh"/>
+                        <outlet property="delegationView" destination="GXF-mj-Lqf" id="f9K-Zg-TgF"/>
+                        <outlet property="delegationViewHeightContraint" destination="Wx2-ef-ULh" id="AOt-47-dUW"/>
+                        <outlet property="navigationView" destination="wZ0-Ks-28K" id="5sl-Cm-0cZ"/>
+                        <outlet property="rewardsLabel" destination="RBp-6u-Hl6" id="2aD-nf-Svi"/>
+                        <outlet property="rewardsValueLabel" destination="Rjc-YH-JaH" id="fad-Yg-m0z"/>
+                        <outlet property="tableView" destination="8gf-Lo-c0X" id="8Qv-Lu-Nnt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vqo-Mw-Tmw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="87.723214285714278"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="down-arrow" width="11" height="6.5"/>
         <namedColor name="Background">
             <color red="0.93300002813339233" green="0.94499999284744263" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomBlue">
+            <color red="0.14900000393390656" green="0.078000001609325409" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TopBarBlue">
             <color red="0.14900000393390656" green="0.078000001609325409" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

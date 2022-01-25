@@ -16,6 +16,10 @@ extension UIColor {
         return color
     }
 
+    class var background: UIColor {
+        return color(with: "Background")
+    }
+
     class var customGreen: UIColor {
         return color(with: "CustomGreen")
     }
@@ -26,5 +30,9 @@ extension UIColor {
 
     class var customRed: UIColor {
         return color(with: "CustomRed")
+    }
+
+    class var lightLilac: UIColor {
+        return color(with: "LightLilac")
     }
 }

@@ -11,8 +11,9 @@ class CustomButton: UIButton {
 
     enum Style {
         case generic(fillColor: UIColor? = .systemBlue, textColor: UIColor? = .white)
-        //case cancel
         case delete
+        case bordered(fillColor: UIColor? = .clear, textColor: UIColor? = .white, borderColor: UIColor? = .white)
+        case withOpacity(alpha: CGFloat? = 0.2)
     }
 
     var style: Style = .generic() {
@@ -41,6 +42,15 @@ class CustomButton: UIButton {
             setTitleColor(.customRed, for: .normal)
             layer.borderColor = UIColor.customRed.cgColor
             layer.borderWidth = 2.0
+
+        case let .bordered(fillColor, textColor, borderColor):
+            backgroundColor = fillColor
+            setTitleColor(textColor, for: .normal)
+            layer.borderColor = borderColor?.cgColor
+            layer.borderWidth = 2.0
+
+        case let .withOpacity(alpha):
+            backgroundColor = UIColor.white.withAlphaComponent(alpha ?? 0.2)
         }
     }
 
