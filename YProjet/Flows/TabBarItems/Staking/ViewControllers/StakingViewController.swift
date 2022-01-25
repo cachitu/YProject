@@ -28,6 +28,7 @@ class StakingViewController: BaseViewController, BindableType, StoryboardIdentif
     }
 
     @IBAction func summaryAction(_ sender: Any) {
+        viewModel.showSummary()
     }
 
     // Order By View Outlets
@@ -35,6 +36,7 @@ class StakingViewController: BaseViewController, BindableType, StoryboardIdentif
     @IBOutlet weak var orderByLabel: UILabel!
     @IBOutlet weak var orderButton: UIButton!
     @IBOutlet weak var arrowImageView: UIImageView!
+    
     @IBAction func orderAction(_ sender: UIButton) {
 
     }

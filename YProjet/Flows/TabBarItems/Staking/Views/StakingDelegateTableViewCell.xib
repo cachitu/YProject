@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Bold.otf">
+            <string>Aeonik-Bold</string>
+        </array>
+        <array key="Aeonik-Regular.otf">
+            <string>Aeonik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StakingDelegateTableViewCell" rowHeight="45" id="ueI-uo-Vvy" customClass="StakingDelegateTableViewCell" customModule="YProjet">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ueI-uo-Vvy" id="1d2-Xk-qak">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Du7-e7-9tP" userLabel="Rounded View">
+                        <rect key="frame" x="36" y="2" width="342" height="41"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="validator-icon" translatesAutoresizingMaskIntoConstraints="NO" id="R77-o1-Nm6">
+                                <rect key="frame" x="0.0" y="13" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="3NT-jV-jPJ"/>
+                                    <constraint firstAttribute="width" constant="15" id="nsv-Xn-DUC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0base.vc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31W-z9-kac">
+                                <rect key="frame" x="25" y="11.5" width="61" height="18"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                <color key="textColor" name="CustomBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.500000 LUNA" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvJ-91-dPw">
+                                <rect key="frame" x="235.5" y="11.5" width="106.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
+                                <color key="textColor" name="CustomBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="31W-z9-kac" firstAttribute="centerY" secondItem="Du7-e7-9tP" secondAttribute="centerY" id="4Ny-nG-O6M"/>
+                            <constraint firstItem="31W-z9-kac" firstAttribute="leading" secondItem="R77-o1-Nm6" secondAttribute="trailing" constant="10" id="9se-TR-lnF"/>
+                            <constraint firstItem="LvJ-91-dPw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="31W-z9-kac" secondAttribute="trailing" constant="3" id="P2u-lC-36g"/>
+                            <constraint firstItem="R77-o1-Nm6" firstAttribute="centerY" secondItem="Du7-e7-9tP" secondAttribute="centerY" id="uHi-H3-NYg"/>
+                            <constraint firstItem="LvJ-91-dPw" firstAttribute="centerY" secondItem="Du7-e7-9tP" secondAttribute="centerY" id="v9O-xt-fXF"/>
+                            <constraint firstItem="R77-o1-Nm6" firstAttribute="leading" secondItem="Du7-e7-9tP" secondAttribute="leading" id="vKA-dY-9Rq"/>
+                            <constraint firstAttribute="trailing" secondItem="LvJ-91-dPw" secondAttribute="trailing" id="zDP-V4-GMo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Du7-e7-9tP" firstAttribute="top" secondItem="1d2-Xk-qak" secondAttribute="top" constant="2" id="H8J-7d-XQE"/>
+                    <constraint firstItem="Du7-e7-9tP" firstAttribute="leading" secondItem="1d2-Xk-qak" secondAttribute="leading" constant="36" id="QXJ-Pa-L7L"/>
+                    <constraint firstAttribute="bottom" secondItem="Du7-e7-9tP" secondAttribute="bottom" constant="2" id="mUE-7k-lvk"/>
+                    <constraint firstAttribute="trailing" secondItem="Du7-e7-9tP" secondAttribute="trailing" constant="36" id="o5H-ul-1EZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="leftLabel" destination="31W-z9-kac" id="Vtt-jb-Bzb"/>
+                <outlet property="rightLabel" destination="LvJ-91-dPw" id="cku-aa-FsT"/>
+                <outlet property="validatorImageView" destination="R77-o1-Nm6" id="1KQ-9u-5vI"/>
+            </connections>
+            <point key="canvasLocation" x="11.594202898550726" y="80.357142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="validator-icon" width="14" height="15"/>
+        <namedColor name="CustomBlue">
+            <color red="0.14900000393390656" green="0.078000001609325409" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

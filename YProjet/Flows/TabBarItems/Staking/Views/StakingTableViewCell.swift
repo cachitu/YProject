@@ -23,8 +23,8 @@ class StakingTableViewCell: UITableViewCell, ReusableCell {
     // TODO
     func configure() {
         walletImageView.image = Images.WalletTypes.cosmos.image
-        leftLabel.text = "0base.vc"
-        rightLabel.text = "1.38"
+        leftLabel.text = "Name"
+        rightLabel.text = "Value"
     }
 }
 

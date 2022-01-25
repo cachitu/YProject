@@ -31,6 +31,7 @@ enum Scene {
 
     // Staking
     case staking(StakingViewModel)
+    case stakingSummary(StakingViewModel)
 
     // Gov
     case gov(GovViewModel)
@@ -60,6 +61,8 @@ extension Scene {
             return instantiateViewController(with: SwapViewController.self, from: .swap, bindWith: viewModel)
         case let .staking(viewModel):
             return instantiateViewController(with: StakingViewController.self, from: .staking, bindWith: viewModel)
+        case let .stakingSummary(viewModel):
+            return instantiateViewController(with: StakingSummaryViewController.self, from: .staking, bindWith: viewModel)
         case let .gov(viewModel):
             return instantiateViewController(with: GovViewController.self, from: .gov, bindWith: viewModel)
         case let .govDetails(viewModel):

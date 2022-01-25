@@ -29,10 +29,10 @@ extension StakingCoordinator: StakingCoordinatorProtocol {
     }
 
     func showSummary() {
-        //        transition(to: .watchWallet(CreateWalletViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
+        transition(to: .stakingSummary(StakingViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
     }
 
-    func showDetails() {
+    func showValidatorDetails() {
 //        transition(to: .watchWallet(CreateWalletViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
     }
 }

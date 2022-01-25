@@ -11,6 +11,8 @@ class CollectPhraseViewController: BaseViewController, BindableType, StoryboardI
 
     @IBOutlet weak var networkLogoImage: UIImageView!
     @IBOutlet weak var phraseTextView: UITextView!
+    @IBOutlet weak var copyimageView: UIImageView!
+
     @IBOutlet weak var confirmButton: CustomButton!
     @IBOutlet weak var navigationView: NavigationView!
 
@@ -33,6 +35,7 @@ class CollectPhraseViewController: BaseViewController, BindableType, StoryboardI
         navigationView.title = "New Wallet".localized
         navigationView.configure(showBackButton: true)
 
+        copyimageView.tintColor = .customBlue
         confirmButton.setTitle("Collect Phrase Button Title".localized, for: .normal)
         confirmButton.style = CustomButton.Style.generic(fillColor: .customGreen, textColor: .white)
     }

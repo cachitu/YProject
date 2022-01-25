@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h9y-40-doF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h9y-40-doF">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -33,13 +33,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos Network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Poz-Xi-voS">
-                                <rect key="frame" x="36" y="260" width="303" height="29.333333333333314"/>
+                                <rect key="frame" x="36" y="260" width="303" height="30"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
                                 <color key="textColor" name="TopBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYt-KC-NTi">
-                                <rect key="frame" x="36" y="319.33333333333331" width="303" height="35"/>
+                                <rect key="frame" x="36" y="320" width="303" height="36"/>
                                 <string key="text">Create a new wallet, import or
 add an existing address.</string>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
@@ -47,7 +47,7 @@ add an existing address.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2z-68-otK">
-                                <rect key="frame" x="36" y="424.33333333333331" width="303" height="95.999999999999943"/>
+                                <rect key="frame" x="36" y="426" width="303" height="96"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-icon" translatesAutoresizingMaskIntoConstraints="NO" id="h1p-rh-sfc">
                                         <rect key="frame" x="98" y="40" width="16" height="16"/>
@@ -84,7 +84,7 @@ add an existing address.</string>
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pg2-Yt-zx6">
-                                <rect key="frame" x="36" y="530.33333333333337" width="303" height="96"/>
+                                <rect key="frame" x="36" y="532" width="303" height="96"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="Yuh-Ph-ygH">
                                         <rect key="frame" x="98" y="40" width="16" height="16"/>
@@ -121,7 +121,7 @@ add an existing address.</string>
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOC-W1-uvt">
-                                <rect key="frame" x="36" y="636.33333333333337" width="303" height="96"/>
+                                <rect key="frame" x="36" y="638" width="303" height="96"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text" translatesAutoresizingMaskIntoConstraints="NO" id="56e-bO-N4v">
                                         <rect key="frame" x="98" y="40" width="16" height="16"/>
@@ -226,13 +226,13 @@ add an existing address.</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos Network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCN-3u-VmV">
-                                <rect key="frame" x="36" y="260" width="303" height="29.333333333333314"/>
+                                <rect key="frame" x="36" y="260" width="303" height="30"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
                                 <color key="textColor" name="TopBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXO-A9-KCa">
-                                <rect key="frame" x="36" y="339.33333333333331" width="303" height="35"/>
+                                <rect key="frame" x="36" y="340" width="303" height="36"/>
                                 <string key="text">Which one is the 10th word
 from your mnemonics phrase?</string>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
@@ -310,7 +310,7 @@ from your mnemonics phrase?</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZE-tq-gmy">
-                                <rect key="frame" x="36" y="264" width="303" height="58.333333333333314"/>
+                                <rect key="frame" x="36" y="264" width="303" height="60"/>
                                 <string key="text">Write down
 the following phrase.</string>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
@@ -318,7 +318,7 @@ the following phrase.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOE-ka-MtE">
-                                <rect key="frame" x="36" y="342.33333333333331" width="303" height="87.666666666666686"/>
+                                <rect key="frame" x="36" y="344" width="303" height="88"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">nice grace chef rural enable voice patch mimic tortoise wealth canal limb alarm mixed between minute detail sock cruel pole response property sample need</string>
                                 <color key="textColor" name="TopBar"/>
@@ -326,16 +326,16 @@ the following phrase.</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copy phrase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bag-5l-jB1">
-                                <rect key="frame" x="156.66666666666666" y="450" width="86" height="18"/>
+                                <rect key="frame" x="155" y="452" width="89" height="18"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                 <color key="textColor" name="TopBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="copy" translatesAutoresizingMaskIntoConstraints="NO" id="9dA-yx-JkD">
-                                <rect key="frame" x="129.66666666666666" y="448.66666666666669" width="17" height="21"/>
+                                <rect key="frame" x="128" y="450.66666666666669" width="17" height="21"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-H2-vBF" userLabel="copy phrase">
-                                <rect key="frame" x="99.666666666666686" y="437" width="200" height="44"/>
+                                <rect key="frame" x="99.666666666666686" y="439" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Dc2-MN-oS4"/>
                                     <constraint firstAttribute="width" constant="200" id="Tpa-98-Psf"/>
@@ -345,7 +345,7 @@ the following phrase.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cq0-Pv-yBn">
-                                <rect key="frame" x="36" y="488.00000000000006" width="303" height="87.666666666666686"/>
+                                <rect key="frame" x="36" y="490" width="303" height="90"/>
                                 <string key="text">Loosing your mnemonics could lead to loss of your asset. We highly reccommend keeping your mnemonics offline in a secure location, and never share your mnemonics with anyone else.</string>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                 <color key="textColor" name="TextRed"/>
@@ -402,6 +402,7 @@ the following phrase.</string>
                     <navigationItem key="navigationItem" id="VBH-9x-VB4"/>
                     <connections>
                         <outlet property="confirmButton" destination="IJQ-we-Mpm" id="RMf-ay-1st"/>
+                        <outlet property="copyimageView" destination="9dA-yx-JkD" id="cBL-oQ-YUn"/>
                         <outlet property="navigationView" destination="boI-RO-kAX" id="rSP-bq-SJ8"/>
                         <outlet property="networkLogoImage" destination="pUD-Sl-EAf" id="t4E-d1-03D"/>
                         <outlet property="phraseTextView" destination="NOE-ka-MtE" id="y7t-ac-OcE"/>
@@ -427,7 +428,7 @@ the following phrase.</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltg-zw-DBo">
-                                <rect key="frame" x="36" y="260" width="303" height="58.333333333333314"/>
+                                <rect key="frame" x="36" y="260" width="303" height="60"/>
                                 <string key="text">Please enter
 Your mnemonics phrase</string>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
@@ -435,7 +436,7 @@ Your mnemonics phrase</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="0HK-A4-p1j">
-                                <rect key="frame" x="36" y="338.33333333333331" width="303" height="88"/>
+                                <rect key="frame" x="36" y="340" width="303" height="88"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="xd9-KK-HYz"/>
@@ -517,19 +518,19 @@ Your mnemonics phrase</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlK-ie-OPu">
-                                <rect key="frame" x="90.666666666666686" y="260" width="194" height="30"/>
+                                <rect key="frame" x="86.333333333333329" y="260" width="202.33333333333337" height="30"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
                                 <color key="textColor" name="TopBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add an existing address to watch." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7e-pm-WaP">
-                                <rect key="frame" x="36" y="320" width="303" height="17.666666666666686"/>
+                                <rect key="frame" x="36" y="320" width="303" height="18"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                 <color key="textColor" name="TopBar"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="cosmos1.." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PNk-8w-AaF">
-                                <rect key="frame" x="36" y="355.66666666666669" width="303" height="34"/>
+                                <rect key="frame" x="36" y="356" width="303" height="34"/>
                                 <color key="textColor" name="TopBar"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>

@@ -10,7 +10,7 @@ import Foundation
 protocol StakingCoordinatorProtocol: Coordinator {
     func claimRewards()
     func showSummary()
-    func showDetails()
+    func showValidatorDetails()
 }
 
 class StakingViewModel: BaseViewModel, CoordinableViewModel  {
@@ -37,7 +37,7 @@ extension StakingViewModel {
         coordinator?.showSummary()
     }
 
-    func showDetails() {
-        coordinator?.showDetails()
+    func showValidatorDetails() {
+        coordinator?.showValidatorDetails()
     }
 }
