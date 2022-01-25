@@ -24,7 +24,7 @@ class ValidatorDetailsViewController: BaseViewController, BindableType, Storyboa
     @IBOutlet weak var detailsValueLabel: UILabel!
 
     @IBAction func delegateAction(_ sender: UIButton) {
-
+        viewModel.delegate()
     }
 
     enum Sections: Int, CaseIterable {

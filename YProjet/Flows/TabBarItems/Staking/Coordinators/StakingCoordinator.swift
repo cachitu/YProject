@@ -35,4 +35,12 @@ extension StakingCoordinator: StakingCoordinatorProtocol {
     func showValidatorDetails() {
         transition(to: .showValidatorDetails(StakingViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
     }
+
+    func delegate() {
+        transition(to: .delegate(StakingViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
+    }
+
+    func confirmDelegation() {
+        transition(to: .confirmDelegation(StakingViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
+    }
 }

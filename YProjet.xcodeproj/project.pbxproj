@@ -74,6 +74,8 @@
 		8DB3CDC127A0310A00741077 /* LabelValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3CDC027A0310A00741077 /* LabelValueTableViewCell.swift */; };
 		8DB3CDC327A034FC00741077 /* ValidatorDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB3CDC227A034FC00741077 /* ValidatorDetailsTableViewCell.xib */; };
 		8DB3CDC527A0350800741077 /* ValidatorDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3CDC427A0350800741077 /* ValidatorDetailsTableViewCell.swift */; };
+		8DB3CDC727A0524C00741077 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3CDC627A0524C00741077 /* DelegateViewController.swift */; };
+		8DB3CDC927A05A9B00741077 /* ConfirmDelegationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3CDC827A05A9B00741077 /* ConfirmDelegationViewController.swift */; };
 		8DBB2009264DA8D30083614F /* NewWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */; };
 		8DBB200D264DA96E0083614F /* NewWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */; };
 		8DD0F2642657DC20002B02A8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD0F2632657DC20002B02A8 /* Home.storyboard */; };
@@ -180,6 +182,8 @@
 		8DB3CDC027A0310A00741077 /* LabelValueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelValueTableViewCell.swift; sourceTree = "<group>"; };
 		8DB3CDC227A034FC00741077 /* ValidatorDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValidatorDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		8DB3CDC427A0350800741077 /* ValidatorDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		8DB3CDC627A0524C00741077 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		8DB3CDC827A05A9B00741077 /* ConfirmDelegationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDelegationViewController.swift; sourceTree = "<group>"; };
 		8DBB2008264DA8D30083614F /* NewWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletCoordinator.swift; sourceTree = "<group>"; };
 		8DBB200C264DA96E0083614F /* NewWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletViewModel.swift; sourceTree = "<group>"; };
 		8DD0F2632657DC20002B02A8 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -311,8 +315,10 @@
 			isa = PBXGroup;
 			children = (
 				8D03D3D0265CE5B800421D8A /* StakingViewController.swift */,
-				8D9C123D265E5DE8000F08DC /* ValidatorDetailsViewController.swift */,
 				8DB3CDB727A0150900741077 /* StakingSummaryViewController.swift */,
+				8D9C123D265E5DE8000F08DC /* ValidatorDetailsViewController.swift */,
+				8DB3CDC627A0524C00741077 /* DelegateViewController.swift */,
+				8DB3CDC827A05A9B00741077 /* ConfirmDelegationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -976,6 +982,7 @@
 			files = (
 				EE11BFCD261E0599005E724D /* CollectPhraseViewController.swift in Sources */,
 				EE11BFD7261E1755005E724D /* WatchWalletViewController.swift in Sources */,
+				8DB3CDC727A0524C00741077 /* DelegateViewController.swift in Sources */,
 				8D3DD36D2651789F00C68655 /* NavigationView.swift in Sources */,
 				8D225AC5263D5E960050B329 /* Scene.swift in Sources */,
 				8DD3C8E1264FEADB00BEA8B7 /* UIColor+StyleGuide.swift in Sources */,
@@ -987,6 +994,7 @@
 				8D225AD6263D62D20050B329 /* BaseViewController.swift in Sources */,
 				8D03D3F0265D128100421D8A /* GovModel.swift in Sources */,
 				8D225ACC263D5F460050B329 /* BaseViewModel.swift in Sources */,
+				8DB3CDC927A05A9B00741077 /* ConfirmDelegationViewController.swift in Sources */,
 				8D84B0DA2652FDCE009F461C /* ReusableCell.swift in Sources */,
 				8D225A73263D50AF0050B329 /* CoordinableViewModel.swift in Sources */,
 				8D03D3E2265CE80A00421D8A /* GovViewController.swift in Sources */,
