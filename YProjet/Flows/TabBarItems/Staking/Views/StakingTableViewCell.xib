@@ -18,30 +18,30 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StakingTableViewCell" rowHeight="100" id="B52-He-hFW" customClass="StakingTableViewCell" customModule="YProjet" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B52-He-hFW" id="b8b-wk-ZMr">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIY-rF-Hu9" userLabel="Rounded View">
-                        <rect key="frame" x="36" y="2" width="342" height="96"/>
+                        <rect key="frame" x="36" y="2" width="342" height="66"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="Bud-2j-9XZ">
-                                <rect key="frame" x="20" y="32" width="32" height="32"/>
+                                <rect key="frame" x="20" y="17" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="MdK-ci-ic9"/>
                                     <constraint firstAttribute="height" constant="32" id="h0y-ls-kL4"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMh-Tf-jgn">
-                                <rect key="frame" x="72" y="39" width="56" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMh-Tf-jgn">
+                                <rect key="frame" x="72" y="24" width="56" height="18"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                 <color key="textColor" name="CustomBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$23,872.88" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljh-Hl-sMW">
-                                <rect key="frame" x="247" y="39" width="75" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$23,872.88" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljh-Hl-sMW">
+                                <rect key="frame" x="247" y="24" width="75" height="18"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                 <color key="textColor" name="CustomBlue"/>
                                 <nil key="highlightedColor"/>
@@ -74,7 +74,7 @@
                 <outlet property="roundedView" destination="eIY-rF-Hu9" id="vUV-1f-cIq"/>
                 <outlet property="walletImageView" destination="Bud-2j-9XZ" id="dyD-q2-qdD"/>
             </connections>
-            <point key="canvasLocation" x="11.594202898550726" y="80.357142857142847"/>
+            <point key="canvasLocation" x="11.594202898550726" y="79.6875"/>
         </tableViewCell>
     </objects>
     <resources>

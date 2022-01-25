@@ -34,13 +34,13 @@
                                     <constraint firstAttribute="width" constant="15" id="nsv-Xn-DUC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0base.vc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31W-z9-kac">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0base.vc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31W-z9-kac">
                                 <rect key="frame" x="25" y="11.5" width="61" height="18"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                 <color key="textColor" name="CustomBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.500000 LUNA" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvJ-91-dPw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.500000 LUNA" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvJ-91-dPw">
                                 <rect key="frame" x="235.5" y="11.5" width="106.5" height="18"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                 <color key="textColor" name="CustomBlue"/>

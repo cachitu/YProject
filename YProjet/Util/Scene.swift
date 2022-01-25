@@ -32,6 +32,7 @@ enum Scene {
     // Staking
     case staking(StakingViewModel)
     case stakingSummary(StakingViewModel)
+    case showValidatorDetails(StakingViewModel)
 
     // Gov
     case gov(GovViewModel)
@@ -41,8 +42,12 @@ enum Scene {
 extension Scene {
     func viewController() -> UIViewController {
         switch self {
+
+        // Welcome
         case let .welcome(viewModel):
             return instantiateViewController(with: WelcomeViewController.self, from: .welcome, bindWith: viewModel)
+
+        // Create Wallet
         case let .createWallet(viewModel):
             return instantiateViewController(with: CreateWalletViewController.self, from: .createWallet, bindWith: viewModel)
         case let .collectPhrase(viewModel):
@@ -53,16 +58,28 @@ extension Scene {
             return instantiateViewController(with: ImportWalletViewController.self, from: .createWallet, bindWith: viewModel)
         case let .watchWallet(viewModel):
             return instantiateViewController(with: WatchWalletViewController.self, from: .createWallet, bindWith: viewModel)
+
+        // Settings
         case let .showSettings(viewModel):
             return instantiateViewController(with: SettingsViewController.self, from: .settings, bindWith: viewModel)
+
+        // Home
         case let .home(viewModel):
             return instantiateViewController(with: HomeViewController.self, from: .home, bindWith: viewModel)
+
+        // Swap
         case let .swap(viewModel):
             return instantiateViewController(with: SwapViewController.self, from: .swap, bindWith: viewModel)
+
+        // Staking
         case let .staking(viewModel):
             return instantiateViewController(with: StakingViewController.self, from: .staking, bindWith: viewModel)
         case let .stakingSummary(viewModel):
             return instantiateViewController(with: StakingSummaryViewController.self, from: .staking, bindWith: viewModel)
+        case let .showValidatorDetails(viewModel):
+            return instantiateViewController(with: ValidatorDetailsViewController.self, from: .staking, bindWith: viewModel)
+
+        // Governance
         case let .gov(viewModel):
             return instantiateViewController(with: GovViewController.self, from: .gov, bindWith: viewModel)
         case let .govDetails(viewModel):

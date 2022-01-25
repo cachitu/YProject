@@ -33,6 +33,6 @@ extension StakingCoordinator: StakingCoordinatorProtocol {
     }
 
     func showValidatorDetails() {
-//        transition(to: .watchWallet(CreateWalletViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
+        transition(to: .showValidatorDetails(StakingViewModel(coordinator: self)), type: .push, animated: true, completion: nil)
     }
 }

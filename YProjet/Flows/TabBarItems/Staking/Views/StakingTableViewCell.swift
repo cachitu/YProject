@@ -25,6 +25,9 @@ class StakingTableViewCell: UITableViewCell, ReusableCell {
         walletImageView.image = Images.WalletTypes.cosmos.image
         leftLabel.text = "Name"
         rightLabel.text = "Value"
+
+        leftLabel.textColor = .customBlue
+        rightLabel.textColor = .customBlue
     }
 }
 

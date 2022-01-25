@@ -18,5 +18,8 @@ class StakingDelegateTableViewCell: UITableViewCell, ReusableCell {
         validatorImageView.image = UIImage(named: "validator-icon") //TODO: from API
         leftLabel.text = "0base.vc"
         rightLabel.text = "0.500000 LUNA"
+
+        leftLabel.textColor = .customBlue
+        rightLabel.textColor = .customBlue
     }
 }
