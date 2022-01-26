@@ -35,9 +35,4 @@ extension WelcomeCoordinator: WelcomeCoordinatorProtocol {
         createWalletCoordinator = CreateWalletCoordinator(parentCoordinator: self, navigationController: self.navigationController)
         createWalletCoordinator?.start()
     }
-
-    func showSettings() {
-        settingsCoordinator = SettingsCoordinator(parentCoordinator: self, navigationController: self.navigationController)
-        settingsCoordinator?.start()
-    }
 }

@@ -22,7 +22,7 @@ class HomeViewController: BaseViewController, BindableType, StoryboardIdentifiab
 
     func configureUI() {
         navigationView.title = "My Wallets".localized
-        navigationView.configure(showNotificationButton: true, showSettingsButton: true)
+        navigationView.configure(showNotificationButton: true)
     }
 
     func bindViewModel() {}
@@ -82,10 +82,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
 extension HomeViewController: NavigationViewDelegate {
     func notificationAction() {
 
-    }
-
-    func settingsAction() {
-        viewModel.showSettings()
     }
 }
 

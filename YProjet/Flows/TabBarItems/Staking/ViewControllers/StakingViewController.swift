@@ -53,7 +53,7 @@ class StakingViewController: BaseViewController, BindableType, StoryboardIdentif
 
     private func configureUI() {
         navigationView.title = "Staking".localized
-        navigationView.configure(showNotificationButton: true, showSettingsButton: true)
+        navigationView.configure(showNotificationButton: true)
 
         // Delegation View
         delegationView.isHidden = !hasDelegations

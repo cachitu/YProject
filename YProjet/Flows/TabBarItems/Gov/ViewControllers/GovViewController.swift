@@ -22,7 +22,7 @@ class GovViewController: BaseViewController, BindableType, StoryboardIdentifiabl
 
     func configureUI() {
         navigationView.title = "Governance".localized
-        navigationView.configure(showNotificationButton: true, showSettingsButton: true)
+        navigationView.configure(showNotificationButton: true)
     }
 
     private func setupTableView() {

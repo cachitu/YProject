@@ -43,9 +43,5 @@ extension HomeCoordinator: HomeCoordinatorProtocol {
 //        walletDetailsCoordinator?.start()
     }
 
-    func showSettings() {
-        settingsCoordinator = SettingsCoordinator(parentCoordinator: self, navigationController: self.navigationController)
-        settingsCoordinator?.start()
-    }
 }
 

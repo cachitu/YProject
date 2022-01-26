@@ -22,7 +22,7 @@ class WelcomeViewController: BaseViewController, BindableType, StoryboardIdentif
 
     private func configureUI() {
         navigationView.title = "Welcome".localized
-        navigationView.configure(showNotificationButton: true, showSettingsButton: true)
+        navigationView.configure(showNotificationButton: true)
     }
 
     func bindViewModel() {}
@@ -55,10 +55,6 @@ extension WelcomeViewController: UITableViewDelegate {
 }
 
 extension WelcomeViewController: NavigationViewDelegate {
-    func settingsAction() {
-        viewModel.showSettings()
-    }
-
     func notificationAction() {
         
     }

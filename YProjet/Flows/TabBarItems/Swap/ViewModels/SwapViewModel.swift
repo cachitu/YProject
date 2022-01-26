@@ -9,7 +9,6 @@ import Foundation
 
 protocol SwapCoordinatorProtocol: Coordinator {
     func performNextAction()
-    //func showSettings()
 }
 
 class SwapViewModel: BaseViewModel, CoordinableViewModel  {
@@ -31,8 +30,4 @@ extension SwapViewModel {
     func performNextAction() {
         coordinator?.performNextAction()
     }
-
-//    func showSettings() {
-//        coordinator?.showSettings()
-//    }
 }

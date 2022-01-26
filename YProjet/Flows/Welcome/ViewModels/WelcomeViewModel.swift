@@ -12,7 +12,6 @@ import RxRelay
 protocol WelcomeCoordinatorProtocol: Coordinator {
     //TODO: add wallet type param
     func createWallet()
-    func showSettings()
 }
 
 class WelcomeViewModel: BaseViewModel, CoordinableViewModel  {
@@ -32,9 +31,5 @@ class WelcomeViewModel: BaseViewModel, CoordinableViewModel  {
 extension WelcomeViewModel {
     func createWallet() {
         coordinator?.createWallet()
-    }
-
-    func showSettings() {
-        coordinator?.showSettings()
     }
 }

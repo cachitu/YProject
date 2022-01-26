@@ -10,7 +10,6 @@ import RxSwift
 
 protocol HomeCoordinatorProtocol: Coordinator {
     func showWalletDetails()
-    func showSettings()
 }
 
 class HomeViewModel: BaseViewModel, CoordinableViewModel  {
@@ -31,9 +30,5 @@ class HomeViewModel: BaseViewModel, CoordinableViewModel  {
 extension HomeViewModel {
     func showWalletDetails() {
         coordinator?.showWalletDetails()
-    }
-
-    func showSettings() {
-        coordinator?.showSettings()
     }
 }
