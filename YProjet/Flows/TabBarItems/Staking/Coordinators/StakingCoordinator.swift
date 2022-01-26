@@ -19,6 +19,7 @@ class StakingCoordinator: Coordinator {
 
     override func flowFinished() {
         pop(animated: true, completion: nil)
+        parentCoordinator?.childCoordinatorDidFinish(coordinator: self)
     }
 }
 

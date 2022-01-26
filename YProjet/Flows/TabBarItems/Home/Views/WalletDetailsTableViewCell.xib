@@ -1,18 +1,106 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Bold.otf">
+            <string>Aeonik-Bold</string>
+        </array>
+        <array key="Aeonik-Regular.otf">
+            <string>Aeonik-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-        </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WalletDetailsTableViewCell" rowHeight="70" id="doo-eq-OU0" customClass="WalletDetailsTableViewCell" customModule="YProjet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="doo-eq-OU0" id="W5B-kf-bcd">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t65-GD-C9l" userLabel="Rounded View">
+                        <rect key="frame" x="36" y="2" width="342" height="66"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="3Gp-zT-MaE">
+                                <rect key="frame" x="20" y="17" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="ooB-SF-MlU"/>
+                                    <constraint firstAttribute="width" constant="32" id="sz2-ew-vMi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luna" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cA9-HO-0om">
+                                <rect key="frame" x="72" y="24" width="33.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
+                                <color key="textColor" name="CustomBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0000000" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGE-ql-GeB">
+                                <rect key="frame" x="232.5" y="15" width="61.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="13"/>
+                                <color key="textColor" name="CustomBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="eXy-MS-wiF">
+                                <rect key="frame" x="314" y="26" width="8" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="XZQ-u1-vDo"/>
+                                    <constraint firstAttribute="height" constant="14" id="t31-dH-SaI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$6.448756" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfw-FI-uL0">
+                                <rect key="frame" x="232.5" y="35" width="61.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="13"/>
+                                <color key="textColor" name="CustomBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eXy-MS-wiF" secondAttribute="trailing" constant="20" id="1O8-X1-Tmm"/>
+                            <constraint firstItem="3Gp-zT-MaE" firstAttribute="leading" secondItem="t65-GD-C9l" secondAttribute="leading" constant="20" id="2MQ-eZ-1gF"/>
+                            <constraint firstItem="Vfw-FI-uL0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cA9-HO-0om" secondAttribute="trailing" constant="2" id="4Jt-S1-Ua6"/>
+                            <constraint firstItem="eXy-MS-wiF" firstAttribute="centerY" secondItem="t65-GD-C9l" secondAttribute="centerY" id="4zT-he-RAo"/>
+                            <constraint firstItem="Vfw-FI-uL0" firstAttribute="top" secondItem="BGE-ql-GeB" secondAttribute="bottom" constant="4" id="5ot-2q-Gus"/>
+                            <constraint firstItem="BGE-ql-GeB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cA9-HO-0om" secondAttribute="trailing" constant="2" id="DfI-K5-Sm7"/>
+                            <constraint firstItem="cA9-HO-0om" firstAttribute="centerY" secondItem="t65-GD-C9l" secondAttribute="centerY" id="EjA-dF-RCh"/>
+                            <constraint firstItem="3Gp-zT-MaE" firstAttribute="centerY" secondItem="t65-GD-C9l" secondAttribute="centerY" id="P6j-OT-Se0"/>
+                            <constraint firstItem="eXy-MS-wiF" firstAttribute="leading" secondItem="BGE-ql-GeB" secondAttribute="trailing" constant="20" id="ZdP-F1-7dk"/>
+                            <constraint firstItem="Vfw-FI-uL0" firstAttribute="centerY" secondItem="eXy-MS-wiF" secondAttribute="centerY" constant="10" id="bmu-9A-PHs"/>
+                            <constraint firstItem="cA9-HO-0om" firstAttribute="leading" secondItem="3Gp-zT-MaE" secondAttribute="trailing" constant="20" id="frw-dY-tFu"/>
+                            <constraint firstItem="eXy-MS-wiF" firstAttribute="leading" secondItem="Vfw-FI-uL0" secondAttribute="trailing" constant="20" id="qzI-hN-EVM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="t65-GD-C9l" secondAttribute="trailing" constant="36" id="84l-QU-tfI"/>
+                    <constraint firstAttribute="bottom" secondItem="t65-GD-C9l" secondAttribute="bottom" constant="2" id="QhU-LM-J37"/>
+                    <constraint firstItem="t65-GD-C9l" firstAttribute="leading" secondItem="W5B-kf-bcd" secondAttribute="leading" constant="36" id="RBN-6F-J2l"/>
+                    <constraint firstItem="t65-GD-C9l" firstAttribute="top" secondItem="W5B-kf-bcd" secondAttribute="top" constant="2" id="X1l-bn-0o2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="leftLabel" destination="cA9-HO-0om" id="q5j-Ue-3GU"/>
+                <outlet property="rightNumberLabel" destination="BGE-ql-GeB" id="Scz-Ha-elN"/>
+                <outlet property="rightValueLabel" destination="Vfw-FI-uL0" id="Ndo-HR-6e6"/>
+                <outlet property="roundedView" destination="t65-GD-C9l" id="8sd-m3-L7b"/>
+                <outlet property="walletImageView" destination="3Gp-zT-MaE" id="j3J-Yd-iR4"/>
+            </connections>
+            <point key="canvasLocation" x="5.7971014492753632" y="59.598214285714285"/>
+        </tableViewCell>
     </objects>
+    <resources>
+        <image name="cosmos" width="32" height="32"/>
+        <image name="right-arrow" width="8" height="14"/>
+        <namedColor name="CustomBlue">
+            <color red="0.14900000393390656" green="0.078000001609325409" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

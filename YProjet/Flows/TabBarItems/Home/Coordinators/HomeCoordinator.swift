@@ -9,7 +9,7 @@ import UIKit
 
 class HomeCoordinator: Coordinator {
 
-    //private var walletDetailsCoordinator: WalletDetailsCoordinator?
+    private var walletDetailsCoordinator: WalletDetailsCoordinator?
     private var settingsCoordinator: SettingsCoordinator?
 
     override func start() {
@@ -22,8 +22,8 @@ class HomeCoordinator: Coordinator {
 
     override func childCoordinatorDidFinish(coordinator: Coordinator) {
         switch coordinator {
-//        case is WalletDetailsCoordinator:
-//            walletDetailsCoordinator = nil
+        case is WalletDetailsCoordinator:
+            walletDetailsCoordinator = nil
         case is SettingsCoordinator:
             settingsCoordinator = nil
         default:
@@ -39,8 +39,8 @@ class HomeCoordinator: Coordinator {
 
 extension HomeCoordinator: HomeCoordinatorProtocol {
     func showWalletDetails() {
-//        walletDetailsCoordinator = WalletDetailsCoordinator(parentCoordinator: self, navigationController: navigationController)
-//        walletDetailsCoordinator?.start()
+        walletDetailsCoordinator = WalletDetailsCoordinator(parentCoordinator: self, navigationController: navigationController)
+        walletDetailsCoordinator?.start()
     }
 
 }

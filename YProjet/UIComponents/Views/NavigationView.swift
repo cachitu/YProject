@@ -108,7 +108,7 @@ class NavigationView: UIView {
     }
 
     private func configureBackButton() {
-        backButtonWidthConstraint.constant = showBackButton ? 22.0 : 0.0
+        backButtonWidthConstraint.constant = showBackButton ? 25.0 : 0.0
     }
 
     private func configureNotificationButton() {

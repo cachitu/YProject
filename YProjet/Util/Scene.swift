@@ -25,6 +25,7 @@ enum Scene {
 
     // Home
     case home(HomeViewModel)
+    case wallet(WalletViewModel)
 
     // Swap
     case swap(SwapViewModel)
@@ -70,6 +71,8 @@ extension Scene {
         // Home
         case let .home(viewModel):
             return instantiateViewController(with: HomeViewController.self, from: .home, bindWith: viewModel)
+        case let .wallet(viewModel):
+            return instantiateViewController(with: WalletDetailsViewController.self, from: .home, bindWith: viewModel)
 
         // Swap
         case let .swap(viewModel):
