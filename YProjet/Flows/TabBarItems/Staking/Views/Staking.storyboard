@@ -36,13 +36,13 @@
                                 <rect key="frame" x="0.0" y="120" width="414" height="190"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5000000 LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4o-Yz-91U">
-                                        <rect key="frame" x="261" y="30" width="117" height="18"/>
+                                        <rect key="frame" x="263" y="30" width="115" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000005 LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erH-G2-Mkd">
-                                        <rect key="frame" x="261" y="58" width="117" height="18"/>
+                                        <rect key="frame" x="263" y="58" width="115" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -74,13 +74,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGN-p8-YIC">
-                                        <rect key="frame" x="36" y="30" width="72.5" height="18"/>
+                                        <rect key="frame" x="36" y="30" width="68.5" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyF-PG-IXw">
-                                        <rect key="frame" x="36" y="58" width="61" height="18"/>
+                                        <rect key="frame" x="36" y="58" width="59" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -111,7 +111,7 @@
                                 <rect key="frame" x="0.0" y="310" width="414" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validators" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqs-Pu-Cwd">
-                                        <rect key="frame" x="36" y="33.5" width="70" height="18"/>
+                                        <rect key="frame" x="36" y="33.5" width="66" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
@@ -134,7 +134,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order by: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adg-aq-1yq">
-                                        <rect key="frame" x="163.5" y="33.5" width="65.5" height="18"/>
+                                        <rect key="frame" x="162" y="33.5" width="67" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
@@ -222,25 +222,25 @@
                                 <rect key="frame" x="0.0" y="120" width="414" height="105"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5000000 LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9I-xK-fXp">
-                                        <rect key="frame" x="261" y="30" width="117" height="18"/>
+                                        <rect key="frame" x="263" y="30" width="115" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000005 LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjc-YH-JaH">
-                                        <rect key="frame" x="261" y="58" width="117" height="18"/>
+                                        <rect key="frame" x="263" y="58" width="115" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0Q-XL-0ge">
-                                        <rect key="frame" x="36" y="30" width="72.5" height="18"/>
+                                        <rect key="frame" x="36" y="30" width="68.5" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBp-6u-Hl6">
-                                        <rect key="frame" x="36" y="58" width="61" height="18"/>
+                                        <rect key="frame" x="36" y="58" width="59" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -284,7 +284,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegated to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWM-Ei-Vrp">
-                                                    <rect key="frame" x="36" y="26" width="90" height="18"/>
+                                                    <rect key="frame" x="36" y="26" width="86" height="18"/>
                                                     <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                                     <color key="textColor" name="CustomBlue"/>
                                                     <nil key="highlightedColor"/>
@@ -367,19 +367,19 @@
                                 <rect key="frame" x="0.0" y="120" width="414" height="170"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="terra1hfu02n2t4mre9w6qdrs7k8u7jpsgpt5ldj283t" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gr-kZ-zwi">
-                                        <rect key="frame" x="36" y="83" width="376" height="18"/>
+                                        <rect key="frame" x="36" y="83" width="376" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5R-l0-9oH">
-                                        <rect key="frame" x="36" y="134" width="378" height="18"/>
+                                        <rect key="frame" x="36" y="133.5" width="378" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operator address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGL-nT-xg0">
-                                        <rect key="frame" x="36" y="60" width="124" height="18"/>
+                                        <rect key="frame" x="36" y="60" width="118" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -391,7 +391,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvY-ty-Bbp">
-                                        <rect key="frame" x="36" y="111" width="48" height="18"/>
+                                        <rect key="frame" x="36" y="110.5" width="46" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -510,19 +510,19 @@
                                 <rect key="frame" x="0.0" y="120" width="414" height="170"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="terra1hfu02n2t4mre9w6qdrs7k8u7jpsgpt5ldj283t" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYj-fN-t6n">
-                                        <rect key="frame" x="36" y="83" width="376" height="18"/>
+                                        <rect key="frame" x="36" y="83" width="376" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXR-7p-KKZ">
-                                        <rect key="frame" x="36" y="134" width="378" height="18"/>
+                                        <rect key="frame" x="36" y="133.5" width="378" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operator address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf6-S7-pFr">
-                                        <rect key="frame" x="36" y="60" width="124" height="18"/>
+                                        <rect key="frame" x="36" y="60" width="118" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -534,7 +534,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWg-o3-M6e">
-                                        <rect key="frame" x="36" y="111" width="48" height="18"/>
+                                        <rect key="frame" x="36" y="110.5" width="46" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -580,13 +580,13 @@
                                 <rect key="frame" x="0.0" y="320" width="414" height="422"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E32-Lv-cTj">
-                                        <rect key="frame" x="36" y="0.0" width="56" height="18"/>
+                                        <rect key="frame" x="36" y="0.0" width="53" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available: 1.000000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFt-jX-6sF">
-                                        <rect key="frame" x="249" y="0.0" width="129" height="18"/>
+                                        <rect key="frame" x="247" y="0.0" width="131" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
@@ -755,13 +755,13 @@
                                 <rect key="frame" x="0.0" y="150" width="414" height="592"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUh-AW-HSj">
-                                        <rect key="frame" x="36" y="0.0" width="56" height="18"/>
+                                        <rect key="frame" x="36" y="0.0" width="53" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="0.5000000 LUNA" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQP-Uf-3LZ">
-                                        <rect key="frame" x="261" y="0.0" width="117" height="18"/>
+                                        <rect key="frame" x="263" y="0.0" width="115" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
@@ -776,7 +776,7 @@
                                         <rect key="frame" x="36" y="96" width="342" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LUNA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juB-Vx-Dap">
-                                                <rect key="frame" x="15" y="26" width="37" height="18"/>
+                                                <rect key="frame" x="15" y="26" width="40" height="18"/>
                                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                                 <color key="textColor" name="CustomBlue"/>
                                                 <nil key="highlightedColor"/>
@@ -927,7 +927,7 @@
                                 <rect key="frame" x="0.0" y="150" width="414" height="592"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ge-Oq-VbD">
-                                        <rect key="frame" x="134.5" y="228" width="145" height="18"/>
+                                        <rect key="frame" x="137.5" y="228" width="139" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
@@ -962,7 +962,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- OR - " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8si-JH-aTQ">
-                                        <rect key="frame" x="184.5" y="346" width="45.5" height="18"/>
+                                        <rect key="frame" x="184" y="346" width="46" height="18"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
@@ -1063,29 +1063,29 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="718"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked-icon" translatesAutoresizingMaskIntoConstraints="NO" id="9g4-GB-XTl">
-                                        <rect key="frame" x="182" y="191" width="50" height="50"/>
+                                        <rect key="frame" x="182" y="192" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="1nL-Y2-46q"/>
                                             <constraint firstAttribute="width" constant="50" id="KKL-Td-iTH"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9V-KW-Sx2">
-                                        <rect key="frame" x="153.5" y="251" width="107" height="30"/>
+                                        <rect key="frame" x="156" y="252" width="102" height="29.5"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
                                         <color key="textColor" name="CustomGreen"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aZx-Yo-vpL">
-                                        <rect key="frame" x="146.5" y="341" width="121.5" height="36"/>
+                                        <rect key="frame" x="149.5" y="341.5" width="115" height="35"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You DELEGATED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOw-AQ-cnc">
-                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                                 <color key="textColor" name="CustomBlue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5000000 LUNA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLW-Xy-iF9">
-                                                <rect key="frame" x="0.0" y="18" width="121.5" height="18"/>
+                                                <rect key="frame" x="0.0" y="17.5" width="115" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                                 <color key="textColor" name="CustomBlue"/>
                                                 <nil key="highlightedColor"/>
@@ -1094,13 +1094,13 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAr-TC-Ase">
-                                        <rect key="frame" x="200.5" y="407" width="13.5" height="18"/>
+                                        <rect key="frame" x="200.5" y="406.5" width="13.5" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obase.vc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IO4-5M-kYD">
-                                        <rect key="frame" x="174.5" y="455" width="65" height="18"/>
+                                        <rect key="frame" x="175" y="454" width="64" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="15"/>
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>

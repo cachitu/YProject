@@ -21,6 +21,7 @@ class CollectPhraseViewController: BaseViewController, BindableType, StoryboardI
     }
     
     @IBAction func copyPhraseAction(_ sender: Any) {
+        UIPasteboard.general.string = phraseTextView.text
     }
 
     var viewModel: NewWalletViewModel!
@@ -34,8 +35,6 @@ class CollectPhraseViewController: BaseViewController, BindableType, StoryboardI
     private func configureUI() {
         navigationView.title = "New Wallet".localized
         navigationView.configure(showBackButton: true)
-
-        copyimageView.tintColor = .customBlue
         confirmButton.setTitle("Collect Phrase Button Title".localized, for: .normal)
         confirmButton.style = CustomButton.Style.generic(fillColor: .customGreen, textColor: .white)
     }

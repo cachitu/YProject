@@ -13,8 +13,16 @@ class ImportWalletViewController: BaseViewController, BindableType, StoryboardId
     @IBOutlet weak var mnemonicTextView: UITextView!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var navigationView: NavigationView!
+    @IBOutlet weak var pasteButton: UIButton!
+
+    @IBAction func pasteAction(_ sender: UIButton) {
+        if let pasteString = UIPasteboard.general.string {
+            mnemonicTextView.text = pasteString
+        }
+    }
 
     @IBAction func confirmAction(_ sender: Any) {
+
     }
 
     var viewModel: CreateWalletViewModel!
@@ -27,6 +35,7 @@ class ImportWalletViewController: BaseViewController, BindableType, StoryboardId
 
     private func configureUI() {
         confirmButton.layer.cornerRadius = 10
+        pasteButton.setTitle("    " + "Paste phrase".localized, for: .normal)
         navigationView.title = "Import Wallet".localized
         navigationView.configure(showBackButton: true)
     }
