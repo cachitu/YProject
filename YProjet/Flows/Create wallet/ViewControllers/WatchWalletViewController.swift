@@ -13,7 +13,15 @@ class WatchWalletViewController: BaseViewController, BindableType, StoryboardIde
     @IBOutlet weak var networkLabel: UILabel!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var navigationView: NavigationView!
-        
+
+    @IBAction func qrScanAction(_ sender: UIButton) {
+
+    }
+
+    @IBAction func pasteAction(_ sender: UIButton) {
+
+    }
+
     @IBAction func confirmAction(_ sender: Any) {
     }
 

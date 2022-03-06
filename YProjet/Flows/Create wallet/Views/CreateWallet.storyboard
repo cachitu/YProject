@@ -333,10 +333,13 @@ the following phrase.</string>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJQ-we-Mpm" customClass="CustomButton" customModule="YProjet" customModuleProvider="target">
                                 <rect key="frame" x="36" y="678" width="303" height="70"/>
+                                <color key="backgroundColor" name="CustomGreen"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Mb0-f1-k82"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="confirmButtonAction:" destination="fcw-ae-HZG" eventType="touchUpInside" id="cqa-8I-63n"/>
                                 </connections>
@@ -506,9 +509,11 @@ Your mnemonics phrase</string>
                             <constraint firstItem="Bka-jI-G69" firstAttribute="centerX" secondItem="4Oj-Jx-ek7" secondAttribute="centerX" id="WnC-UQ-yJa"/>
                             <constraint firstAttribute="trailing" secondItem="06d-Qj-ach" secondAttribute="trailing" id="b9j-Cf-lvW"/>
                             <constraint firstItem="Ee7-Bd-nxj" firstAttribute="leading" secondItem="0HK-A4-p1j" secondAttribute="leading" id="cO1-sQ-bLU"/>
+                            <constraint firstItem="9Gs-7u-sYF" firstAttribute="trailing" secondItem="Ee7-Bd-nxj" secondAttribute="trailing" constant="36" id="f50-fB-HuA"/>
                             <constraint firstItem="0HK-A4-p1j" firstAttribute="top" secondItem="ltg-zw-DBo" secondAttribute="bottom" constant="20" id="f6R-3Q-OAU"/>
                             <constraint firstItem="06d-Qj-ach" firstAttribute="top" secondItem="4Oj-Jx-ek7" secondAttribute="top" id="iAK-Lu-IR5"/>
                             <constraint firstItem="m3i-Jt-Rg8" firstAttribute="top" secondItem="06d-Qj-ach" secondAttribute="bottom" constant="80" id="iKo-Fh-urr"/>
+                            <constraint firstItem="Ee7-Bd-nxj" firstAttribute="leading" secondItem="9Gs-7u-sYF" secondAttribute="leading" constant="36" id="t1b-6r-KUC"/>
                             <constraint firstItem="m3i-Jt-Rg8" firstAttribute="centerX" secondItem="9Gs-7u-sYF" secondAttribute="centerX" id="wOn-X3-GSX"/>
                             <constraint firstItem="06d-Qj-ach" firstAttribute="leading" secondItem="9Gs-7u-sYF" secondAttribute="leading" id="yCi-XL-Y7S"/>
                         </constraints>
@@ -541,7 +546,7 @@ Your mnemonics phrase</string>
                                     <constraint firstAttribute="height" constant="50" id="Udq-Dv-LPr"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlK-ie-OPu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmos Network" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlK-ie-OPu">
                                 <rect key="frame" x="86.333333333333329" y="260" width="202.33333333333337" height="30"/>
                                 <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="25"/>
                                 <color key="textColor" name="TopBar"/>
@@ -581,25 +586,90 @@ Your mnemonics phrase</string>
                                     <constraint firstAttribute="height" constant="120" id="C9n-1I-b1i"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZO-2D-PBR">
+                                <rect key="frame" x="35.999999999999993" y="420" width="121.33333333333331" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Xk4-vx-el4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" name="CustomBlue"/>
+                                <state key="normal" title="    QR Scan" image="qr-icon">
+                                    <color key="titleColor" name="CustomBlue"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.02"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pasteAction:" destination="raH-U2-1vr" eventType="touchUpInside" id="ey6-wr-nIs"/>
+                                    <action selector="qrScanAction:" destination="2zf-vl-A6V" eventType="touchUpInside" id="pGy-lf-N7t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anC-Ec-ay8">
+                                <rect key="frame" x="217.66666666666666" y="420" width="121.33333333333334" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PQL-M5-y26"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" name="CustomBlue"/>
+                                <state key="normal" title="    Paste" image="copy">
+                                    <color key="titleColor" name="CustomBlue"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.02"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pasteAction:" destination="raH-U2-1vr" eventType="touchUpInside" id="TmG-Cv-DdR"/>
+                                    <action selector="pasteAction:" destination="2zf-vl-A6V" eventType="touchUpInside" id="vJI-Vz-D3c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nIW-us-You"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
+                            <constraint firstItem="vZO-2D-PBR" firstAttribute="width" secondItem="jJP-Et-NkM" secondAttribute="width" multiplier="0.4" id="28f-e4-hsY"/>
                             <constraint firstItem="nIW-us-You" firstAttribute="trailing" secondItem="r7e-pm-WaP" secondAttribute="trailing" constant="36" id="2JI-4e-SEw"/>
                             <constraint firstItem="hlK-ie-OPu" firstAttribute="centerX" secondItem="oA3-WX-FNI" secondAttribute="centerX" id="2Sn-9P-pBS"/>
                             <constraint firstItem="yGG-4j-k6g" firstAttribute="top" secondItem="6mP-s2-z3c" secondAttribute="top" id="3ld-9A-T6s"/>
                             <constraint firstItem="oA3-WX-FNI" firstAttribute="top" secondItem="yGG-4j-k6g" secondAttribute="bottom" constant="80" id="Arl-Di-Q4s"/>
-                            <constraint firstItem="jJP-Et-NkM" firstAttribute="leading" secondItem="PNk-8w-AaF" secondAttribute="leading" id="AzG-eh-Ll6"/>
+                            <constraint firstItem="nIW-us-You" firstAttribute="trailing" secondItem="jJP-Et-NkM" secondAttribute="trailing" constant="36" id="BMb-lA-vd7"/>
+                            <constraint firstItem="anC-Ec-ay8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vZO-2D-PBR" secondAttribute="trailing" constant="5" id="DXF-m8-APG"/>
                             <constraint firstItem="PNk-8w-AaF" firstAttribute="leading" secondItem="nIW-us-You" secondAttribute="leading" constant="36" id="FmQ-z3-ZKv"/>
                             <constraint firstItem="r7e-pm-WaP" firstAttribute="leading" secondItem="nIW-us-You" secondAttribute="leading" constant="36" id="HNO-v6-xI8"/>
                             <constraint firstItem="PNk-8w-AaF" firstAttribute="top" secondItem="r7e-pm-WaP" secondAttribute="bottom" constant="18" id="Hi9-MN-1jx"/>
                             <constraint firstItem="oA3-WX-FNI" firstAttribute="centerX" secondItem="nIW-us-You" secondAttribute="centerX" id="Ioa-I7-ZPs"/>
                             <constraint firstItem="hlK-ie-OPu" firstAttribute="top" secondItem="oA3-WX-FNI" secondAttribute="bottom" constant="10" id="JVr-s3-mQe"/>
+                            <constraint firstItem="anC-Ec-ay8" firstAttribute="width" secondItem="vZO-2D-PBR" secondAttribute="width" id="Loh-8g-fFb"/>
                             <constraint firstItem="yGG-4j-k6g" firstAttribute="leading" secondItem="nIW-us-You" secondAttribute="leading" id="VNf-CM-bRd"/>
-                            <constraint firstItem="jJP-Et-NkM" firstAttribute="trailing" secondItem="PNk-8w-AaF" secondAttribute="trailing" id="aUL-zW-Guf"/>
+                            <constraint firstItem="anC-Ec-ay8" firstAttribute="top" secondItem="vZO-2D-PBR" secondAttribute="top" id="bAc-3q-obS"/>
+                            <constraint firstItem="nIW-us-You" firstAttribute="trailing" secondItem="anC-Ec-ay8" secondAttribute="trailing" constant="36" id="gmx-Cm-ynd"/>
                             <constraint firstItem="nIW-us-You" firstAttribute="trailing" secondItem="PNk-8w-AaF" secondAttribute="trailing" constant="36" id="h4K-vw-w4l"/>
                             <constraint firstItem="nIW-us-You" firstAttribute="bottom" secondItem="jJP-Et-NkM" secondAttribute="bottom" constant="30" id="nI7-Uc-jqn"/>
                             <constraint firstItem="r7e-pm-WaP" firstAttribute="centerX" secondItem="hlK-ie-OPu" secondAttribute="centerX" id="ptX-8d-TVg"/>
+                            <constraint firstItem="vZO-2D-PBR" firstAttribute="leading" secondItem="nIW-us-You" secondAttribute="leading" constant="36" id="pz3-IU-N58"/>
+                            <constraint firstItem="vZO-2D-PBR" firstAttribute="top" secondItem="PNk-8w-AaF" secondAttribute="bottom" constant="30" id="qCg-A1-Qer"/>
+                            <constraint firstItem="jJP-Et-NkM" firstAttribute="leading" secondItem="nIW-us-You" secondAttribute="leading" constant="36" id="reb-mo-EVh"/>
                             <constraint firstItem="r7e-pm-WaP" firstAttribute="top" secondItem="hlK-ie-OPu" secondAttribute="bottom" constant="30" id="vea-kT-sFO"/>
                             <constraint firstAttribute="trailing" secondItem="yGG-4j-k6g" secondAttribute="trailing" id="xHo-cL-4eA"/>
                         </constraints>
@@ -621,7 +691,8 @@ Your mnemonics phrase</string>
         <image name="add-icon" width="24" height="24"/>
         <image name="copy" width="17.666666030883789" height="21"/>
         <image name="cosmos" width="32" height="32"/>
-        <image name="down" width="14.743000030517578" height="16"/>
+        <image name="down" width="15" height="16"/>
+        <image name="qr-icon" width="21" height="21"/>
         <image name="text" width="16" height="16"/>
         <namedColor name="Background">
             <color red="0.93300002813339233" green="0.94499999284744263" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

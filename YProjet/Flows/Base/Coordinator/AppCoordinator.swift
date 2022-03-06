@@ -24,8 +24,9 @@ class AppCoordinator: Coordinator {
     }
 
     // TODO: bool that indicates if the current user has at least one wallet
+    // for testing UI
     private var noWallet: Bool {
-        return false
+        return true
     }
 
     required init(window: UIWindow) {
