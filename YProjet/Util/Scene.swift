@@ -27,9 +27,6 @@ enum Scene {
     case home(HomeViewModel)
     case wallet(WalletViewModel)
 
-    // Swap
-    case swap(SwapViewModel)
-
     // Staking
     case staking(StakingViewModel)
     case stakingSummary(StakingViewModel)
@@ -73,10 +70,6 @@ extension Scene {
             return instantiateViewController(with: HomeViewController.self, from: .home, bindWith: viewModel)
         case let .wallet(viewModel):
             return instantiateViewController(with: WalletDetailsViewController.self, from: .home, bindWith: viewModel)
-
-        // Swap
-        case let .swap(viewModel):
-            return instantiateViewController(with: SwapViewController.self, from: .swap, bindWith: viewModel)
 
         // Staking
         case let .staking(viewModel):

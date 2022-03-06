@@ -15,7 +15,6 @@ extension UIStoryboard {
         case createWallet
         case settings
         case home
-        case swap
         case staking
         case gov
 

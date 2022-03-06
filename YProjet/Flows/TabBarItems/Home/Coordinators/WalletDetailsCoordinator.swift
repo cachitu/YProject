@@ -19,6 +19,11 @@ class WalletDetailsCoordinator: Coordinator {
         transition(to: .wallet(WalletViewModel(coordinator: self)), type: type, animated: true, completion: nil)
     }
 
+    func showSettings() {
+        settingsCoordinator = SettingsCoordinator(parentCoordinator: self, navigationController: self.navigationController)
+        settingsCoordinator?.start()
+    }
+
     override func childCoordinatorDidFinish(coordinator: Coordinator) {
         switch coordinator {
         case is SettingsCoordinator:

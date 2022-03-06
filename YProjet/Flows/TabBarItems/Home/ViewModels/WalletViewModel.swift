@@ -8,7 +8,7 @@
 import Foundation
 
 protocol WalletCoordinatorProtocol: Coordinator {
-
+    func showSettings()
 }
 
 class WalletViewModel: BaseViewModel, CoordinableViewModel {
@@ -22,5 +22,9 @@ class WalletViewModel: BaseViewModel, CoordinableViewModel {
 
     func pop(animated: Bool) {
         coordinator?.pop(animated: animated, completion: nil)
+    }
+
+    func showSettings() {
+        coordinator?.showSettings()
     }
 }

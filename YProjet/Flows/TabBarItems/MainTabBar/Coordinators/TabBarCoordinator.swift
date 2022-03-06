@@ -9,7 +9,7 @@ import RxSwift
 import UIKit
 
 enum Tab: Int {
-    case home, swap, staking, gov
+    case home, staking, gov
 }
 
 class TabBarCoordinator: Coordinator {
@@ -17,10 +17,6 @@ class TabBarCoordinator: Coordinator {
 
     private lazy var homeCoordinator: HomeCoordinator = {
         return HomeCoordinator(parentCoordinator: self)
-    }()
-
-    private lazy var swapCoordinator: SwapCoordinator = {
-        return SwapCoordinator(parentCoordinator: self)
     }()
 
     private lazy var stakingCoordinator: StakingCoordinator = {
@@ -48,11 +44,6 @@ class TabBarCoordinator: Coordinator {
                          image: Images.TabBarIcons.home.image,
                          tag: Tab.home.rawValue)
 
-        swapCoordinator.navigationController.tabBarItem =
-            UITabBarItem(title: "Swap".localized,
-                         image: Images.TabBarIcons.swap.image,
-                         tag: Tab.swap.rawValue)
-
         stakingCoordinator.navigationController.tabBarItem =
             UITabBarItem(title: "Staking".localized,
                          image: Images.TabBarIcons.staking.image,
@@ -64,12 +55,10 @@ class TabBarCoordinator: Coordinator {
                          tag: Tab.gov.rawValue)
 
         tabBarController.setViewControllers([homeCoordinator.navigationController,
-                                             swapCoordinator.navigationController,
                                              stakingCoordinator.navigationController,
                                              govCoordinator.navigationController
                                                 ], animated: true)
         homeCoordinator.start()
-        swapCoordinator.start()
         stakingCoordinator.start()
         govCoordinator.start()
 

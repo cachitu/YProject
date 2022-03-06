@@ -10,7 +10,6 @@ import UIKit
 enum Images {
     enum TabBarIcons: String, ImageAsset {
         case home = "wallet"
-        case swap = "003-refresh"
         case staking = "001-stacked-files"
         case gov = "004-check"
     }

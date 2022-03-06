@@ -34,7 +34,7 @@ class WalletDetailsViewController: BaseViewController, BindableType, StoryboardI
     }
 
     func configureUI() {
-        navigationView.configure(showBackButton: true, showNotificationButton: true)
+        navigationView.configure(showBackButton: true, showNotificationButton: true, showSettingsButton: true)
     }
 
     private func setupTableView() {
@@ -152,5 +152,9 @@ extension WalletDetailsViewController: NavigationViewDelegate {
 
     func backAction() {
         viewModel.pop(animated: true)
+    }
+
+    func settingsAction() {
+        viewModel.showSettings()
     }
 }

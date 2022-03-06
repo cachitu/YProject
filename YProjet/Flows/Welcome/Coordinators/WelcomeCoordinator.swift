@@ -9,7 +9,6 @@ import Foundation
 
 class WelcomeCoordinator: Coordinator {
     private var createWalletCoordinator: CreateWalletCoordinator?
-    private var settingsCoordinator: SettingsCoordinator?
 
     override func start() {
         transition(to: .welcome(WelcomeViewModel(coordinator: self)), type: .navigationRoot, animated: true, completion: nil)

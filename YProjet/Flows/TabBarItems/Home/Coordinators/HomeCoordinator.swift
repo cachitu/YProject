@@ -10,7 +10,6 @@ import UIKit
 class HomeCoordinator: Coordinator {
 
     private var walletDetailsCoordinator: WalletDetailsCoordinator?
-    private var settingsCoordinator: SettingsCoordinator?
 
     override func start() {
         showHome(type: .navigationRoot)
@@ -24,8 +23,6 @@ class HomeCoordinator: Coordinator {
         switch coordinator {
         case is WalletDetailsCoordinator:
             walletDetailsCoordinator = nil
-        case is SettingsCoordinator:
-            settingsCoordinator = nil
         default:
             break
         }
