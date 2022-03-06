@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "left-arrow.svg",
+      "filename" : "004-check.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "004-check@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "004-check@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

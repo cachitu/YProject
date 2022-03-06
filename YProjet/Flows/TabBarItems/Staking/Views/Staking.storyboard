@@ -1105,6 +1105,13 @@
                                         <color key="textColor" name="CustomBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="G03-xw-vHw">
+                                        <rect key="frame" x="197" y="207" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="aBd-p5-Q1x"/>
+                                            <constraint firstAttribute="height" constant="20" id="wo6-5Y-ooO"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1119,6 +1126,8 @@
                                     <constraint firstItem="IO4-5M-kYD" firstAttribute="centerX" secondItem="toE-t2-YSR" secondAttribute="centerX" id="ctK-dC-5qg"/>
                                     <constraint firstItem="zAr-TC-Ase" firstAttribute="centerX" secondItem="toE-t2-YSR" secondAttribute="centerX" id="dNE-jE-XHv"/>
                                     <constraint firstItem="IO4-5M-kYD" firstAttribute="top" secondItem="zAr-TC-Ase" secondAttribute="bottom" constant="30" id="e7c-Pj-jnx"/>
+                                    <constraint firstItem="G03-xw-vHw" firstAttribute="centerY" secondItem="9g4-GB-XTl" secondAttribute="centerY" id="eYa-uG-1zm"/>
+                                    <constraint firstItem="G03-xw-vHw" firstAttribute="centerX" secondItem="9g4-GB-XTl" secondAttribute="centerX" id="mSy-Dv-mEm"/>
                                     <constraint firstItem="aZx-Yo-vpL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="toE-t2-YSR" secondAttribute="leading" constant="10" id="nfs-fR-8if"/>
                                 </constraints>
                             </view>
@@ -1165,6 +1174,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="check" width="23" height="18"/>
         <image name="checked-icon" width="50" height="50"/>
         <image name="down-arrow" width="11" height="6.5"/>
         <image name="faceid" width="45" height="45"/>

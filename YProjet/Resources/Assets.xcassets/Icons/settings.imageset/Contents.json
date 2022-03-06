@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "fi-rr-settings.svg",
+      "filename" : "fi-rr-settings.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "fi-rr-settings@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "fi-rr-settings@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
